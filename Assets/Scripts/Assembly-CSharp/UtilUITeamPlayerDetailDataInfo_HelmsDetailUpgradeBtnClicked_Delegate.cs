@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailDataInfo_HelmsDetailUpgradeBtnClicked_Delegate();

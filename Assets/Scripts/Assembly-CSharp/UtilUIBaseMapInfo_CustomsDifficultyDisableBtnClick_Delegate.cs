@@ -1,0 +1,1 @@
+public delegate void UtilUIBaseMapInfo_CustomsDifficultyDisableBtnClick_Delegate(Defined.LevelMode levelMode);

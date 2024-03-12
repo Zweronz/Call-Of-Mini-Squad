@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameLevel><!--LevelMode:游戏模式(0普通 1困难 2地狱) id:对应的场景文件名 name:场景名 battleMode:关卡类型(0:普通 1:BOSS 2:遭遇战) enenyTeamID:遭遇战对应敌人队伍的配置表(如果不是遭遇战不要有此字段)-->
+	<LevelMode mode = "0" bgm = "BGM_Laboratory">
+		<LevelNode index="0" id="MAP2-1-2-1" name = "STAGE 2-1" mapNodePosX="-393.0" mapNodePosY="-222.0" depth="3" mode="0" level="121" battleMode="0" title = "Safe Camp" description = "Entering into the medical control center, the heaven like place seems to keep some unknown secrets. " >
+			<DialogStart>
+     			<Part PlayerID = "10" dialog = "Hi, guys! My name is Eva and I am a researcher here."/>
+				<Part PlayerID = "0" dialog = "Thanks for saving me!"/>
+				<Part PlayerID = "10" dialog = "This place has hot water, you can take a bath here, but do not go away."/>
+				<Part PlayerID = "2" dialog = "Great! I can take a shower."/>
+				<Part PlayerID = "10" dialog = "Can you help us to clear up this center?"/>
+				<Part PlayerID = "1" dialog = "Of course."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "1" dialog = "Why so many zombies here?"/>
+				<Part PlayerID = "10" dialog = "Er……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="1" id="MAP2-1-2-2" name = "STAGE 2-2" mapNodePosX="-376.0" mapNodePosY="-133.0" depth="3" mode="0" level="133" battleMode="0" title = "Secrets" description = "Mike finds that Eva has always been in the lab and doesn't allow anyone to come in. So out of the curiosity..." >
+		    <DialogStart>
+     			<Part PlayerID = "2" dialog = "Mike, have you noticed Eva is always hiding in the lab, it's weird right?"/>
+				<Part PlayerID = "0" dialog = "Yes, I feel a little bit, and she also asks us to clear up zombies. It shouldn't have so many zombies here."/>
+				<Part PlayerID = "2" dialog = "Shall we go to have a check or I cannot sleep well."/>
+				<Part PlayerID = "0" dialog = "OK, let's go……damn it, why so many zombies here?"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "10" dialog = "What are you doing in my lab?"/>
+				<Part PlayerID = "0" dialog = "This is the same question we want to ask. Why are so many zombies in your lab?"/>
+				<Part PlayerID = "10" dialog = "I am conducting experiment, I want to find ways to make vaccines to kill all zombies."/>
+				<Part PlayerID = "0" dialog = "…… "/>
+				<Part PlayerID = "10" dialog = "My lab has been messed up by you guys."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="2" id="MAP2-1-2-3" name = "STAGE 2-3" mapNodePosX="-356.0" mapNodePosY="-64.0" depth="3" mode="0" level="146" battleMode="0" title = "The Walking Dead" description = "With the revelation of secrets, the road in front us is a way paved by the walking dead." >
+		    <DialogStart>
+     			<Part PlayerID = "10" dialog = "So you guys know the reason now?"/>
+				<Part PlayerID = "0" dialog = "We need to kill those zombies here."/>
+				<Part PlayerID = "10" dialog = "Whatever, but don't touch stuff here."/>
+				<Part PlayerID = "0" dialog = "Open the door."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "Damn it, what a mess!"/>
+				<Part PlayerID = "1" dialog = "Stop complaint, we are safer here than staying outside."/>
+				<Part PlayerID = "0" dialog = "Let's back home now!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="3" id="MAP2-1-2-4" name = "STAGE 2-4" mapNodePosX="-337.0" mapNodePosY="18.0" depth="3" mode="0" level="161" battleMode="0" title = "Sick" description = "When Mike and his friends are clearing the center, they get sick." >
+		    <DialogStart>
+     			<Part PlayerID = "0" dialog = "Lili, how about Chris and guys?"/>
+				<Part PlayerID = "2" dialog = "It doesn't go well, we might get infected."/>
+				<Part PlayerID = "10" dialog = "So let's isolate him first and people who have contacted him shall also be isolated."/>
+				<Part PlayerID = "2" dialog = "We need medicines now. We need to save him."/>
+				<Part PlayerID = "10" dialog = "Medicines are located in another place and we cannot pass through."/>
+				<Part PlayerID = "0" dialog = "We have to try."/>
+				<Part PlayerID = "10" dialog = "I show you the way."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "How many zombies?"/>
+				<Part PlayerID = "10" dialog = "I don't know."/>
+				<Part PlayerID = "0" dialog = "How couldn't you know that?"/>
+				<Part PlayerID = "10" dialog = "Before the outbreak of virus, many people were isolated here."/>
+				<Part PlayerID = "0" dialog = "……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="4" id="MAP2-1-2-5" name = "STAGE 2-5" mapNodePosX="-324.0" mapNodePosY="134.0" depth="3" mode="0" level="180" battleMode="1" title = "Bleeding" description = "There are too many zombies in the room, try to attract some of them." >
+		    <DialogStart>
+     			<Part PlayerID = "5" dialog = "Too many here, we couldn't pass through."/>
+				<Part PlayerID = "0" dialog = "Figure it out."/>
+				<Part PlayerID = "10" dialog = "Zombies have a good nose so let's try to use blood to draw them away."/>
+				<Part PlayerID = "0" dialog = "Let's do it."/>
+				<Part PlayerID = "5" dialog = "They are coming. Let's find a place to hide."/>
+				<Part PlayerID = "10" dialog = "It works, let's go."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "2" dialog = "Why so many jumping zombies here?"/>
+				<Part PlayerID = "5" dialog = "They are moving quickly in the tunnel, big trouble."/>
+				<Part PlayerID = "10" dialog = "Here we are, lock the door."/>
+				<Part PlayerID = "5" dialog = "En, Let's start to find."/>
+				<Part PlayerID = "10" dialog = "Stop finding, just take eveything you can."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="5" id="MAP2-1-2-6" name = "STAGE 2-6" mapNodePosX="-219.0" mapNodePosY="118.0" depth="2" mode="0" level="190" battleMode="0" title = "Sweeping" description = "Those attacted zombies are back, you must kill them otherwise you may not get through tha passage." >
+			<DialogStart>
+				<Part PlayerID = "5" dialog = "Go, zombies are dead. Come out, guys."/>
+				<Part PlayerID = "10" dialog = "How about there?"/>
+				<Part PlayerID = "5" dialog = "Fine! Let's do it otherwise zombies will occupy the way again. It is impossible for me to get through without disturbing them."/>
+				<Part PlayerID = "10" dialog = "Then let's do it now."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "What have you guys got?"/>
+				<Part PlayerID = "5" dialog = "It's all here, and what she has got?"/>
+				<Part PlayerID = "10" dialog = "Take it easy Bro."/>
+				<Part PlayerID = "-1" dialog = "[2days later]"/>
+				<Part PlayerID = "1" dialog = "It is great to be alive after the battle."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="6" id="MAP2-1-3-1" name = "STAGE 2-7" mapNodePosX="-157.0" mapNodePosY="116.0" depth="1" mode="0" level="201" battleMode="0" title = "Water" description = "Water are muddy this morning. Vasily said the pipeline might be broken." >
+			<DialogStart>
+			<Part PlayerID = "6" dialog = "Guys, come to check the water here."/>
+				<Part PlayerID = "2" dialog = "What about water? Why is it so muddy?"/>
+				<Part PlayerID = "3" dialog = "I guess the pipeline is broken."/>
+				<Part PlayerID = "10" dialog = "Let me check it first…… I find t water leakage along the way to the isolation room. So the broken pipeline might be there."/>
+				<Part PlayerID = "0" dialog = "Let's dea with it otherwise we will have no water in a few days."/>
+				<Part PlayerID = "3" dialog = "Turn off the valve first and I go to find some tools to fix it."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "OK, it has been turned off."/>
+				<Part PlayerID = "3" dialog = "This place is like a maze, I feel dizzy now."/>
+				<Part PlayerID = "0" dialog = "Just get used to it, have you found tools?"/>
+				<Part PlayerID = "3" dialog = "Yes."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="7" id="MAP2-1-3-2" name = "STAGE 2-8" mapNodePosX="-89.0" mapNodePosY="115.0" depth="3" mode="0" level="213" battleMode="0" title = "Repair" description = "Repair doesn't go smoothly as zombies are following them." >
+			<DialogStart>
+				<Part PlayerID = "3" dialog = "I need 1 hour to fix it Pls wait for me."/>
+				<Part PlayerID = "6" dialog = "Vasily, keep quiet. Listen…… Zombies."/>
+				<Part PlayerID = "3" dialog = "Why make me so exciting when I see them?"/>
+				<Part PlayerID = "0" dialog = "Stop joking, fix them."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "Vasily, kill them, it is not safe here."/>
+				<Part PlayerID = "3" dialog = "OK…… it's ok now, Let's go! Turn on the valve now."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="8" id="MAP2-1-3-3" name = "STAGE 2-9" mapNodePosX="-32.0" mapNodePosY="100.0" depth="2" mode="0" level="225" battleMode="0" title = "Bullets" description = "The shortage of bullets has become severe after a series of battles against walking dead." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Shit, we are short of bullets now."/>
+				<Part PlayerID = "6" dialog = "Ask Eva, there is arsenal in the center."/>
+				<Part PlayerID = "0" dialog = "Eva, where is the arsenal?"/>
+				<Part PlayerID = "10" dialog = "It is located at the periphery of the center, this is the map; You need to pass through this place to get to the arsenal."/>
+				<Part PlayerID = "0" dialog = "OK"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "This is it, right? Around?"/>
+				<Part PlayerID = "7" dialog = "According to Eva's map, we need to pass through this area."/>
+				<Part PlayerID = "0" dialog = "Let's have a rest for 15mins."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="9" id="MAP2-1-3-4" name = "STAGE 2-10" mapNodePosX="-64.0" mapNodePosY="16.0" depth="3" mode="0" level="238" battleMode="1" title = "Surprise" description = "What arsenal brings to us is unexpected surprise." >
+			<DialogStart>
+			<Part PlayerID = "0" dialog = "OK guys, let's keep moving."/>
+				<Part PlayerID = "7" dialog = "Be careful guys, this is a new area we have never cleared before."/>
+				<Part PlayerID = "0" dialog = "After all, be careful. Arnoud, you show us the way."/>
+				<Part PlayerID = "6" dialog = "Be careful the zombie with the bag. It's a tough zombie, look the green glow around him."/>
+				<Part PlayerID = "7" dialog = "OK"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "Here we are, this is the place."/>
+				<Part PlayerID = "0" dialog = "Zero, open the door."/>
+				<Part PlayerID = "6" dialog = "OK. "/>
+				<Part PlayerID = "-1" dialog = "[Open the door]"/>
+				<Part PlayerID = "7" dialog = "Look what I have found? RPG-my favorite weapon."/>
+				<Part PlayerID = "0" dialog = "Hi, buddy. Be careful your weapon."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="10" id="MAP2-1-4-1" name = "STAGE 2-11" mapNodePosX="-58.0" mapNodePosY="-101.0" depth="3" mode="0" level="252" battleMode="0" title = "Stranger" description = "In the crazy world, it is hard for survivors to accept strangers." >
+			<DialogStart>
+				<Part PlayerID = "-1" dialog = "Help! Help! Is anyone here?"/>
+				<Part PlayerID = "0" dialog = "Why those people are here?"/>
+				<Part PlayerID = "2" dialog = "Mike?"/>
+				<Part PlayerID = "0" dialog = "Just do it quickly. Don't complicate the issue now."/>
+				<Part PlayerID = "2" dialog = "Mike……"/>
+				<Part PlayerID = "0" dialog = "OK! Let's go to have a check"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "Who are you? Why you are here?"/>
+				<Part PlayerID = "-1" dialog = "[Wuwu]"/>
+				<Part PlayerID = "0" dialog = "Shit."/>
+				<Part PlayerID = "9" dialog = "My name is Clint, I was hiding here when disaster occurred."/>
+				<Part PlayerID = "0" dialog = "You live here? How could you survive? Say!"/>
+				<Part PlayerID = "9" dialog = "I have been hiding here and have not come out "/>
+				<Part PlayerID = "0" dialog = "Take us to the place you are hiding."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="11" id="MAP2-1-4-2" name = "STAGE 2-12" mapNodePosX="41.0" mapNodePosY="-99.0" depth="3" mode="0" level="267" battleMode="0" title = "Truck" description = "Clint takes us to his room,but more questions are raised later?" >
+			<DialogStart>
+				<Part PlayerID = "9" dialog = "Here we are."/>
+				<Part PlayerID = "0" dialog = "Why have you got so much food here?"/>
+				<Part PlayerID = "9" dialog = "When the disaster came, I was delivering food to the inventory. So I hide here when it occurred."/>
+				<Part PlayerID = "0" dialog = "How did you come out?"/>
+				<Part PlayerID = "9" dialog = "I have no food left and starving, so……"/>
+				<Part PlayerID = "0" dialog = "Is that truck still there? Let's go there to get it."/>
+				<Part PlayerID = "9" dialog = "No, it is too dangerous."/>
+				<Part PlayerID = "0" dialog = "But it will be more dangerous if we don't, attention my gun may go off."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "6" dialog = "OH, Time for wholesaling food."/>
+				<Part PlayerID = "0" dialog = "Let's go, food are enough for a long time "/>
+				<Part PlayerID = "2" dialog = "What about him?"/>
+				<Part PlayerID = "0" dialog = "……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="12" id="MAP2-1-4-3" name = "STAGE 2-13" mapNodePosX="96.0" mapNodePosY="-79.0" depth="3" mode="0" level="283" battleMode="0" title = "Lab" description = "We are back to Clint's room for break. However, that room is no long safe." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Let's take a rest here."/>
+				<Part PlayerID = "-1" dialog = "[Bump]"/>
+				<Part PlayerID = "0" dialog = "Quiet."/>
+				<Part PlayerID = "2" dialog = "Mike, Guys, run."/>
+				<Part PlayerID = "0" dialog = "Enter the room first."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "9" dialog = "Oh, my god, my home."/>
+				<Part PlayerID = "2" dialog = "This is not your home."/>
+				<Part PlayerID = "0" dialog = "It is just a lab."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="13" id="MAP2-1-4-4" name = "STAGE 2-14" mapNodePosX="106.0" mapNodePosY="-6.0" depth="3" mode="0" level="299" battleMode="0" title = "Other people" description = "After finding Clint, we start to find other people in the center." >
+			<DialogStart>
+				<Part PlayerID = "10" dialog = "Hi guys, I find there are other people here except us."/>
+				<Part PlayerID = "0" dialog = "Other people?"/>
+				<Part PlayerID = "10" dialog = "En, I find there are other people shooting zombies in the monitor."/>
+				<Part PlayerID = "0" dialog = "……"/>
+				<Part PlayerID = "10" dialog = "So guys are be careful when coming out."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "-1" dialog = "[Gunshot]"/>
+				<Part PlayerID = "5" dialog = "Over there, Gunshot."/>
+				<Part PlayerID = "0" dialog = "Check it out."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="14" id="MAP2-1-4-5" name = "STAGE 2-15" mapNodePosX="106.0" mapNodePosY="128.0" depth="4" mode="0" level="316" battleMode="1" title = "Tracing" description = "After hearing the gunshot, we come to the place but seeing something shockingly." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Vasily, How is it going? They are heading there."/>
+				<Part PlayerID = "3" dialog = "Go this way?"/>
+				<Part PlayerID = "-1" dialog = "Ah!"/>
+				<Part PlayerID = "0" dialog = "Go, check it out."/>
+				<Part PlayerID = "6" dialog = "OH, damn it. What a huge zombie."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "3" dialog = "What the hell it is?"/>
+				<Part PlayerID = "0" dialog = "It seems someone has kept something from us."/>
+				<Part PlayerID = "3" dialog = "Who?......"/>
+				<Part PlayerID = "6" dialog = "Whoever it is I just know it is very tough. I can't remember how many times I have slashed."/>
+				<Part PlayerID = "0" dialog = "Let's return back first."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="15" id="MAP2-1-4-6" name = "STAGE 2-16" mapNodePosX="188.0" mapNodePosY="85.0" depth="5" mode="0" level="334" battleMode="0" title = "Doubt" description = "We return to the shelter with doubts, but the answer for that is……" >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Eva, we are ecnountering……"/>
+				<Part PlayerID = "10" dialog = "What the hell?"/>
+				<Part PlayerID = "0" dialog = "What? What did you say?"/>
+				<Part PlayerID = "-1" dialog = "[Beep]"/>
+				<Part PlayerID = "10" dialog = "Cabine door at the left side of the shelter is just broken, zombies are coming in. Let's go to fix them first. "/>
+				<Part PlayerID = "3" dialog = "So……"/>
+				<Part PlayerID = "0" dialog = "Kill zombies first."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "Arnoud, Please move table and other stuff in other rooms to block here."/>
+				<Part PlayerID = "7" dialog = "Vasily, Let's go together."/>
+				<Part PlayerID = "3" dialog = "OK. "/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="16" id="MAP2-1-5-1" name = "STAGE 2-17" mapNodePosX="230.0" mapNodePosY="49.0" depth="6" mode="0" level="354" battleMode="0" title = "Evolution" description = "The finding by Eva has given us an answer-Evolution." >
+			<DialogStart>
+				<Part PlayerID = "10" dialog = "From the body brought by you guys, I discover……"/>
+				<Part PlayerID = "7" dialog = "……"/>
+				<Part PlayerID = "0" dialog = "Can you explain to us in a simple way?"/>
+				<Part PlayerID = "8" dialog = "You mean they are evolving?"/>
+				<Part PlayerID = "10" dialog = "Is that possible?"/>
+				<Part PlayerID = "0" dialog = "So go to kill zombines in the center. Let's go."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "Damages dealt by us will be lower over time."/>
+				<Part PlayerID = "8" dialog = "We need to find other ways."/>
+				<Part PlayerID = "0" dialog = "Let's go back first to check whether Eva's got other ways to deal with them."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="17" id="MAP2-1-5-2" name = "STAGE 2-18" mapNodePosX="276.0" mapNodePosY="8.0" depth="6" mode="0" level="375" battleMode="0" title = "Test" description = "Eva wants to know the reason behind the evolution of zombies, but things go contrary. " >
+			<DialogStart>
+				<Part PlayerID = "10" dialog = "It seems they are evolving in a way beyond our imagination."/>
+				<Part PlayerID = "0" dialog = "Have you figured it out why they start evolve?"/>
+				<Part PlayerID = "10" dialog = "Not yet."/>
+				<Part PlayerID = "0" dialog = "You should take a rest. You look so tired."/>
+				<Part PlayerID = "10" dialog = "It's fine."/>
+				<Part PlayerID = "-1" dialog = "[Crack]"/>
+				<Part PlayerID = "10" dialog = "Guys, GO, GO!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "2" dialog = "Their reaction and strength has been improved."/>
+				<Part PlayerID = "10" dialog = "I should have thought of that."/>
+				<Part PlayerID = "8" dialog = "What? "/>
+				<Part PlayerID = "10" dialog = "In the experiement, I have found they are different……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="18" id="MAP2-1-6-1" name = "STAGE 2-19" mapNodePosX="367.0" mapNodePosY="-60.0" depth="6" mode="0" level="397" battleMode="0" title = "Self-destruction" description = "Zombies evolve faster than we think and the protection set up in the center is unable to ward off them." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "We can't hold on any more, they are evolving very fast."/>
+				<Part PlayerID = "10" dialog = "Especially in the lab, their power was beyond my imagination."/>
+				<Part PlayerID = "0" dialog = "Let's get out of this place."/>
+				<Part PlayerID = "7" dialog = "Mike, they are coming in."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "10" dialog = "There is no other way but to activate the self-destruction device."/>
+				<Part PlayerID = "7" dialog = "Self-destruction?"/>
+				<Part PlayerID = "10" dialog = "A protection device made for the occurrence of unexpected event, now it looks like those who made it are really farsighted."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="19" id="MAP2-1-6-2" name = "STAGE 2-20" mapNodePosX="455.0" mapNodePosY="-39.0" depth="6" mode="0" level="420" battleMode="1" title = "Countdown" description = "We are worried about the time left for self-destruction." >
+			<DialogStart>
+				<Part PlayerID = "8" dialog = "Why just give us 15mins to evacuate?"/>
+				<Part PlayerID = "10" dialog = "People who made it didn't consider the current situation."/>
+				<Part PlayerID = "0" dialog = "Are there any other ways?"/>
+				<Part PlayerID = "10" dialog = "We can try to go through the sewage."/>
+				<Part PlayerID = "0" dialog = "Let's go. Life is important."/>
+				<Part PlayerID = "-1" dialog = "[Gunshot]"/>
+				<Part PlayerID = "0" dialog = "Stay away, shit. Who is attacking us?"/>
+				<Part PlayerID = "1" dialog = "Mike, I guess I know. Look……"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "What the hell! Zombies can use weapons?"/>
+				<Part PlayerID = "0" dialog = "Let's move!"/>
+				<Part PlayerID = "2" dialog = "Damn it, it's digusting."/>
+				<Part PlayerID = "0" dialog = "No other choice. Just put it up with that now."/>
+				<Part PlayerID = "-1" dialog = "[Bomb!]"/>
+				<Part PlayerID = "8" dialog = "Wake up, guys."/>
+				<Part PlayerID = "0" dialog = "Wu!"/>
+			</DialogEnd>
+		</LevelNode>
+	</LevelMode>
+	<LevelMode mode = "1" bgm = "BGM_Laboratory">
+		<LevelNode index="0" id="MAP2-2-2-6" name = "STAGE 2-1" mapNodePosX="-390.0" mapNodePosY="-213.0" depth="3" mode="0" level="592" battleMode="0" title = "Food" description = "In the chaotic world,food is indispensible and sometimes worthier than life." />
+		<LevelNode index="1" id="MAP2-2-3-1" name = "STAGE 2-2" mapNodePosX="-369.0" mapNodePosY="-123.0" depth="3" mode="0" level="618" battleMode="0" title = "Massacre" description = "Killing is unavoidable otherwise you may not survive in escaping." />
+		<LevelNode index="2" id="MAP2-2-3-2" name = "STAGE 2-3" mapNodePosX="-349.0" mapNodePosY="-38.0" depth="3" mode="0" level="645" battleMode="0" title = "Medicines " description = "Medicnes are very important, especially when people is ill as diseases can infect to other people quickly." />
+		<LevelNode index="3" id="MAP2-2-3-3" name = "STAGE 2-4" mapNodePosX="-329.0" mapNodePosY="43.0" depth="3" mode="0" level="674" battleMode="0" title = "Supplies" description = "Chris says: Supplies are far from enough. He is always right……" />
+		<LevelNode index="4" id="MAP2-2-3-4" name = "STAGE 2-5" mapNodePosX="-310.0" mapNodePosY="161.0" depth="3" mode="0" level="704" battleMode="1" title = "New Food" description = "You are not zombie, so you don't eat people. What you need is food." />
+		<LevelNode index="5" id="MAP2-2-4-1" name = "STAGE 2-6" mapNodePosX="-213.0" mapNodePosY="117.0" depth="2" mode="0" level="735" battleMode="0" title = "Living Dead" description = "Don't think they are humans, they are just a group of living dead." />
+		<LevelNode index="6" id="MAP2-2-4-2" name = "STAGE 2-7" mapNodePosX="-93.0" mapNodePosY="117.0" depth="1" mode="0" level="768" battleMode="0" title = "Training" description = "Zombies are everywhere and it is necessary to find some targets for training." />
+		<LevelNode index="7" id="MAP2-2-4-3" name = "STAGE 2-8" mapNodePosX="-43.0" mapNodePosY="44.0" depth="3" mode="0" level="802" battleMode="0" title = "Cases" description = "There are many cases here, it is better to check out." />
+		<LevelNode index="8" id="MAP2-2-4-4" name = "STAGE 2-9" mapNodePosX="-58.0" mapNodePosY="-50.0" depth="2" mode="0" level="838" battleMode="0" title = "New Weapon" description = "Zombies are all over the place, it is impossible to move without weapons!" />
+		<LevelNode index="9" id="MAP2-2-4-5" name = "STAGE 2-10" mapNodePosX="30.0" mapNodePosY="-43.0" depth="3" mode="0" level="875" battleMode="1" title = "Survivors" description = "It seems a massacre was taken place last night. Not sure whether there are survivors or not." />
+		<LevelNode index="10" id="MAP2-2-4-6" name = "STAGE 2-11" mapNodePosX="104.0" mapNodePosY="-7.0" depth="3" mode="0" level="914" battleMode="0" title = "Transportation" description = "Supplies in shelter are far from enough. We have to carry new supplies back in time." />
+		<LevelNode index="11" id="MAP2-2-5-1" name = "STAGE 2-12" mapNodePosX="118.0" mapNodePosY="81.0" depth="3" mode="0" level="955" battleMode="0" title = "Suspicious" description = "It seems some suspicious objects are moving around, let's go to check it out. " />
+		<LevelNode index="12" id="MAP2-2-5-2" name = "STAGE 2-13" mapNodePosX="203.0" mapNodePosY="70.0" depth="3" mode="0" level="997" battleMode="0" title = "Crisis" description = "Crisis exacerbated as a large number of zombies are coming!" />
+		<LevelNode index="13" id="MAP2-2-6-1" name = "STAGE 2-14" mapNodePosX="260.0" mapNodePosY="22.0" depth="3" mode="0" level="1041" battleMode="0" title = "Medical Supplies" description = "You go to the warehouse and get many medical supplies." />
+		<LevelNode index="14" id="MAP2-2-6-2" name = "STAGE 2-15" mapNodePosX="359.0" mapNodePosY="-11.0" depth="4" mode="0" level="1087" battleMode="1" title = "Water" description = "Drinking water in the shelter is insufficient and hope we can search some." />
+	</LevelMode>
+	<LevelMode mode = "2" bgm = "BGM_Laboratory">
+		<LevelNode index="0" id="MAP2-3-2-6" name = "STAGE 2-1" mapNodePosX="-390.0" mapNodePosY="-213.0" depth="3" mode="0" level="1995" battleMode="0" title = "Food" description = "In the chaotic world,food is indispensible and sometimes worthier than life." />
+		<LevelNode index="1" id="MAP2-3-3-1" name = "STAGE 2-2" mapNodePosX="-369.0" mapNodePosY="-123.0" depth="3" mode="0" level="2028" battleMode="0" title = "Massacre" description = "Killing is unavoidable otherwise you may not survive in escaping." />
+		<LevelNode index="2" id="MAP2-3-3-2" name = "STAGE 2-3" mapNodePosX="-349.0" mapNodePosY="-38.0" depth="3" mode="0" level="2062" battleMode="0" title = "Medicines " description = "Medicnes are very important, especially when people is ill as diseases can infect to other people quickly." />
+		<LevelNode index="3" id="MAP2-3-3-3" name = "STAGE 2-4" mapNodePosX="-329.0" mapNodePosY="43.0" depth="3" mode="0" level="2096" battleMode="0" title = "Supplies" description = "Chris says: Supplies are far from enough. He is always right……" />
+		<LevelNode index="4" id="MAP2-3-3-4" name = "STAGE 2-5" mapNodePosX="-310.0" mapNodePosY="161.0" depth="3" mode="0" level="2131" battleMode="1" title = "New Food" description = "You are not zombie, so you don't eat people. What you need is food." />
+		<LevelNode index="5" id="MAP2-3-4-1" name = "STAGE 2-6" mapNodePosX="-213.0" mapNodePosY="117.0" depth="2" mode="0" level="2166" battleMode="0" title = "Living Dead" description = "Don't think they are humans, they are just a group of living dead." />
+		<LevelNode index="6" id="MAP2-3-4-2" name = "STAGE 2-7" mapNodePosX="-93.0" mapNodePosY="117.0" depth="1" mode="0" level="2202" battleMode="0" title = "Training" description = "Zombies are everywhere and it is necessary to find some targets for training." />
+		<LevelNode index="7" id="MAP2-3-4-3" name = "STAGE 2-8" mapNodePosX="-43.0" mapNodePosY="44.0" depth="3" mode="0" level="2239" battleMode="0" title = "Cases" description = "There are many cases here, it is better to check out." />
+		<LevelNode index="8" id="MAP2-3-4-4" name = "STAGE 2-9" mapNodePosX="-58.0" mapNodePosY="-50.0" depth="2" mode="0" level="2276" battleMode="0" title = "New Weapon" description = "Zombies are all over the place, it is impossible to move without weapons!" />
+		<LevelNode index="9" id="MAP2-3-4-5" name = "STAGE 2-10" mapNodePosX="30.0" mapNodePosY="-43.0" depth="3" mode="0" level="2579" battleMode="1" title = "Survivors" description = "It seems a massacre was taken place last night. Not sure whether there are survivors or not." />
+		<LevelNode index="10" id="MAP2-3-4-6" name = "STAGE 2-11" mapNodePosX="104.0" mapNodePosY="-7.0" depth="3" mode="0" level="2622" battleMode="0" title = "Transportation" description = "Supplies in shelter are far from enough. We have to carry new supplies back in time." />
+		<LevelNode index="11" id="MAP2-3-5-1" name = "STAGE 2-12" mapNodePosX="118.0" mapNodePosY="81.0" depth="3" mode="0" level="2665" battleMode="0" title = "Suspicious" description = "It seems some suspicious objects are moving around, let's go to check it out. " />
+		<LevelNode index="12" id="MAP2-3-5-2" name = "STAGE 2-13" mapNodePosX="203.0" mapNodePosY="70.0" depth="3" mode="0" level="2710" battleMode="0" title = "Crisis" description = "Crisis exacerbated as a large number of zombies are coming!" />
+		<LevelNode index="13" id="MAP2-3-6-1" name = "STAGE 2-14" mapNodePosX="260.0" mapNodePosY="22.0" depth="3" mode="0" level="2755" battleMode="0" title = "Medical Supplies" description = "You go to the warehouse and get many medical supplies." />
+		<LevelNode index="14" id="MAP2-3-6-2" name = "STAGE 2-15" mapNodePosX="359.0" mapNodePosY="-11.0" depth="4" mode="0" level="2800" battleMode="1" title = "Water" description = "Drinking water in the shelter is insufficient and hope we can search some." />
+	</LevelMode>
+</GameLevel>

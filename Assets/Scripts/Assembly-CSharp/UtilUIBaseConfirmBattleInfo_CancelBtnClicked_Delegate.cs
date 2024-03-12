@@ -1,0 +1,1 @@
+public delegate void UtilUIBaseConfirmBattleInfo_CancelBtnClicked_Delegate();

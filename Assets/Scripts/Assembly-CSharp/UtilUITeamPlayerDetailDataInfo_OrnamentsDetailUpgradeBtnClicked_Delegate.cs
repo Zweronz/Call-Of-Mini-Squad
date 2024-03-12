@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailDataInfo_OrnamentsDetailUpgradeBtnClicked_Delegate();

@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailExDataInfo_WSWeaponUpgradeBtnClicked_Delegate();

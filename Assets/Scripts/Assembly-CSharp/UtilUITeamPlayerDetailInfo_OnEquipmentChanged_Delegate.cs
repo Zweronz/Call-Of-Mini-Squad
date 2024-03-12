@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailInfo_OnEquipmentChanged_Delegate(UtilUITeamPlayerDetailInfo.EquipmentChangedType _key);

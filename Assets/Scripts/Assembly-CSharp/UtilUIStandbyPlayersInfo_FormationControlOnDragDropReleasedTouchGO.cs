@@ -1,0 +1,3 @@
+using UnityEngine;
+
+public delegate void UtilUIStandbyPlayersInfo_FormationControlOnDragDropReleasedTouchGO(GameObject go);

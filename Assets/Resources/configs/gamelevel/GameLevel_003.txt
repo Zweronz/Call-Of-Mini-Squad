@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameLevel><!--LevelMode:游戏模式(0普通 1困难 2地狱) id:对应的场景文件名 name:场景名 battleMode:关卡类型(0:普通 1:BOSS 2:遭遇战) enenyTeamID:遭遇战对应敌人队伍的配置表(如果不是遭遇战不要有此字段)-->
+	<LevelMode mode = "0" bgm = "BGM_Channel">
+		<LevelNode index="0" id="MAP3-1-2-1" name = "STAGE 3-1" mapNodePosX="-530.0" mapNodePosY="77.0" depth="3" mode="0" level="445" battleMode="0" title = "Come With Me" description = "Find a way out! Now we can only walk in this disgusting sewer defensing hidden dangers all the time." >
+			<DialogStart>
+				<Part PlayerID = "2" dialog = "Ah……"/>
+				<Part PlayerID = "1" dialog = "What's up?"/>
+				<Part PlayerID = "2" dialog = "Mice!"/>
+				<Part PlayerID = "1" dialog = "……"/>
+				<Part PlayerID = "0" dialog = "Listen… Run!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "What the hell is that everywhere! Everywhere!"/>
+				<Part PlayerID = "0" dialog = "It seems unsafe here!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="1" id="MAP3-1-2-2" name = "STAGE 3-2" mapNodePosX="-410.0" mapNodePosY="80.0" depth="3" mode="0" level="471" battleMode="0" title = "Shelter" description = "The sewer radiates in all directions. We must leave here and look for the right place to take refuge." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Take a rest! We've been running for a long time!"/>
+				<Part PlayerID = "10" dialog = "We gotta get outta here now!"/>
+				<Part PlayerID = "2" dialog = "Too sick! Let's get out of here, quick!"/>
+				<Part PlayerID = "0" dialog = "Well, let's have a rest!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "9" dialog = "What about this room? We can take some time to rest here. "/>
+				<Part PlayerID = "0" dialog = "Look around, be sure that we're not in danger."/>
+				<Part PlayerID = "8" dialog = "I checked, there was no problem!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="2" id="MAP3-1-2-3" name = "STAGE 3-3" mapNodePosX="-284.0" mapNodePosY="79.0" depth="3" mode="0" level="499" battleMode="0" title = "New Decision" description = "Zero has found a map. It's time to make a new decision." >
+			<DialogStart>
+				<Part PlayerID = "6" dialog = "Look what I've found…A map for this sewer!"/>
+				<Part PlayerID = "0" dialog = "Wait, let me see… Now try to find out a map for this city!"/>
+				<Part PlayerID = "7" dialog = "Here it is!"/>
+				<Part PlayerID = "6" dialog = "Here we are now, go through this passageway to reach the next place."/>
+				<Part PlayerID = "0" dialog = "Let's get ready, just start off now."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "I go up first. Wait to hear from me."/>
+				<Part PlayerID = "4" dialog = "Watch out."/>
+				<Part PlayerID = "0" dialog = "No danger here! Come on!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="3" id="MAP3-1-2-4" name = "STAGE 3-4" mapNodePosX="-226.0" mapNodePosY="56.0" depth="3" mode="0" level="528" battleMode="0" title = "Another Team" description = "Our team keeps moving, and meets some other survivors under way." >
+			<DialogStart>
+				<Part PlayerID = "7" dialog = "Hey, Lili! Cook a pasta for me plz!"/>
+				<Part PlayerID = "2" dialog = "You must be dreaming!"/>
+				<Part PlayerID = "4" dialog = "Don't be so fussy, Arnoud!"/>
+				<Part PlayerID = "0" dialog = "Let's go!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "Who are you?"/>
+				<Part PlayerID = "11" dialog = "I was just about to ask you…"/>
+				<Part PlayerID = "0" dialog = "Hey! Calm down! Put the guns down!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="4" id="MAP3-1-2-5" name = "STAGE 3-5" mapNodePosX="-158.0" mapNodePosY="66.0" depth="4" mode="0" level="559" battleMode="1" title = "A short-time Alliance" description = "We temporarily are in alliance with Jason to leave this city." >
+			<DialogStart>
+				<Part PlayerID = "11" dialog = "I'm Jason, and they are Tanya, Bourne, Rock……"/>
+				<Part PlayerID = "0" dialog = "Mike."/>
+				<Part PlayerID = "12" dialog = "A cool guy, I like."/>
+				<Part PlayerID = "0" dialog = "What's the red thing?"/>
+				<Part PlayerID = "11" dialog = "It moves quickly!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "11" dialog = "Gosh, what the hell?!"/>
+				<Part PlayerID = "0" dialog = "They're evolving."/>
+				<Part PlayerID = "11" dialog = "Evolving? Are you kidding me?"/>
+				<Part PlayerID = "0" dialog = "So what do you think?"/>
+				<Part PlayerID = "11" dialog = "……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="5" id="MAP3-1-2-6" name = "STAGE 3-6" mapNodePosX="-90.0" mapNodePosY="-12.0" depth="3" mode="0" level="592" battleMode="0" title = "Friendship" description = "As the saying goes, suffering is the touchstone of friendship." >
+			<DialogStart>
+				<Part PlayerID = "12" dialog = "Bourne?"/>
+				<Part PlayerID = "11" dialog = "What's wrong, Tanya?"/>
+				<Part PlayerID = "12" dialog = "Bourne is lost. I must find him!"/>
+				<Part PlayerID = "11" dialog = "Stop! Stay here! Let me go!"/>
+				<Part PlayerID = "0" dialog = "Let's go with you! You go first. We'll catch up with you later!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "11" dialog = "Bourne, are you OK?"/>
+				<Part PlayerID = "13" dialog = "I'm fine, just sprain my ankle."/>
+				<Part PlayerID = "0" dialog = "Don't crap. Let's get out of here."/>
+				<Part PlayerID = "11" dialog = "Let me carry you on my back."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="6" id="MAP3-1-3-1" name = "STAGE 3-7" mapNodePosX="-83.0" mapNodePosY="-80.0" depth="3" mode="0" level="618" battleMode="0" title = "Distance" description = "In the light of the marks left by the force, we move on. The distance is gradually narrowing." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Have a rest. At this rate, we'll catch up with them soon."/>
+				<Part PlayerID = "11" dialog = "Thanks! Actually, you don't need take a risk for us."/>
+				<Part PlayerID = "0" dialog = "Not at all. I did it for all of us."/>
+				<Part PlayerID = "11" dialog = "Any way, thank you."/>
+				<Part PlayerID = "0" dialog = "Come on."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "12" dialog = "So glad to see you again, Bourne!"/>
+				<Part PlayerID = "13" dialog = "Plz, do not be so sensational!"/>
+				<Part PlayerID = "12" dialog = "All right."/>
+				<Part PlayerID = "-1" dialog = "[Laughter]"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="7" id="MAP3-1-3-2" name = "STAGE 3-8" mapNodePosX="-73.0" mapNodePosY="-143.0" depth="3" mode="0" level="645" battleMode="0" title = "Casualty" description = "On this road we are on, injuries and deaths are inevitable." >
+			<DialogStart>
+				<Part PlayerID = "-1" dialog = "[Mike! Mike!]"/>
+				<Part PlayerID = "0" dialog = "It was a dream…"/>
+				<Part PlayerID = "0" dialog = "Memory of the days before is wonderful!"/>
+				<Part PlayerID = "9" dialog = "It's time to go."/>
+				<Part PlayerID = "0" dialog = "OK."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "How about Lili?"/>
+				<Part PlayerID = "2" dialog = "She was…"/>
+				<Part PlayerID = "11" dialog = "Listen to me…"/>
+				<Part PlayerID = "9" dialog = "Bless us in peace and happiness, Amen!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="8" id="MAP3-1-3-3" name = "STAGE 3-9" mapNodePosX="-12.0" mapNodePosY="-157.0" depth="3" mode="0" level="674" battleMode="0" title = "Move Forward" description = "We must keep moving on even through in sorrow, and go through the unknown future." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Go."/>
+				<Part PlayerID = "9" dialog = "It's a damn world! We even don't know when is our turn."/>
+				<Part PlayerID = "4" dialog = "Stop sighing! Go!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "4" dialog = "Another day has gone."/>
+				<Part PlayerID = "9" dialog = "So what? So you are not sighing with emotion now?"/>
+				<Part PlayerID = "4" dialog = "Would you like a cup of Whisky? I just found it here."/>
+				<Part PlayerID = "0" dialog = "OK. "/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="9" id="MAP3-1-3-4" name = "STAGE 3-10" mapNodePosX="53.0" mapNodePosY="-110.0" depth="9" mode="0" level="704" battleMode="1" title = "Horror" description = "The evolving dead make we feel so scared." >
+			<DialogStart>
+				<Part PlayerID = "8" dialog = "Did you hear the chainsaw?"/>
+				<Part PlayerID = "0" dialog = "Watch your back! Lower your head now!"/>
+				<Part PlayerID = "8" dialog = "Damn. Why we run into these big ones every time?"/>
+				<Part PlayerID = "0" dialog = "It's much more horrific than the one we saw last time!"/>
+				<Part PlayerID = "8" dialog = "Hurry up! Leave here quickly!"/>
+				<Part PlayerID = "0" dialog = "Watch out."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "14" dialog = "Oh Gosh! My hands..."/>
+				<Part PlayerID = "2" dialog = "That's OK, your hands were just injured by blast. It seems you cannot hold the gun for a while. "/>
+				<Part PlayerID = "0" dialog = "Leave soon, otherwise the just gunshot will draw them the danger."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="10" id="MAP3-1-4-1" name = "STAGE 3-11" mapNodePosX="130.0" mapNodePosY="-175.0" depth="8" mode="0" level="735" battleMode="0" title = "Emotion" description = "Suffering makes us understand what is the cherishing." >
+			<DialogStart>
+				<Part PlayerID = "3" dialog = "Do you think the woman are elusive?"/>
+				<Part PlayerID = "0" dialog = "What happened?"/>
+				<Part PlayerID = "3" dialog = "Lili, she is always hospitable and later becomes cool."/>
+				<Part PlayerID = "0" dialog = "Give her some time."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "3" dialog = "Lili, are you OK?"/>
+				<Part PlayerID = "2" dialog = "……"/>
+				<Part PlayerID = "2" dialog = "I'm so scared, I'afraid I will leave you alone."/>
+				<Part PlayerID = "3" dialog = "But I'll never, by my troth."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="11" id="MAP3-1-4-2" name = "STAGE 3-12" mapNodePosX="183.0" mapNodePosY="-220.0" depth="7" mode="0" level="768" battleMode="0" title = "Golden Times" description = "The time has passed. It's the only way for us to accept the following unknown." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "One-half cup.[Memory]"/>
+				<Part PlayerID = "8" dialog = "What are you thinking about?"/>
+				<Part PlayerID = "0" dialog = "It's nothing. If there will be? "/>
+				<Part PlayerID = "8" dialog = "Don't think any more. It's time to leave."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "How long will we get out here?"/>
+				<Part PlayerID = "7" dialog = "About one week, I think."/>
+				<Part PlayerID = "0" dialog = "Well."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="12" id="MAP3-1-4-3" name = "STAGE 3-13" mapNodePosX="235.0" mapNodePosY="-255.0" depth="6" mode="0" level="802" battleMode="0" title = "Wedding Ceremony" description = "Recently, we are in deep difficulty. So Vasily and Lili hope that their wedding will brings out hope." >
+			<DialogStart>
+				<Part PlayerID = "3" dialog = "Mike, Arnound said there was a church around here."/>
+				<Part PlayerID = "0" dialog = "……"/>
+				<Part PlayerID = "3" dialog = "I just want a simple wedding…"/>
+				<Part PlayerID = "13" dialog = "Our fellow finally gets the point! Aha!"/>
+				<Part PlayerID = "0" dialog = "Good deed!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "9" dialog = "Vasily, would you…"/>
+				<Part PlayerID = "3" dialog = "Yes, I do…"/>
+				<Part PlayerID = "9" dialog = "Lili, would you…"/>
+				<Part PlayerID = "2" dialog = "Yes, I do…"/>
+				<Part PlayerID = "9" dialog = "I now pronounce you…"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="13" id="MAP3-1-4-4" name = "STAGE 3-14" mapNodePosX="292.0" mapNodePosY="-265.0" depth="5" mode="0" level="838" battleMode="0" title = "New Issue" description = "After a long-time fight, the supply of weapons has become the new problem. We have an urge to find the Weapon Shop." >
+			<DialogStart>
+				<Part PlayerID = "11" dialog = "Mike, how many bullets do you have?"/>
+				<Part PlayerID = "0" dialog = "Few."/>
+				<Part PlayerID = "11" dialog = "So do we. We must solve this problem first."/>
+				<Part PlayerID = "0" dialog = "Arnound may know."/>
+				<Part PlayerID = "11" dialog = "Arnound…"/>
+				<Part PlayerID = "7" dialog = "Here is a police station. We may find some in it."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "7" dialog = "I find it! Come here!"/>
+				<Part PlayerID = "13" dialog = "Good job!"/>
+				<Part PlayerID = "0" dialog = "We are going to stay overnight here and then leave tomorrow."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="14" id="MAP3-1-4-5" name = "STAGE 3-15" mapNodePosX="285.0" mapNodePosY="-129.0" depth="4" mode="0" level="875" battleMode="1" title = "Predation" description = "We, who sit in the top of the food chain, now will become their food." >
+			<DialogStart>
+				<Part PlayerID = "14" dialog = "Hey, light is ahead!"/>
+				<Part PlayerID = "0" dialog = "Come and see."/>
+				<Part PlayerID = "-1" dialog = "The light kisses their faces."/>
+				<Part PlayerID = "14" dialog = "Hell, they're kidding me?"/>
+				<Part PlayerID = "0" dialog = "Run!"/>
+				<Part PlayerID = "11" dialog = "Variations are eating the dead!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "0" dialog = "Is everyone fine?"/>
+				<Part PlayerID = "10" dialog = "Now it's the key process for evolving. They're "/>
+				<Part PlayerID = "0" dialog = "You mean they consider us as their food? To accelerate the evolving…"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="15" id="MAP3-1-4-6" name = "STAGE 3-16" mapNodePosX="301.0" mapNodePosY="-27.0" depth="3" mode="0" level="914" battleMode="0" title = "Conflict" description = "Others may attack you even if you has not attacked them." >
+			<DialogStart>
+				<Part PlayerID = "15" dialog = "Hey, guys, stay and put down your guns."/>
+				<Part PlayerID = "17" dialog = "Don't scare them, Wesler!"/>
+				<Part PlayerID = "0" dialog = "Impossible!"/>
+				<Part PlayerID = "15" dialog = "Put down, I suggest! It benefits both parties. We just need your food."/>
+				<Part PlayerID = "0" dialog = "Completely impossible! Get them by yourselves."/>
+				<Part PlayerID = "16" dialog = "Take care, Wesker!"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "4" dialog = "Why did you attack us?"/>
+				<Part PlayerID = "16" dialog = "Obviously you did first."/>
+				<Part PlayerID = "4" dialog = "When?"/>
+				<Part PlayerID = "16" dialog = "Let them,the two masked guys, tell you."/>
+				<Part PlayerID = "5" dialog = "We did not."/>
+				<Part PlayerID = "16" dialog = "……"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="16" id="MAP3-1-5-1" name = "STAGE 3-17" mapNodePosX="355.0" mapNodePosY="2.0" depth="3" mode="0" level="955" battleMode="0" title = "Misunderstanding" description = "We have learnt the reason why they attacked us from Oppenheimer." >
+			<DialogStart>
+				<Part PlayerID = "0" dialog = "Still cannot believe what we say?"/>
+				<Part PlayerID = "16" dialog = "Quibbled!"/>
+				<Part PlayerID = "6" dialog = "You should have died if we attacked you."/>
+				<Part PlayerID = "0" dialog = "Come on!"/>
+				<Part PlayerID = "12" dialog = "What to do with her?"/>
+				<Part PlayerID = "0" dialog = "Carry along."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "16" dialog = "Oppenheimer!"/>
+				<Part PlayerID = "0" dialog = "?"/>
+				<Part PlayerID = "16" dialog = "That's my name. Thanks for saving me."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="17" id="MAP3-1-5-2" name = "STAGE 3-18" mapNodePosX="411.0" mapNodePosY="34.0" depth="3" mode="0" level="997" battleMode="0" title = "Pursuers" description = "The conflict ends. Wesker they two catche up with, meanwhile, they find companions disappeared." >
+			<DialogStart>
+				<Part PlayerID = "11" dialog = "I feel there is something wrong here."/>
+				<Part PlayerID = "8" dialog = "Yes, too quiet. Even no mice can be found here."/>
+				<Part PlayerID = "0" dialog = "Get away quickly."/>
+				<Part PlayerID = "8" dialog = "Watch out…"/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "15" dialog = "I noticed a movement in front."/>
+				<Part PlayerID = "17" dialog = "Be careful."/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="18" id="MAP3-1-6-1" name = "STAGE 3-19" mapNodePosX="464.0" mapNodePosY="67.0" depth="3" mode="0" level="1041" battleMode="0" title = "Rendezvous" description = "Oppenheimer's companions catch up at last. However, no one knows if the next path is safe and fortunate." >
+			<DialogStart>
+				<Part PlayerID = "16" dialog = "Put down your gun, Wesker."/>
+				<Part PlayerID = "15" dialog = "Oppenheimer! "/>
+				<Part PlayerID = "16" dialog = "Aren't them. I'm not sure because they two looks similar."/>
+				<Part PlayerID = "15" dialog = "……"/>
+				<Part PlayerID = "16" dialog = "Let's go now."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "17" dialog = "A dead shot?"/>
+				<Part PlayerID = "0" dialog = "We're forced by the reality."/>
+				<Part PlayerID = "13" dialog = "Well. You're unexpectedly joking!"/>
+			</DialogEnd>
+		</LevelNode>
+		<LevelNode index="19" id="MAP3-1-6-2" name = "STAGE 3-20" mapNodePosX="428.0" mapNodePosY="188.0" depth="2" mode="0" level="1087" battleMode="1" title = "Edge" description = "We will leave this ciy soon. This is the edge of the city." >
+			<DialogStart>
+				<Part PlayerID = "7" dialog = "There is a suburb once we pass through the passageway."/>
+				<Part PlayerID = "0" dialog = "There will not be so much dead in the suburbs."/>
+				<Part PlayerID = "13" dialog = "It's time for us go."/>
+				<Part PlayerID = "0" dialog = "Stop."/>
+				<Part PlayerID = "13" dialog = "When did it apear in front of us?"/>
+				<Part PlayerID = "7" dialog = "Suddenly."/>
+			</DialogStart>
+			<DialogEnd>
+				<Part PlayerID = "12" dialog = "Fresh air!"/>
+				<Part PlayerID = "2" dialog = "We finally get out of this fetid place."/>
+				<Part PlayerID = "8" dialog = "Ahead is…"/>
+			</DialogEnd>
+		</LevelNode>
+	</LevelMode>
+	<LevelMode mode = "1" bgm = "BGM_Channel">
+		<LevelNode index="0" id="MAP3-2-2-6" name = "STAGE 3-1" mapNodePosX="-415.0" mapNodePosY="81.0" depth="3" mode="0" level="1135" battleMode="0" title = "Food" description = "In the chaotic world,food is indispensible and sometimes worthier than life." />
+		<LevelNode index="1" id="MAP3-2-3-1" name = "STAGE 3-2" mapNodePosX="-278.0" mapNodePosY="79.0" depth="3" mode="0" level="1186" battleMode="0" title = "Massacre" description = "Killing is unavoidable otherwise you may not survive in escaping." />
+		<LevelNode index="2" id="MAP3-2-3-2" name = "STAGE 3-3" mapNodePosX="-207.0" mapNodePosY="48.0" depth="3" mode="0" level="1239" battleMode="0" title = "Medicines " description = "Medicnes are very important, especially when people is ill as diseases can infect to other people quickly." />
+		<LevelNode index="3" id="MAP3-2-3-3" name = "STAGE 3-4" mapNodePosX="-145.0" mapNodePosY="14.0" depth="3" mode="0" level="1294" battleMode="0" title = "Supplies" description = "Chris says: Supplies are far from enough. He is always right……" />
+		<LevelNode index="4" id="MAP3-2-3-4" name = "STAGE 3-5" mapNodePosX="-86.0" mapNodePosY="-18.0" depth="4" mode="0" level="1352" battleMode="1" title = "New Food" description = "You are not zombie, so you don't eat people. What you need is food." />
+		<LevelNode index="5" id="MAP3-2-4-1" name = "STAGE 3-6" mapNodePosX="-76.0" mapNodePosY="-141.0" depth="3" mode="0" level="1412" battleMode="0" title = "Living Dead" description = "Don't think they are humans, they are just a group of living dead." />
+		<LevelNode index="6" id="MAP3-2-4-2" name = "STAGE 3-7" mapNodePosX="-11.0" mapNodePosY="-157.0" depth="3" mode="0" level="1475" battleMode="0" title = "Training" description = "Zombies are everywhere and it is necessary to find some targets for training." />
+		<LevelNode index="7" id="MAP3-2-4-3" name = "STAGE 3-8" mapNodePosX="53.0" mapNodePosY="-156.0" depth="3" mode="0" level="1541" battleMode="0" title = "Cases" description = "There are many cases here, it is better to check out." />
+		<LevelNode index="8" id="MAP3-2-4-4" name = "STAGE 3-9" mapNodePosX="117.0" mapNodePosY="-171.0" depth="3" mode="0" level="1610" battleMode="0" title = "New Weapon" description = "Zombies are all over the place, it is impossible to move without weapons!" />
+		<LevelNode index="9" id="MAP3-2-4-5" name = "STAGE 3-10" mapNodePosX="196.0" mapNodePosY="-184.0" depth="9" mode="0" level="1682" battleMode="1" title = "Survivors" description = "It seems a massacre was taken place last night. Not sure whether there are survivors or not." />
+		<LevelNode index="10" id="MAP3-2-4-6" name = "STAGE 3-11" mapNodePosX="273.0" mapNodePosY="-263.0" depth="8" mode="0" level="1757" battleMode="0" title = "Transportation" description = "Supplies in shelter are far from enough. We have to carry new supplies back in time." />
+		<LevelNode index="11" id="MAP3-2-5-1" name = "STAGE 3-12" mapNodePosX="294.0" mapNodePosY="-174.0" depth="7" mode="0" level="1836" battleMode="0" title = "Suspicious" description = "It seems some suspicious objects are moving around, let's go to check it out. " />
+		<LevelNode index="12" id="MAP3-2-5-2" name = "STAGE 3-13" mapNodePosX="297.0" mapNodePosY="-78.0" depth="6" mode="0" level="1850" battleMode="0" title = "Crisis" description = "Crisis exacerbated as a large number of zombies are coming!" />
+		<LevelNode index="13" id="MAP3-2-6-1" name = "STAGE 3-14" mapNodePosX="343.0" mapNodePosY="-5.0" depth="5" mode="0" level="1900" battleMode="0" title = "Medical Supplies" description = "You go to the warehouse and get many medical supplies." />
+		<LevelNode index="14" id="MAP3-2-6-2" name = "STAGE 3-15" mapNodePosX="399.0" mapNodePosY="80.0" depth="4" mode="0" level="1962" battleMode="1" title = "Water" description = "Drinking water in the shelter is insufficient and hope we can search some." />
+	</LevelMode>
+	<LevelMode mode = "2" bgm = "BGM_Channel">
+		<LevelNode index="0" id="MAP3-3-2-6" name = "STAGE 3-1" mapNodePosX="-415.0" mapNodePosY="81.0" depth="3" mode="0" level="2847" battleMode="0" title = "Food" description = "In the chaotic world,food is indispensible and sometimes worthier than life." />
+		<LevelNode index="1" id="MAP3-3-3-1" name = "STAGE 3-2" mapNodePosX="-278.0" mapNodePosY="79" depth="3" mode="0" level="2894" battleMode="0" title = "Massacre" description = "Killing is unavoidable otherwise you may not survive in escaping." />
+		<LevelNode index="2" id="MAP3-3-3-2" name = "STAGE 3-3" mapNodePosX="-207.0" mapNodePosY="48.0" depth="3" mode="0" level="2942" battleMode="0" title = "Medicines " description = "Medicnes are very important, especially when people is ill as diseases can infect to other people quickly." />
+		<LevelNode index="3" id="MAP3-3-3-3" name = "STAGE 3-4" mapNodePosX="-145.0" mapNodePosY="14.0" depth="3" mode="0" level="2991" battleMode="0" title = "Supplies" description = "Chris says: Supplies are far from enough. He is always right……" />
+		<LevelNode index="4" id="MAP3-3-3-4" name = "STAGE 3-5" mapNodePosX="-86.0" mapNodePosY="-18.0" depth="4" mode="0" level="3041" battleMode="1" title = "New Food" description = "You are not zombie, so you don't eat people. What you need is food." />
+		<LevelNode index="5" id="MAP3-3-4-1" name = "STAGE 3-6" mapNodePosX="-76.0" mapNodePosY="-141.0" depth="3" mode="0" level="3091" battleMode="0" title = "Living Dead" description = "Don't think they are humans, they are just a group of living dead." />
+		<LevelNode index="6" id="MAP3-3-4-2" name = "STAGE 3-7" mapNodePosX="-11.0" mapNodePosY="-157.0" depth="3" mode="0" level="3465" battleMode="0" title = "Training" description = "Zombies are everywhere and it is necessary to find some targets for training." />
+		<LevelNode index="7" id="MAP3-3-4-3" name = "STAGE 3-8" mapNodePosX="53.0" mapNodePosY="-156.0" depth="3" mode="0" level="3523" battleMode="0" title = "Cases" description = "There are many cases here, it is better to check out." />
+		<LevelNode index="8" id="MAP3-3-4-4" name = "STAGE 3-9" mapNodePosX="117.0" mapNodePosY="-171.0" depth="3" mode="0" level="3581" battleMode="0" title = "New Weapon" description = "Zombies are all over the place, it is impossible to move without weapons!" />
+		<LevelNode index="9" id="MAP3-3-4-5" name = "STAGE 3-10" mapNodePosX="196.0" mapNodePosY="-184.0" depth="9" mode="0" level="3641" battleMode="1" title = "Survivors" description = "It seems a massacre was taken place last night. Not sure whether there are survivors or not." />
+		<LevelNode index="10" id="MAP3-3-4-6" name = "STAGE 3-11" mapNodePosX="273.0" mapNodePosY="-263.0" depth="8" mode="0" level="3701" battleMode="0" title = "Transportation" description = "Supplies in shelter are far from enough. We have to carry new supplies back in time." />
+		<LevelNode index="11" id="MAP3-3-5-1" name = "STAGE 3-12" mapNodePosX="294.0" mapNodePosY="-174.0" depth="7" mode="0" level="3762" battleMode="0" title = "Suspicious" description = "It seems some suspicious objects are moving around, let's go to check it out. " />
+		<LevelNode index="12" id="MAP3-3-5-2" name = "STAGE 3-13" mapNodePosX="297.0" mapNodePosY="-78.0" depth="6" mode="0" level="3825" battleMode="0" title = "Crisis" description = "Crisis exacerbated as a large number of zombies are coming!" />
+		<LevelNode index="13" id="MAP3-3-6-1" name = "STAGE 3-14" mapNodePosX="343.0" mapNodePosY="-5.0" depth="5" mode="0" level="3888" battleMode="0" title = "Medical Supplies" description = "You go to the warehouse and get many medical supplies." />
+		<LevelNode index="14" id="MAP3-3-6-2" name = "STAGE 3-15" mapNodePosX="399.0" mapNodePosY="80.0" depth="4" mode="0" level="3953" battleMode="1" title = "Water" description = "Drinking water in the shelter is insufficient and hope we can search some." />
+	</LevelMode>
+</GameLevel>

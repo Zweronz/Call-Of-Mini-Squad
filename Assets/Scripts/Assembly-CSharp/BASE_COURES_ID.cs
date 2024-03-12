@@ -1,0 +1,9 @@
+internal enum BASE_COURES_ID
+{
+	E_START = 0,
+	E_STAGEBTN = 1,
+	E_WAVEBTN = 2,
+	E_CONFIRMBATTLESTARTBTN = 10,
+	E_TEAMBTN = 11,
+	E_END = 999
+}

@@ -1,0 +1,1 @@
+public delegate void UtilUIArenaTeamModelControl_TurningFinished_Delegate(UtilUIArenaTeamModelControl.ITEMINFO ii);

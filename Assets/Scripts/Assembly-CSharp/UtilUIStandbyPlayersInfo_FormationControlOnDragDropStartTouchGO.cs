@@ -1,0 +1,1 @@
+public delegate void UtilUIStandbyPlayersInfo_FormationControlOnDragDropStartTouchGO(UtilUIStandbyPlayersInfo.PLAYERINFO pi);

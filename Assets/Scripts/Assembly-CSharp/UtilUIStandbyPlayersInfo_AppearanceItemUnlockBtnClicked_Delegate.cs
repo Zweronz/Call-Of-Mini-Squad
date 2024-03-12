@@ -1,0 +1,1 @@
+public delegate void UtilUIStandbyPlayersInfo_AppearanceItemUnlockBtnClicked_Delegate(UtilUIStandbyPlayersInfo.PLAYERINFO pi);

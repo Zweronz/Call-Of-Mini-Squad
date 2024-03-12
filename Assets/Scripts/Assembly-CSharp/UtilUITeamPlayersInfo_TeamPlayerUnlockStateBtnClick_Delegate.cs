@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayersInfo_TeamPlayerUnlockStateBtnClick_Delegate(int index);

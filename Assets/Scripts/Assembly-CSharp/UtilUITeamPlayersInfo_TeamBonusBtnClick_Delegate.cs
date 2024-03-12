@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayersInfo_TeamBonusBtnClick_Delegate(bool bUnlock);

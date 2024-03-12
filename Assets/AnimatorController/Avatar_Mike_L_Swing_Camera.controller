@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!91 &9100000
+AnimatorController:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Avatar_Mike_L_Swing_Camera
+  m_AnimatorParameters:
+  - m_Name: quakeId
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: quake
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  m_AnimatorLayers:
+  - serializedVersion: 3
+    m_Name: Base Layer
+    m_StateMachine: {fileID: 1107973315103651962}
+    m_Mask: {fileID: 0}
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_StateMachineMotionSetIndex: 0
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+--- !u!1107 &1107973315103651962
+StateMachine:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Base Layer
+  m_DefaultState: {fileID: 0}
+  m_States:
+  - {fileID: 1102506060910864811}
+  - {fileID: 1102308265724485379}
+  - {fileID: 1102980899184273545}
+  - {fileID: 1102803293193232928}
+  - {fileID: 1102339027753012111}
+  m_ChildStateMachine: []
+  m_ChildStateMachinePosition: []
+  m_OrderedTransitions:
+  - first: {fileID: 1102506060910864811}
+    second:
+    - {fileID: 1101903464669152980}
+  - first: {fileID: 1102308265724485379}
+    second:
+    - {fileID: 1101918596701442643}
+  - first: {fileID: 1102980899184273545}
+    second:
+    - {fileID: 1101731733849469212}
+  - first: {fileID: 1102803293193232928}
+    second:
+    - {fileID: 1101615900608980104}
+  - first: {fileID: 1102339027753012111}
+    second: []
+  m_MotionSetCount: 0
+  m_AnyStatePosition: {x: 0, y: -250, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+--- !u!1102 &1102506060910864811
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Avatar_Mike_L_Swing_Camera
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 53f97e73de2a6e54e97da5db32c54918, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 0, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101903464669152980
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102339027753012111}
+  m_TransitionDuration: 0.625
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102308265724485379
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprint_Camera
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: b23508805f6da29499309e8010fdae23, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 250, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101918596701442643
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102339027753012111}
+  m_TransitionDuration: 0.5
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102980899184273545
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: C_Camera
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 5b8bfb7c1c40d2c43b0e62ae164cde47, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 500, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101731733849469212
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102339027753012111}
+  m_TransitionDuration: 1.0714285
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102803293193232928
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: D_Camera
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 84695fc1f003fc34ca6d3ddb743e1a8e, type: 2}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 0, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:
+--- !u!1101 &1101615900608980104
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name:
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 1102339027753012111}
+  m_TransitionDuration: 1.0714285
+  m_TransitionOffset: 0
+  m_Conditions: []
+  m_Atomic: 0
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &1102339027753012111
+State:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: New State
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 0}
+  m_ParentStateMachine: {fileID: 0}
+  m_Position: {x: 250, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag:

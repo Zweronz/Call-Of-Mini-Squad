@@ -1,0 +1,1 @@
+public delegate void UtilUIBaseMapInfo_CustomsDifficultyToggleStateChange_Delegate(int index, bool bChecked);

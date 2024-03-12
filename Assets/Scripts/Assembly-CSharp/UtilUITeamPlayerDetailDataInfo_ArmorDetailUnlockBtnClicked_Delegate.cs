@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailDataInfo_ArmorDetailUnlockBtnClicked_Delegate();

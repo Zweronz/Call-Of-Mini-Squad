@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailDataInfo_PageStateBtnClick_Delegate();

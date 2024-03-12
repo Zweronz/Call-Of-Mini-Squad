@@ -1,0 +1,1 @@
+public delegate void UtilUIBaseStagePointInfoData_StageBtnClicked_Delegate(UtilUIBaseStagePointInfoData data);

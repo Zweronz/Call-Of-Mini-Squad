@@ -1,0 +1,1 @@
+public delegate void UtilUITeamPlayerDetailInfo_HandleExTitleStateChanged_Delegate(Defined.EQUIP_TYPE _type);

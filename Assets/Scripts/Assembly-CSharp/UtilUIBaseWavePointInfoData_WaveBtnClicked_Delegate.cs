@@ -1,0 +1,1 @@
+public delegate void UtilUIBaseWavePointInfoData_WaveBtnClicked_Delegate(UtilUIBaseWavePointInfoData data);

@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1675165906807330}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1675165906807330
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4285968645269767}
+  - 114: {fileID: 114533984349290349}
+  m_Layer: 0
+  m_Name: EnemySpawnPointChain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4285968645269767
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1675165906807330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.510029, y: 0, z: -47.1752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114533984349290349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1675165906807330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151097aab686d49a1fd1a974fa2c6ad8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  triggerDistance: 10
+  spawnWaves:
+  - m_spawnInfos:
+    - type: 0
+      count: 4
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    - type: 1
+      count: 1
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    spawnPosition: {fileID: 0}
+    waitSpawnTime: 0
+  - m_spawnInfos:
+    - type: 0
+      count: 18
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    - type: 1
+      count: 2
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    spawnPosition: {fileID: 0}
+    waitSpawnTime: 0
+  - m_spawnInfos:
+    - type: 0
+      count: 27
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    - type: 1
+      count: 3
+      eliteType: 0
+      isBoss: 0
+      specialAttribute:
+    spawnPosition: {fileID: 0}
+    waitSpawnTime: 0
+  frequency: 0.3
+  spawnOneTime: 3
+  storyPoint: 0
+  openDoor: {fileID: 0}

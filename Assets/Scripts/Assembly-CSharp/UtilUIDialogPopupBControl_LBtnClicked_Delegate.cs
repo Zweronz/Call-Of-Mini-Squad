@@ -1,0 +1,1 @@
+public delegate void UtilUIDialogPopupBControl_LBtnClicked_Delegate();

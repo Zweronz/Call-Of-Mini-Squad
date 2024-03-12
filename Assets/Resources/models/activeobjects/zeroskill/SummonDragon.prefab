@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1090838505831124}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1090838505831124
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4925956103055537}
+  - 114: {fileID: 114193195715253650}
+  - 114: {fileID: 114099182742015833}
+  m_Layer: 0
+  m_Name: SummonDragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4925956103055537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090838505831124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4885898655542765}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114193195715253650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090838505831124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35e068098fb872054a0f57818e1d4f8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  DragonEffect: {fileID: 1040221211124175}
+--- !u!114 &114099182742015833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090838505831124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  useAuidoEvent: 1
+  m_AudioName: []
+  m_DelayTime: []
+  m_playOnEnable: 0
+  m_DeleteWhenEnd: 0
+--- !u!1 &1040221211124175
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4885898655542765}
+  m_Layer: 0
+  m_Name: heores_Exotic_Creature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4885898655542765
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040221211124175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8316171, y: 0, z: -2.0006504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4443120246263110}
+  - {fileID: 4195037273671961}
+  - {fileID: 4631443465443295}
+  m_Father: {fileID: 4925956103055537}
+  m_RootOrder: 0
+--- !u!1 &1158207969321973
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4443120246263110}
+  - 114: {fileID: 114665713298317621}
+  m_Layer: 0
+  m_Name: heores_Exotic_Creature_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4443120246263110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158207969321973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7848377, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4885898655542765}
+  m_RootOrder: 0
+--- !u!114 &114665713298317621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158207969321973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9277054d7ae25546f88ea97ef305ea8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  createThis:
+  - {fileID: 1267172380508522, guid: 333240e26a4855240b3735a272ebc0d2, type: 2}
+  thisManyTimes: 3
+  overThisTime: 1.5
+  xWidth: 4
+  yWidth: 6
+  zWidth: 4
+  xRotMax: 2
+  yRotMax: 180
+  zRotMax: 5
+  allUseSameRotation: 1
+  detachToWorld: 1
+  prefabOverTime: 5
+  delayGenerateTime: 0
+--- !u!1 &1011079772808465
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4195037273671961}
+  - 114: {fileID: 114499372100068699}
+  m_Layer: 0
+  m_Name: heores_Exotic_Creature_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4195037273671961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011079772808465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7848382, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4885898655542765}
+  m_RootOrder: 1
+--- !u!114 &114499372100068699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011079772808465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9277054d7ae25546f88ea97ef305ea8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  createThis:
+  - {fileID: 1267172380508522, guid: 333240e26a4855240b3735a272ebc0d2, type: 2}
+  thisManyTimes: 2
+  overThisTime: 1.5
+  xWidth: 4
+  yWidth: 6
+  zWidth: 4
+  xRotMax: 2
+  yRotMax: 0
+  zRotMax: 5
+  allUseSameRotation: 1
+  detachToWorld: 1
+  prefabOverTime: 5
+  delayGenerateTime: 0
+--- !u!1 &1853616286404376
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4631443465443295}
+  - 114: {fileID: 114123300652389230}
+  m_Layer: 0
+  m_Name: heores_Exotic_Creature_flash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4631443465443295
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853616286404376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4885898655542765}
+  m_RootOrder: 2
+--- !u!114 &114123300652389230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853616286404376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9277054d7ae25546f88ea97ef305ea8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  createThis:
+  - {fileID: 1284573404485111, guid: f79ebc526725d0b43aee9aee2a21786d, type: 2}
+  thisManyTimes: 6
+  overThisTime: 4
+  xWidth: 8
+  yWidth: 0
+  zWidth: 8
+  xRotMax: 0
+  yRotMax: 0
+  zRotMax: 0
+  allUseSameRotation: 0
+  detachToWorld: 1
+  prefabOverTime: 3
+  delayGenerateTime: 0
