@@ -85,6 +85,7 @@ public class HttpRequestHandle : MonoBehaviour
 	private void Awake()
 	{
 		instance = this;
+		Init("", "", "");
 	}
 
 	public void Init(string gameURL, string accountURL, string chatURL)
@@ -293,6 +294,8 @@ public class HttpRequestHandle : MonoBehaviour
 
 	public void SendRequest(RequestType requestType, OnRequestFinish callBack)
 	{
+		Debug.LogError(requestType);
+		m_requestMap[requestType].GetResponse("");
 		if (callBack != null)
 		{
 			callBack(0);

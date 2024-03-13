@@ -18,18 +18,34 @@ public class UITeamModelAnimationManager : MonoBehaviour
 
 	public void PlayDefaultAnim(bool loop)
 	{
-		base.gameObject.GetComponent<Animation>()[m_defaultAnimName].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
-		base.gameObject.GetComponent<Animation>().Play(m_defaultAnimName);
+		string defaultAnimName = TryGetAnimationName(m_defaultAnimName);
+		base.gameObject.GetComponent<Animation>()[defaultAnimName].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
+		base.gameObject.GetComponent<Animation>().Play(defaultAnimName);
 		m_bPlayShowAnim = false;
 		m_bAnimLoop = loop;
 	}
 
 	public void PlayShowAnim(bool loop)
 	{
-		base.gameObject.GetComponent<Animation>()[m_showAnimName].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
-		base.gameObject.GetComponent<Animation>().Play(m_showAnimName);
+		string showAnimName = TryGetAnimationName(m_showAnimName);
+		base.gameObject.GetComponent<Animation>()[showAnimName].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
+		base.gameObject.GetComponent<Animation>().Play(showAnimName);
 		m_bPlayShowAnim = true;
 		m_bAnimLoop = loop;
+	}
+
+	private string TryGetAnimationName(string animation)
+	{
+		//thanks jeremy
+		for (int i = -1; i < 11; i++)
+		{
+			if (base.gameObject.GetComponent<Animation>()[animation + (i == -1 ? "" : "_" + i)] != null)
+			{
+				return animation + (i == -1 ? "" : "_" + i);
+			}
+		}
+
+		return animation;
 	}
 
 	private void Update()
