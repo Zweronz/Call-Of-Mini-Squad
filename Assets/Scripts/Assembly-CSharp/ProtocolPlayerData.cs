@@ -127,6 +127,7 @@ public class ProtocolPlayerData : Protocol
 
 		public DummyProtocol()
 		{
+			teamLevel = 1;
 			teamSites = new TeamSite[5] { new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available } };
 
 			List<PlayerData> heroes = new List<PlayerData>();
@@ -134,6 +135,8 @@ public class ProtocolPlayerData : Protocol
 			heroes.Add(new PlayerData()
 			{
 				heroIndex = 0,
+
+				state = Defined.ItemState.Available,
 
 				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 				{
@@ -156,6 +159,8 @@ public class ProtocolPlayerData : Protocol
 			{
 				heroIndex = 1,
 
+				state = Defined.ItemState.Available,
+
 				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 				{
 					{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
@@ -175,14 +180,16 @@ public class ProtocolPlayerData : Protocol
 
 			for (int i = 2; i < 17; i++)
 			{
-				if (i == 8)
+				if (i == 8 || i == 5 || i == 15)
 				{
-					break;
+					continue;
 				}
-
+				
 				heroes.Add(new PlayerData()
 				{
 					heroIndex = i,
+
+					state = Defined.ItemState.Available,
 
 					equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 					{

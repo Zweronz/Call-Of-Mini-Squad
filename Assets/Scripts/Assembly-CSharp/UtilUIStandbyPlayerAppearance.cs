@@ -115,7 +115,7 @@ public class UtilUIStandbyPlayerAppearance : MonoBehaviour
 		}
 		else
 		{
-			m_iconTexture.shader = Shader.Find("Unlit/Premultiplied Colored");
+			m_iconTexture.shader = Shader.Find("Unlit/Colored");
 		}
 		m_iconTexture.enabled = false;
 		m_iconTexture.enabled = true;

@@ -24,6 +24,7 @@ public class UITeamModelManager : MonoBehaviour
 		Object original2 = gameObject.transform.Find("AudioTalk").gameObject;
 		GameObject gameObject2 = Object.Instantiate(original, Vector3.zero, Quaternion.identity) as GameObject;
 		GameObject gameObject3 = Object.Instantiate(original2, Vector3.zero, Quaternion.identity) as GameObject;
+		gameObject3.GetComponent<AudioSource>().spatialBlend = 0f;
 		gameObject3.transform.parent = gameObject2.transform;
 		gameObject3.transform.localPosition = Vector3.zero;
 		if (ct != Player.CharacterType.Rock)
