@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using CoMDS2;
 using LitJson;
@@ -126,11 +127,63 @@ public class ProtocolPlayerData : Protocol
 
 		public DummyProtocol()
 		{
-			teamSites = new TeamSite[1] { new TeamSite() { state = Defined.ItemState.Available } };
-			heroes = new PlayerData[1]
+			teamSites = new TeamSite[5] { new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available } };
+
+			List<PlayerData> heroes = new List<PlayerData>();
+
+			heroes.Add(new PlayerData()
 			{
-				new PlayerData()
+				heroIndex = 0,
+
+				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 				{
+					{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
+					{Defined.EQUIP_TYPE.Body, new UserEquipData() { currEquipIndex = 11, currEquipLevel = 0 } },
+					{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
+				},
+
+				siteNum = 0,
+					
+				upgradeData = new UpgradeData() 
+				{ 
+					ArmorsUpgrade = new EquipUpgradeData[1]{ new EquipUpgradeData() { index = 1, equipIndex = 11,  } },
+					helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
+					ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
+				}
+			});
+
+			heroes.Add(new PlayerData()
+			{
+				heroIndex = 1,
+
+				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
+				{
+					{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
+					{Defined.EQUIP_TYPE.Body, new UserEquipData() { currEquipIndex = 11, currEquipLevel = 0 } },
+					{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
+				},
+
+				siteNum = 1,
+					
+				upgradeData = new UpgradeData() 
+				{ 
+					ArmorsUpgrade = new EquipUpgradeData[1]{ new EquipUpgradeData() { index = 1, equipIndex = 11,  } },
+					helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
+					ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
+				}
+			});
+
+			for (int i = 2; i < 17; i++)
+			{
+				if (i == 8)
+				{
+					break;
+				}
+
+				heroes.Add(new PlayerData()
+				{
+					heroIndex = i,
+
 					equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 					{
 						{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
@@ -138,7 +191,7 @@ public class ProtocolPlayerData : Protocol
 						{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
 					},
 
-					siteNum = 0,
+					siteNum = -1,
 					
 					upgradeData = new UpgradeData() 
 					{ 
@@ -146,8 +199,10 @@ public class ProtocolPlayerData : Protocol
 						helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
 						ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
 					}
-				} 
-			};
+				});
+			}
+
+			this.heroes = heroes.ToArray();
 		}
 
 		public class TeamSite

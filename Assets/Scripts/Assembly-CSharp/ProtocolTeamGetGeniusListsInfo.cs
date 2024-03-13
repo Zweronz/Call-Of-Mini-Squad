@@ -25,10 +25,10 @@ public class ProtocolTeamGetGeniusListsInfo : Protocol
 		string path = Application.persistentDataPath + "/saves/teamGeniusList.json";
 		string playerDataPath = Application.persistentDataPath + "/saves/playerData.json";
 			
-		if (!File.Exists(path))
-		{
+		//if (!File.Exists(path))
+		//{
 			File.WriteAllText(path, JsonConvert.SerializeObject(new DummyProtocol(), Formatting.Indented));
-		}
+		//}
 
 		DummyProtocol dummyProtocol = JsonConvert.DeserializeObject<DummyProtocol>(File.ReadAllText(path));
 

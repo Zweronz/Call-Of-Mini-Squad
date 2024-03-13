@@ -76,6 +76,10 @@ public class EffectParticleContinuous : EffectControl
 	{
 		if (!(GetComponent<TimerDestroy>() != null))
 		{
+			if (m_emitter == null)
+			{
+				Awake();
+			}
 			for (int i = 0; i < m_emitter.Length; i++)
 			{
 				m_emitter[i].emit = enableEmission;

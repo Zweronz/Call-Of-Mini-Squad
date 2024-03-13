@@ -303,6 +303,7 @@ public class GameBattle : MonoBehaviour
 						{
 							DataCenter.State().battleTime = Time.realtimeSinceStartup - DataCenter.State().battleTime;
 							GameState = State.DialogEnd;
+							Debug.LogError("returneag");
 							return;
 						}
 					}

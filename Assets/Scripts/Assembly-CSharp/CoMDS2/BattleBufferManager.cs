@@ -250,6 +250,7 @@ namespace CoMDS2
 			int num = ((count <= 30) ? count : 30);
 			if (m_enemyBuffer.ContainsKey(type))
 			{
+				Debug.LogError(type);
 				int size = m_enemyBuffer[type].Size;
 				if (size + num > 30)
 				{
@@ -269,10 +270,12 @@ namespace CoMDS2
 			}
 			if (m_enemyBuffer.ContainsKey(type))
 			{
+				Debug.LogError(type);
 				m_enemyBuffer[type].AddBuffer(dS2ObjectBuffer);
 			}
 			else
 			{
+				Debug.LogError(type);
 				m_enemyBuffer.Add(type, dS2ObjectBuffer);
 			}
 		}

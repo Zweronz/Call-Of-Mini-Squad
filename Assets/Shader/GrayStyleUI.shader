@@ -45,7 +45,7 @@ SubShader {
   float4 frag(v2f i) : SV_TARGET
   {
     float4 col = tex2D(_MainTex, i.texcoord0);
-    float gray = col.x + col.y + col.z * 0.333 * _ColorF;
+    float gray = (col.x * 0.1) + (col.y * 0.6) + (col.z * 0.3) * _ColorF;
     return float4(lerp(col.x, gray, _GrayFactor), lerp(col.y, gray, _GrayFactor), lerp(col.z, gray, _GrayFactor), col.w);
   }
   ENDCG

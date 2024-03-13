@@ -30,8 +30,11 @@ public class ProtocolGetWorldNodesData : Protocol
 		//}
 
 		DummyProtocol dummyProtocol = JsonConvert.DeserializeObject<DummyProtocol>(File.ReadAllText(path));
+		GameProgressData test = new GameProgressData();
+		test.levelProgress[0] = 1;
+		test.levelStars[Defined.LevelMode.Normal] = new ushort[30];
+		dummyProtocol.worldNodes.Add(test);
 		DataCenter.Save().SetWorldNodeProgress(dummyProtocol.worldNodes);
-
 		return 0;
 	}
 
@@ -44,10 +47,6 @@ public class ProtocolGetWorldNodesData : Protocol
 		public DummyProtocol()
 		{
 			worldNodes = new List<GameProgressData>();
-			GameProgressData test = new GameProgressData();
-			test.levelProgress[0] = 1;
-			test.levelStars[Defined.LevelMode.Normal] = new ushort[30];
-			worldNodes.Add(test);
 		}
 	}
 }

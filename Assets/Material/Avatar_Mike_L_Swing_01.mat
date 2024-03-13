@@ -2,34 +2,31 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Avatar_Mike_L_Swing_01
   m_Shader: {fileID: 4800000, guid: d6f2736f8b55b4e4a9dc1983eb24c58a, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 2800000, guid: 8b1c9941f8440b042bc8fa9d0eb62286, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _FadeTex
-      second:
+    - _FadeTex:
         m_Texture: {fileID: 2800000, guid: 28dde447e163c344d9307fb7547f5bb5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: {}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8b1c9941f8440b042bc8fa9d0eb62286, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
     m_Colors:
-    - first:
-        name: _Color
-      second: {r: 0.6117647, g: 0.39215687, b: 0, a: 0}
-    - first:
-        name: _Color2
-      second: {r: 0.18656719, g: 0.11724466, b: 0.06265316, a: 0.3254902}
+    - _Color: {r: 0.6117647, g: 0.39215687, b: 0, a: 0}
+    - _Color2: {r: 0.18656719, g: 0.11724466, b: 0.06265316, a: 0.3254902}
