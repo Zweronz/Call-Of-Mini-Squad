@@ -877,9 +877,9 @@ public class UICamera : MonoBehaviour
 	public void ProcessTouches()
 	{
 		currentScheme = ControlScheme.Touch;
-		for (int i = 0; i < Input.touchCount; i++)
+		for (int i = 0; i < Input2.touchCount; i++)
 		{
-			Touch touch = Input.GetTouch(i);
+			Touch touch = Input2.GetTouch(i);
 			currentTouchID = ((!allowMultiTouch) ? 1 : touch.fingerId);
 			currentTouch = GetTouch(currentTouchID);
 			bool flag = touch.phase == TouchPhase.Began || currentTouch.touchBegan;
@@ -922,7 +922,7 @@ public class UICamera : MonoBehaviour
 				break;
 			}
 		}
-		if (Input.touchCount == 0 && useMouse)
+		if (Input2.touchCount == 0 && useMouse)
 		{
 			ProcessMouse();
 		}

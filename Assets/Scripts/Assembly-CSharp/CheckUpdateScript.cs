@@ -275,6 +275,8 @@ public class CheckUpdateScript : MonoBehaviour
 				DataCenter.Save().BattleTutorialFinished = !DataCenter.Save().bNewUser;
 				if (DataCenter.Save().BattleTutorialFinished)
 				{
+					HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Get_WorldNodeList, null);
+					HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_GetListGeniusInfos, CreateWorldNodeListCallBack);
 					SceneManager.Instance.SwitchScene("UIBase");
 					Chartboost.showInterstitial(CBLocation.Default);
 					UIUtil.ShowOpenClik(true);

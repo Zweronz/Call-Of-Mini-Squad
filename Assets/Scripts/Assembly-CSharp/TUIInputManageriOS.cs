@@ -11,27 +11,27 @@ internal class TUIInputManageriOS
 		TUIInput item = default(TUIInput);
 		TUIInput item2 = default(TUIInput);
 		TUIInput item3 = default(TUIInput);
-		for (int i = 0; i < Input.touches.Length; i++)
+		for (int i = 0; i < Input2.touches.Length; i++)
 		{
-			if (Input.touches[i].phase == TouchPhase.Began)
+			if (Input2.touches[i].phase == TouchPhase.Began)
 			{
-				item.fingerId = Input.touches[i].fingerId;
+				item.fingerId = Input2.touches[i].fingerId;
 				item.inputType = TUIInputType.Began;
-				item.position = Input.touches[i].position;
+				item.position = Input2.touches[i].position;
 				list.Add(item);
 			}
-			else if (Input.touches[i].phase == TouchPhase.Moved)
+			else if (Input2.touches[i].phase == TouchPhase.Moved)
 			{
-				item2.fingerId = Input.touches[i].fingerId;
+				item2.fingerId = Input2.touches[i].fingerId;
 				item2.inputType = TUIInputType.Moved;
-				item2.position = Input.touches[i].position;
+				item2.position = Input2.touches[i].position;
 				list.Add(item2);
 			}
-			else if (Input.touches[i].phase == TouchPhase.Ended)
+			else if (Input2.touches[i].phase == TouchPhase.Ended)
 			{
-				item3.fingerId = Input.touches[i].fingerId;
+				item3.fingerId = Input2.touches[i].fingerId;
 				item3.inputType = TUIInputType.Ended;
-				item3.position = Input.touches[i].position;
+				item3.position = Input2.touches[i].position;
 				list.Add(item3);
 			}
 		}

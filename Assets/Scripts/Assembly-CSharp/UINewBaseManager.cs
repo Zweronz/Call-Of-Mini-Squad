@@ -540,6 +540,7 @@ public class UINewBaseManager : MonoBehaviour
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Get_LevelReward, OnGetLevelRewardDataFinished);
 			DataConf.GameLevelData gameLevelData = DataCenter.Conf().GetCurrentGameLevelList(DataCenter.State().selectLevelMode)[data.ID];
 			DataCenter.Conf().SetCurrentGameLevel(DataCenter.State().selectLevelMode, gameLevelData.index);
+			DataCenter.Conf().GetCurrentGameLevelData().level = ProtocolGetLevelRewardData.level;
 		}
 		else
 		{

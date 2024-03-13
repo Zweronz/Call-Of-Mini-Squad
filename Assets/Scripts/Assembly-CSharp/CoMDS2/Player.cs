@@ -597,21 +597,21 @@ namespace CoMDS2
 				}
 				else
 				{
-					m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].layer = 2;
-					m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].AddMixingTransform(mix);
+					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].layer = 2;
+					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].AddMixingTransform(mix);
 				}
 				newCharacterAnim = DataCenter.Conf().GetNewCharacterAnim(name, "Reload");
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].layer = 2;
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].AddMixingTransform(mix);
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].layer = 2;
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].AddMixingTransform(mix);
 				newCharacterAnim = DataCenter.Conf().GetNewCharacterAnim(name, "Shift");
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].layer = 2;
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].AddMixingTransform(mix);
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].layer = 2;
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].AddMixingTransform(mix);
 				newCharacterAnim = DataCenter.Conf().GetNewCharacterAnim(name, "Shoting");
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].layer = 2;
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].AddMixingTransform(mix);
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].layer = 2;
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].AddMixingTransform(mix);
 				newCharacterAnim = DataCenter.Conf().GetNewCharacterAnim(name, "ReadyFire");
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].layer = 2;
-				m_gameObject.GetComponent<Animation>()[newCharacterAnim.name].AddMixingTransform(mix);
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].layer = 2;
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), newCharacterAnim.name)].AddMixingTransform(mix);
 				return;
 			}
 			string weaponName = getWeaponName();
@@ -620,25 +620,25 @@ namespace CoMDS2
 			for (int j = 0; j < characterAnim.count; j++)
 			{
 				empty = ((!characterAnim.name.Contains("Rifle")) ? weaponName : string.Empty);
-				m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].layer = 2;
-				m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].AddMixingTransform(mix);
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].layer = 2;
+				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].AddMixingTransform(mix);
 			}
 			characterAnim = DataCenter.Conf().GetCharacterAnim("Reload");
 			empty = ((!characterAnim.name.Contains("Rifle")) ? weaponName : string.Empty);
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].layer = 2;
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].AddMixingTransform(mix);
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].layer = 2;
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].AddMixingTransform(mix);
 			characterAnim = DataCenter.Conf().GetCharacterAnim("Shift");
 			empty = ((!characterAnim.name.Contains("Rifle")) ? weaponName : string.Empty);
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].layer = 2;
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].AddMixingTransform(mix);
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].layer = 2;
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].AddMixingTransform(mix);
 			characterAnim = DataCenter.Conf().GetCharacterAnim("Shoting");
 			empty = ((!characterAnim.name.Contains("Rifle")) ? weaponName : string.Empty);
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].layer = 2;
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].AddMixingTransform(mix);
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].layer = 2;
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].AddMixingTransform(mix);
 			characterAnim = DataCenter.Conf().GetCharacterAnim("ReadyFire");
 			empty = ((!characterAnim.name.Contains("Rifle")) ? weaponName : string.Empty);
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].layer = 2;
-			m_gameObject.GetComponent<Animation>()[empty + characterAnim.name].AddMixingTransform(mix);
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].layer = 2;
+			m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), empty + characterAnim.name)].AddMixingTransform(mix);
 		}
 
 		public override void Update(float deltaTime)

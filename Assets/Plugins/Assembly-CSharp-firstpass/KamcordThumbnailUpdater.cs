@@ -51,7 +51,7 @@ public class KamcordThumbnailUpdater : MonoBehaviour
 		{
 			return;
 		}
-		Touch[] touches = Input.touches;
+		Touch[] touches = Input2.touches;
 		for (int i = 0; i < touches.Length; i++)
 		{
 			Touch touch = touches[i];
