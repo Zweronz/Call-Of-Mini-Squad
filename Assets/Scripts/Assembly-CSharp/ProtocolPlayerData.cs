@@ -128,85 +128,162 @@ public class ProtocolPlayerData : Protocol
 		public DummyProtocol()
 		{
 			teamLevel = 1;
-			teamSites = new TeamSite[5] { new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available } };
+			teamSites = new TeamSite[5] { new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Available }, new TeamSite() { state = Defined.ItemState.Locked }, new TeamSite() { state = Defined.ItemState.Locked }, new TeamSite() { state = Defined.ItemState.Locked } };
 
-			List<PlayerData> heroes = new List<PlayerData>();
-
-			heroes.Add(new PlayerData()
+			List<PlayerData> heroes = new List<PlayerData>
 			{
-				heroIndex = 0,
-
-				state = Defined.ItemState.Available,
-
-				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
+				new PlayerData
 				{
-					{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
-					{Defined.EQUIP_TYPE.Body, new UserEquipData() { currEquipIndex = 11, currEquipLevel = 0 } },
-					{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
-				},
-
-				siteNum = 0,
-					
-				upgradeData = new UpgradeData() 
-				{ 
-					ArmorsUpgrade = new EquipUpgradeData[1]{ new EquipUpgradeData() { index = 1, equipIndex = 11,  } },
-					helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
-					ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
-				}
-			});
-
-			heroes.Add(new PlayerData()
-			{
-				heroIndex = 1,
-
-				state = Defined.ItemState.Available,
-
-				equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
-				{
-					{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
-					{Defined.EQUIP_TYPE.Body, new UserEquipData() { currEquipIndex = 11, currEquipLevel = 0 } },
-					{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
-				},
-
-				siteNum = 1,
-					
-				upgradeData = new UpgradeData() 
-				{ 
-					ArmorsUpgrade = new EquipUpgradeData[1]{ new EquipUpgradeData() { index = 1, equipIndex = 11,  } },
-					helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
-					ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
-				}
-			});
-
-			for (int i = 2; i < 17; i++)
-			{
-				if (i == 8 || i == 5 || i == 15)
-				{
-					continue;
-				}
-				
-				heroes.Add(new PlayerData()
-				{
-					heroIndex = i,
-
+					heroIndex = 0,
+					siteNum = 0,
 					state = Defined.ItemState.Available,
+				},
+				new PlayerData
+				{
+					heroIndex = 1,
+					siteNum = 1,
+					state = Defined.ItemState.Available,
+				},
+				new PlayerData
+				{
+					heroIndex = 9,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = 10,
+					costType = Defined.COST_TYPE.Money,
+					unlockCost = 10000
+				},
+				new PlayerData
+				{
+					heroIndex = 9,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = 10,
+					costType = Defined.COST_TYPE.Money,
+					unlockCost = 10000
+				},
+				new PlayerData
+				{
+					heroIndex = 7,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = 20,
+					costType = Defined.COST_TYPE.Money,
+					unlockCost = 20000
+				},
+				new PlayerData
+				{
+					heroIndex = 3,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = 30,
+					costType = Defined.COST_TYPE.Money,
+					unlockCost = 30000
+				},
+				new PlayerData
+				{
+					heroIndex = 13,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 299
+				},
+				new PlayerData
+				{
+					heroIndex = 11,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 299
+				},
+				new PlayerData
+				{
+					heroIndex = 10,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 149
+				},
+				new PlayerData
+				{
+					heroIndex = 14,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 299
+				},
+				new PlayerData
+				{
+					heroIndex = 2,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = -1
+				},
+				new PlayerData
+				{
+					heroIndex = 6,
+					state = Defined.ItemState.Locked,
+					unlockNeedTeamLevel = -2
+				},
+				new PlayerData
+				{
+					heroIndex = 12,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 149
+				},
+				new PlayerData
+				{
+					heroIndex = 15,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 299
+				},
+				new PlayerData
+				{
+					heroIndex = 17,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Crystal,
+					unlockCost = 299
+				},
+				new PlayerData
+				{
+					heroIndex = 16,
+					state = Defined.ItemState.Purchase,
+					costType = Defined.COST_TYPE.Money,
+					unlockCost = 75000
+				},
+			};
 
-					equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
+			foreach (PlayerData hero in heroes)
+			{
+				hero.equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
+				{
+					{Defined.EQUIP_TYPE.Acc, new UserEquipData { currEquipIndex = 22, currEquipLevel = -1 } },
+					{Defined.EQUIP_TYPE.Body, new UserEquipData { currEquipIndex = 11, currEquipLevel = -1 } },
+					{Defined.EQUIP_TYPE.Head, new UserEquipData { currEquipIndex = 0, currEquipLevel = -1 } }
+				};
+
+                hero.upgradeData = new UpgradeData
+                {
+                    helmsUpgrade = new EquipUpgradeData[11],
+					ArmorsUpgrade = new EquipUpgradeData[11],
+                    ornamentsUpgrade = new EquipUpgradeData[10]
+                };
+
+				hero.weaponLevel = 1;
+				hero.skillLevel = 1;
+
+				//placeholder
+				hero.weaponMaxLevel = 5;
+				hero.skillMaxLevel = 5;
+
+                for (int i = 0; i < 32; i++)
+				{
+					if (i < 11)
 					{
-						{Defined.EQUIP_TYPE.Head, new UserEquipData() { currEquipIndex = 0, currEquipLevel = 0 } },
-						{Defined.EQUIP_TYPE.Body, new UserEquipData() { currEquipIndex = 11, currEquipLevel = 0 } },
-						{Defined.EQUIP_TYPE.Acc, new UserEquipData() { currEquipIndex = 22, currEquipLevel = 0 } }
-					},
-
-					siteNum = -1,
-					
-					upgradeData = new UpgradeData() 
-					{ 
-						ArmorsUpgrade = new EquipUpgradeData[1]{ new EquipUpgradeData() { index = 1, equipIndex = 11,  } },
-						helmsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 2, equipIndex = 0 } },
-						ornamentsUpgrade = new EquipUpgradeData[1] { new EquipUpgradeData() { index = 3, equipIndex = 22 } }
+						hero.upgradeData.helmsUpgrade[i] = new EquipUpgradeData() { index = i + 1, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
 					}
-				});
+					else if (i < 22)
+					{
+						hero.upgradeData.ArmorsUpgrade[i - 11] = new EquipUpgradeData() { index = i - 10, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
+					}
+					else
+					{
+						hero.upgradeData.ornamentsUpgrade[i - 22] = new EquipUpgradeData() { index = i - 21, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
+					}
+				}
 			}
 
 			this.heroes = heroes.ToArray();

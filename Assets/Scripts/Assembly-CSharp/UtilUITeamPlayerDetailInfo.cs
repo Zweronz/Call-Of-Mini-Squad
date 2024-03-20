@@ -161,10 +161,6 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 					iTEMINFO.ui.Selected(true);
 					ii = iTEMINFO;
 				}
-				else
-				{
-					Debug.LogError(iTEMINFO.data.equipIndex + " " + playdata.equips[Defined.EQUIP_TYPE.Head].currEquipIndex);
-				}
 			}
 			UpdateExDetailUI(ii);
 			for (int j = 0; j < playdata.upgradeData.ArmorsUpgrade.Length; j++)
@@ -181,10 +177,6 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 					iTEMINFO2.ui.Selected(true);
 					ii = iTEMINFO2;
 				}
-				else
-				{
-					Debug.LogError(iTEMINFO2.data.equipIndex + " " + playdata.equips[Defined.EQUIP_TYPE.Body].currEquipIndex);
-				}
 			}
 			UpdateExDetailUI(ii);
 			for (int k = 0; k < playdata.upgradeData.ornamentsUpgrade.Length; k++)
@@ -200,10 +192,6 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 					nowSelectOmamentsItemIndex = equipUpgradeData3.equipIndex;
 					iTEMINFO3.ui.Selected(true);
 					ii = iTEMINFO3;
-				}
-				else
-				{
-					Debug.LogError(iTEMINFO3.data.equipIndex + " " + playdata.equips[Defined.EQUIP_TYPE.Acc].currEquipIndex);
 				}
 			}
 			UpdateExDetailUI(ii);

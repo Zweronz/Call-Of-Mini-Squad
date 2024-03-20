@@ -1070,7 +1070,6 @@ public class UIUtil
 	public static string GetProtocolLaguageCode()
 	{
 		string languageCode = DevicePlugin.GetLanguageCode();
-		Debug.Log("--DevicePlugin.GetLanguageCode--  :" + languageCode);
 		if (languageCode.Contains("ja"))
 		{
 			return "japanese";

@@ -270,12 +270,10 @@ namespace CoMDS2
 			}
 			if (m_enemyBuffer.ContainsKey(type))
 			{
-				Debug.LogError(type);
 				m_enemyBuffer[type].AddBuffer(dS2ObjectBuffer);
 			}
 			else
 			{
-				Debug.LogError(type);
 				m_enemyBuffer.Add(type, dS2ObjectBuffer);
 			}
 		}
