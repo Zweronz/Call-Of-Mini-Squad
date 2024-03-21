@@ -303,7 +303,6 @@ public class GameBattle : MonoBehaviour
 						{
 							DataCenter.State().battleTime = Time.realtimeSinceStartup - DataCenter.State().battleTime;
 							GameState = State.DialogEnd;
-							Debug.LogError("returneag");
 							return;
 						}
 					}
@@ -356,6 +355,7 @@ public class GameBattle : MonoBehaviour
 					}
 					else
 					{
+						BattleResultController.Get();
 						HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.BattleResult, null);
 					}
 				}
@@ -456,6 +456,7 @@ public class GameBattle : MonoBehaviour
 					}
 					else
 					{
+						BattleResultController.Get();
 						HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.BattleResult, null);
 					}
 				}
@@ -638,7 +639,7 @@ public class GameBattle : MonoBehaviour
 		DataCenter.State().lastSceneType = Defined.SceneType.Battle;
 		if (Util.s_debug)
 		{
-			DataCenter.Save().BattleTutorialFinished = true;
+			//DataCenter.Save().BattleTutorialFinished = true;
 			GameState = State.Ready;
 		}
 		if (!DataCenter.Save().BattleTutorialFinished)

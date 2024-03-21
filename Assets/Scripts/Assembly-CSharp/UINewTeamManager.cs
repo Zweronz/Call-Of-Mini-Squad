@@ -306,7 +306,8 @@ public class UINewTeamManager : MonoBehaviour
 		if (UIBASECOURSEINFO.TutorialInProgress && UIBASECOURSEINFO.GetCourse(1050).STATE == UtilUICourseInfo.CoursePhaseState.InProgress)
 		{
 			UIBASECOURSEINFO.GetCourse(1050).STATE = UtilUICourseInfo.CoursePhaseState.Done;
-			DataCenter.Save().tutorialStep = Defined.TutorialStep.UnlockedTeamSite;
+			Debug.LogError("eh??");
+			//DataCenter.Save().tutorialStep = Defined.TutorialStep.UnlockedTeamSite;
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 			UtilUIStandbyPlayersInfo.PLAYERINFO playerInfoById = UISTANDBYPLAYERSINFOSCRIPT.GetPlayerInfoById(UIConstant.gCouseHeroId);
 			Object.Destroy(playerInfoById.formationControl.gameObject.GetComponent<UIDragScrollView>());
@@ -357,7 +358,8 @@ public class UINewTeamManager : MonoBehaviour
 		{
 			UIBASECOURSEINFO.GetCourse(1052).STATE = UtilUICourseInfo.CoursePhaseState.Done;
 			UIBASECOURSEINFO.GetCourse(1053).STATE = UtilUICourseInfo.CoursePhaseState.Done;
-			DataCenter.Save().tutorialStep = Defined.TutorialStep.SetTeam;
+			Debug.LogError("eh??");
+			//DataCenter.Save().tutorialStep = Defined.TutorialStep.SetTeam;
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 			UIBASECOURSEINFO.AddCursor(1064, backGO, backGO.transform.position);
 			UIBASECOURSEINFO.GetCourse(1064).STATE = UtilUICourseInfo.CoursePhaseState.InProgress;
@@ -1012,7 +1014,8 @@ public class UINewTeamManager : MonoBehaviour
 			if (UIBASECOURSEINFO.TutorialInProgress && UIBASECOURSEINFO.GetCourse(1058).STATE == UtilUICourseInfo.CoursePhaseState.InProgress)
 			{
 				UIBASECOURSEINFO.GetCourse(1058).STATE = UtilUICourseInfo.CoursePhaseState.Done;
-				DataCenter.Save().tutorialStep = Defined.TutorialStep.Finish;
+				Debug.LogError("eh??");
+				//DataCenter.Save().tutorialStep = Defined.TutorialStep.Finish;
 				HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 				DataCenter.Save().SaveGameData();
 			}

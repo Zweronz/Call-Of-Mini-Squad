@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 
 public class DataState
 {
@@ -78,6 +79,7 @@ public class DataState
 
 	public void ResetData(bool bCleanUUID)
 	{
+		UnityEngine.Debug.LogError("askmdskad");
 		if (bCleanUUID)
 		{
 			UtilUIAccountManager.mInstance.accountData.uuid = string.Empty;

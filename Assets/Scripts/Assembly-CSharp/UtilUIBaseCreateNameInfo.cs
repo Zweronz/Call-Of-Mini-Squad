@@ -67,11 +67,13 @@ public class UtilUIBaseCreateNameInfo : MonoBehaviour
 		if (code != 0)
 		{
 			UIDialogManager.Instance.ShowHttpFeedBackMsg(code);
-			DataCenter.Save().tutorialStep = Defined.TutorialStep.CreateNameFialed;
+			Debug.LogError("eh??");
+			//DataCenter.Save().tutorialStep = Defined.TutorialStep.CreateNameFialed;
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 			return;
 		}
-		DataCenter.Save().tutorialStep = Defined.TutorialStep.CreateNameFinish;
+		Debug.LogError("eh??");
+		//DataCenter.Save().tutorialStep = Defined.TutorialStep.CreateNameFinish;
 		HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 		//DataCenter.Save().bNewUser = false;
 		UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 39);

@@ -295,7 +295,7 @@ public class HttpRequestHandle : MonoBehaviour
 	public void SendRequest(RequestType requestType, OnRequestFinish callBack)
 	{
 		Debug.Log(requestType);
-		m_requestMap[requestType].GetResponse("");
+		//m_requestMap[requestType].GetResponse("");
 		if (callBack != null)
 		{
 			callBack(0);

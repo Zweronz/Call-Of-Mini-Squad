@@ -8,22 +8,24 @@ public class LevelCalcTest : MonoBehaviour
 
 	private const int CoinsStarting = 1500, XPStarting = 510, CoinsStartIncreasing = 10, XPStartIncreasing = 280, CoinsIncrease = 5, XPIncrease = 20;
 
-	private int currentCoinAdd, currentXPAdd;
+	private static int currentCoinAdd, currentXPAdd;
 
-	void Start()
+	public static List<int[]> LevelRewards = new List<int[]>();
+
+	public static void Init()
 	{
 		for (int i = 0; i < 100; i++)
 		{
 			if (i == 0)
 			{
-				levels.Add(CoinsStarting + "," + XPStarting);
+				LevelRewards.Add(new int[2] { CoinsStarting, XPStarting } );
 				continue;
 			}
 
 			currentCoinAdd += CoinsStartIncreasing + (CoinsIncrease * (i - 1));
 			currentXPAdd += XPStartIncreasing + (XPIncrease * (i - 1));
 
-			levels.Add(CoinsStarting + currentCoinAdd + "," + (XPStarting + currentXPAdd));
+			LevelRewards.Add(new int[2] { CoinsStarting + currentCoinAdd,  XPStarting + currentXPAdd } );
 		}
 	}
 }

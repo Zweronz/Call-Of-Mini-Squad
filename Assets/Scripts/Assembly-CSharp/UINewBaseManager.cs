@@ -537,10 +537,11 @@ public class UINewBaseManager : MonoBehaviour
 			UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 5);
 			UIDialogManager.Instance.ShowBlock(5);
 			DataCenter.State().selectAreaNode = data.ID;
+			LevelRewardController.Get();
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Get_LevelReward, OnGetLevelRewardDataFinished);
 			DataConf.GameLevelData gameLevelData = DataCenter.Conf().GetCurrentGameLevelList(DataCenter.State().selectLevelMode)[data.ID];
 			DataCenter.Conf().SetCurrentGameLevel(DataCenter.State().selectLevelMode, gameLevelData.index);
-			DataCenter.Conf().GetCurrentGameLevelData().level = ProtocolGetLevelRewardData.level;
+			DataCenter.Conf().GetCurrentGameLevelData().level = LevelRewardController.Level;
 		}
 		else
 		{
@@ -589,12 +590,14 @@ public class UINewBaseManager : MonoBehaviour
 		if (UIBASECOURSEINFO.TutorialInProgress && UIBASECOURSEINFO.GetCourse(10).STATE == UtilUICourseInfo.CoursePhaseState.InProgress)
 		{
 			UIBASECOURSEINFO.GetCourse(10).STATE = UtilUICourseInfo.CoursePhaseState.Done;
-			DataCenter.Save().tutorialStep = Defined.TutorialStep.EnterBattle;
+			//DataCenter.Save().tutorialStep = Defined.TutorialStep.EnterBattle;
+			Debug.LogError("eh??");
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 		}
 		if (gameLevelData.index == 0 && DataCenter.State().selectWorldNode == 0 && DataCenter.Save().tutorialStep != Defined.TutorialStep.Finish)
 		{
-			DataCenter.Save().tutorialStep = Defined.TutorialStep.FinishStageOneWaveOne;
+			//DataCenter.Save().tutorialStep = Defined.TutorialStep.FinishStageOneWaveOne;
+			Debug.LogError("eh??");
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Lesson, null);
 		}
 		UIBASECONFIRMBATTLEINFO.SetBattleBtnEnable(false);

@@ -107,13 +107,19 @@ public class DataSave
 
 	private int m_superRefreshMaker;
 
-	public bool BattleTutorialFinished;
+	public bool BattleTutorialFinished
+	{
+		get
+		{
+			return true;
+		}
+	}
 
 	public bool tutorialChangeMode;
 
 	public float lastLoginTime;
 
-	public Defined.TutorialStep tutorialStep = Defined.TutorialStep.TutorialBattle;
+	public Defined.TutorialStep tutorialStep = Defined.TutorialStep.None;
 
 	private TeamData m_teamData;
 
@@ -468,6 +474,11 @@ public class DataSave
 	public TeamData GetTeamData()
 	{
 		return m_teamData;
+	}
+
+	public void SetTeamData(TeamData teamData)
+	{
+		m_teamData = teamData;
 	}
 
 	public TeamSiteData GetTeamSiteData(Defined.TEAM_SITE site)
@@ -826,6 +837,11 @@ public class DataSave
 		m_gameProgress = worldProgress;
 	}
 
+	public List<GameProgressData> GetWorldNodeProgress()
+	{
+		return m_gameProgress;
+	}
+
 	public ushort GetLevelStars(int worldIndex, Defined.LevelMode mode, int levelIndex)
 	{
 		if (worldIndex >= m_gameProgress.Count || worldIndex < 0)
@@ -869,7 +885,7 @@ public class DataSave
 
 	public void ResetTutorial()
 	{
-		BattleTutorialFinished = false;
+		//BattleTutorialFinished = false;
 		tutorialChangeMode = false;
 	}
 
@@ -945,7 +961,7 @@ public class DataSave
 		xmlElement = (XmlElement)documentElement.GetElementsByTagName("Tutorail").Item(0);
 		if (xmlElement != null)
 		{
-			BattleTutorialFinished = int.Parse(xmlElement.GetAttribute("BattleTutorial")) == 1;
+			//BattleTutorialFinished = int.Parse(xmlElement.GetAttribute("BattleTutorial")) == 1;
 			tutorialChangeMode = int.Parse(xmlElement.GetAttribute("tutorialChangeMode")) == 1;
 		}
 		xmlElement = (XmlElement)documentElement.GetElementsByTagName("LastLoginTime").Item(0);

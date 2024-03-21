@@ -34,6 +34,7 @@ public class ProtocolGetLevelRewardData : Protocol
 			//}
 
 			DummyProtocol dummyProtocol = JsonConvert.DeserializeObject<DummyProtocol>(File.ReadAllText(path));
+			Debug.LogError(DataCenter.State().selectWorldNode);
 
 			level = dummyProtocol.monsterLevel;
 			DataCenter.Save().selectLevelDropData = dummyProtocol.levelDropData;
@@ -52,7 +53,19 @@ public class ProtocolGetLevelRewardData : Protocol
 		public DummyProtocol()
 		{
 			monsterLevel = 1;
-			levelDropData = new LevelDropData();
+
+			if (LevelCalcTest.LevelRewards.Count == 0)
+			{
+				LevelCalcTest.Init();
+			}
+
+			int[] rewards = LevelCalcTest.LevelRewards[DataCenter.State().selectWorldNode];
+
+			levelDropData = new LevelDropData()
+			{
+				money = rewards[0],
+				exp = rewards[1]
+			};
 		}
 	}
 }
