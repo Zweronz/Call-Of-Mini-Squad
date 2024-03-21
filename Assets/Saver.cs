@@ -4,77 +4,80 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public static class Saver
+namespace Zweronz.SavingSystem
 {
-	public static SaveData Save()
+	public static class Saver
 	{
-		return TypeSaver.Save<SaveSaver>() as SaveData;
-	}
-}
-
-public static class TypeSaver
-{
-	public static object Save<T>() where T : ISaver
-	{
-		return Activator.CreateInstance<T>().Save();
-	}
-}
-
-public interface ISaver
-{
-	object Save();
-}
-
-public class SaveSaver : ISaver
-{
-	public object Save()
-	{
-        return new SaveData
-        {
-            heroes = TypeSaver.Save<HeroSaver>() as List<PlayerData>,
-            teamSave = TypeSaver.Save<TeamSaver>() as TeamSave,
-            currency = TypeSaver.Save<CurrencySaver>() as Currency,
-            worldNodes = TypeSaver.Save<WorldNodeSaver>() as List<GameProgressData>
-        };
-    }
-}
-
-public class HeroSaver : ISaver
-{
-	public object Save()
-	{
-		return DataCenter.Save().GetHeroList().ToList();
-	}
-}
-
-public class TeamSaver : ISaver
-{
-	public object Save()
-	{
-		return new TeamSave
+		public static SaveData Save()
 		{
-			teamData = DataCenter.Save().GetTeamData(),
-			teamAttributeSaveData = DataCenter.Save().teamAttributeSaveData
-		};
+			return TypeSaver.Save<SaveSaver>() as SaveData;
+		}
 	}
-}
-
-public class CurrencySaver : ISaver
-{
-	public object Save()
+	
+	public static class TypeSaver
 	{
-		return new Currency
+		public static object Save<T>() where T : ISaver
 		{
-			money = DataCenter.Save().Money,
-			crystal = DataCenter.Save().Crystal
-		};
+			return Activator.CreateInstance<T>().Save();
+		}
 	}
-}
-
-public class WorldNodeSaver : ISaver
-{
-	public object Save()
+	
+	public interface ISaver
 	{
-		return DataCenter.Save().GetWorldNodeProgress();
+		object Save();
+	}
+	
+	public class SaveSaver : ISaver
+	{
+		public object Save()
+		{
+	        return new SaveData
+	        {
+	            heroes = TypeSaver.Save<HeroSaver>() as List<PlayerData>,
+	            teamSave = TypeSaver.Save<TeamSaver>() as TeamSave,
+	            currency = TypeSaver.Save<CurrencySaver>() as Currency,
+	            worldNodes = TypeSaver.Save<WorldNodeSaver>() as List<GameProgressData>
+	        };
+	    }
+	}
+	
+	public class HeroSaver : ISaver
+	{
+		public object Save()
+		{
+			return DataCenter.Save().GetHeroList().ToList();
+		}
+	}
+	
+	public class TeamSaver : ISaver
+	{
+		public object Save()
+		{
+			return new TeamSave
+			{
+				teamData = DataCenter.Save().GetTeamData(),
+				teamAttributeSaveData = DataCenter.Save().teamAttributeSaveData
+			};
+		}
+	}
+	
+	public class CurrencySaver : ISaver
+	{
+		public object Save()
+		{
+			return new Currency
+			{
+				money = DataCenter.Save().Money,
+				crystal = DataCenter.Save().Crystal
+			};
+		}
+	}
+	
+	public class WorldNodeSaver : ISaver
+	{
+		public object Save()
+		{
+			return DataCenter.Save().GetWorldNodeProgress();
+		}
 	}
 }
