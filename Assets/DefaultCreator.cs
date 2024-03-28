@@ -220,6 +220,28 @@ namespace Zweronz.SavingSystem
 						costType = Defined.COST_TYPE.Money,
 						unlockCost = 75000
 					},
+					//add later
+					//new PlayerData
+					//{
+					//	heroIndex = 4,
+					//	state = Defined.ItemState.Purchase,
+					//	costType = Defined.COST_TYPE.Crystal,
+					//	unlockCost = 299
+					//},
+					//new PlayerData
+					//{
+					//	heroIndex = 5,
+					//	state = Defined.ItemState.Purchase,
+					//	costType = Defined.COST_TYPE.Crystal,
+					//	unlockCost = 299
+					//},
+					//	new PlayerData
+					//{
+					//	heroIndex = 8,
+					//	state = Defined.ItemState.Purchase,
+					//	costType = Defined.COST_TYPE.Crystal,
+					//	unlockCost = 449
+					//},
 				}
 			};
 
@@ -239,8 +261,8 @@ namespace Zweronz.SavingSystem
                     ornamentsUpgrade = new EquipUpgradeData[10]
                 };
 
-				hero.weaponLevel = 1;
-				hero.skillLevel = 1;
+				hero.weaponLevel = 2;
+				hero.skillLevel = 2;
 
 				//placeholder
 				hero.weaponMaxLevel = 5;

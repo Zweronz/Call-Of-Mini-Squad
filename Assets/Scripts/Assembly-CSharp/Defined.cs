@@ -647,11 +647,12 @@ public class Defined
 
 	public const int UI_ROOT_MAXIMUM_HEIGHT = 768;
 
-	public static string[] SystemUserName = new string[26]
+	public static string[] SystemUserName = new string[]
 	{
-		"Aaron", "Abraham", "Angus", "Bert", "Brant", "Chris", "Cosmo", "Edison", "Ethan", "Francis",
-		"George", "Harrison", "Ignativs", "Jacob", "Jerry", "Joe", "Lawrence", "Mark", "Norman", "Peter",
-		"Randolph", "Robinson", "Steven", "Shawn", "Terry", "Warren"
+		"JohnnyHello"
+		//"Aaron", "Abraham", "Angus", "Bert", "Brant", "Chris", "Cosmo", "Edison", "Ethan", "Francis",
+		//"George", "Harrison", "Ignativs", "Jacob", "Jerry", "Joe", "Lawrence", "Mark", "Norman", "Peter",
+		//"Randolph", "Robinson", "Steven", "Shawn", "Terry", "Warren"
 	};
 
 	public static string[] LoadingIcons = new string[17]

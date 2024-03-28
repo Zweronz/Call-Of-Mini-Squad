@@ -244,6 +244,7 @@ namespace CoMDS2
 		public void CreateEnemyBufferByType(Enemy.EnemyType type, int count)
 		{
 			DataConf.EnemyData enemyDataByType = DataCenter.Conf().GetEnemyDataByType(type);
+			Debug.LogError((enemyDataByType == null).ToString() + " " + type.ToString());
 			GameObject gameObject = new GameObject();
 			gameObject.name = enemyDataByType.name;
 			gameObject.transform.parent = s_enemyGameObjectRoot.transform;

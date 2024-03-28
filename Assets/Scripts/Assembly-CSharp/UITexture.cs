@@ -8,7 +8,8 @@ public class UITexture : UIWidget
 	[HideInInspector]
 	private Rect mRect = new Rect(0f, 0f, 1f, 1f);
 
-	[HideInInspector]
+	//doing this until I replace this stupid decompiled version of ngui
+	//[HideInInspector]
 	[SerializeField]
 	private Texture mTexture;
 

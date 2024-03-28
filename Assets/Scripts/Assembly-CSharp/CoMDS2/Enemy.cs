@@ -1910,6 +1910,12 @@ namespace CoMDS2
 			m_proFirstAttackLose = enemyDataByType.proFirstAttackLose;
 			num2 = (base.hpMax = (int)((float)enemyDataByType.hp + (float)(enemyDataByType.hp * (currentGameLevelData.level - 1)) * 0.07f));
 			base.hp = num2;
+			if (enemyType == EnemyType.Zombie_Purple)
+			{
+				MoveSpeed *= 2f;
+				hpMax *= 2;
+				hp *= 2;
+			}
 			base.hitInfo.damage = new NumberSection<float>(base.hitInfo.damage.left + base.hitInfo.damage.left * (float)(currentGameLevelData.level - 1) * 0.05f, base.hitInfo.damage.right + base.hitInfo.damage.right * (float)(currentGameLevelData.level - 1) * 0.05f);
 			if (DataCenter.State().selectLevelMode == Defined.LevelMode.Hard)
 			{

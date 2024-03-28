@@ -2043,6 +2043,9 @@ public class DataConf
 	{
 		switch (type)
 		{
+		case Enemy.EnemyType.Zombie_Purple:
+			type = Enemy.EnemyType.Zombie;
+			break;
 		case Enemy.EnemyType.ZombieNurse_Purple:
 			type = Enemy.EnemyType.ZombieNurse;
 			break;

@@ -13,7 +13,7 @@ public static class LevelRewardController
 			LevelCalcTest.Init();
 		}
 
-		int[] rewards = LevelCalcTest.LevelRewards[DataCenter.State().selectWorldNode];
+		int[] rewards = LevelCalcTest.LevelRewards[DataCenter.State().selectAreaNode];
 
 		DataCenter.Save().selectLevelDropData = new LevelDropData
 		{
