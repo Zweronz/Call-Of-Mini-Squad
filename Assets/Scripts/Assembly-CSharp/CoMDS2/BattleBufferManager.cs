@@ -244,14 +244,16 @@ namespace CoMDS2
 		public void CreateEnemyBufferByType(Enemy.EnemyType type, int count)
 		{
 			DataConf.EnemyData enemyDataByType = DataCenter.Conf().GetEnemyDataByType(type);
-			Debug.LogError((enemyDataByType == null).ToString() + " " + type.ToString());
+			if (enemyDataByType == null)
+			{
+				Debug.LogError(type.ToString() + " is null!");
+			}
 			GameObject gameObject = new GameObject();
 			gameObject.name = enemyDataByType.name;
 			gameObject.transform.parent = s_enemyGameObjectRoot.transform;
 			int num = ((count <= 30) ? count : 30);
 			if (m_enemyBuffer.ContainsKey(type))
 			{
-				Debug.LogError(type);
 				int size = m_enemyBuffer[type].Size;
 				if (size + num > 30)
 				{

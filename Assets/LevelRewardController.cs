@@ -4,8 +4,6 @@ using UnityEngine;
 
 public static class LevelRewardController
 {
-	public static int Level;
-
 	public static void Get()
 	{
 		if (LevelCalcTest.LevelRewards.Count == 0)
@@ -20,7 +18,5 @@ public static class LevelRewardController
 			money = rewards[0],
 			exp = rewards[1]
 		};
-
-		Level = 1;
 	}
 }

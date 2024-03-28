@@ -320,22 +320,7 @@ namespace Zweronz.SavingSystem
 			{
 				gameProgressData = new List<GameProgressData>
 				{
-					new GameProgressData
-					{
-						levelProgress = new ushort[20]
-						{
-							1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-						},
-
-						modeProgress = 0,
-
-						levelStars = new Dictionary<Defined.LevelMode, ushort[]>
-						{
-							{Defined.LevelMode.Normal, new ushort[20]},
-							{Defined.LevelMode.Hard, new ushort[20]},
-							{Defined.LevelMode.Hell, new ushort[20]}
-						}
-					}
+					GameProgressController.CreateProgress()
 				}
 			};
 		}

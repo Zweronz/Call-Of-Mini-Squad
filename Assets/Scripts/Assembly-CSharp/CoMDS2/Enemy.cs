@@ -1916,6 +1916,10 @@ namespace CoMDS2
 				hpMax *= 2;
 				hp *= 2;
 			}
+			else if (enemyType == EnemyType.ZombieBomb_Purple)
+			{
+				MoveSpeed *= 2f;
+			}
 			base.hitInfo.damage = new NumberSection<float>(base.hitInfo.damage.left + base.hitInfo.damage.left * (float)(currentGameLevelData.level - 1) * 0.05f, base.hitInfo.damage.right + base.hitInfo.damage.right * (float)(currentGameLevelData.level - 1) * 0.05f);
 			if (DataCenter.State().selectLevelMode == Defined.LevelMode.Hard)
 			{

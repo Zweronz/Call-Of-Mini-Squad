@@ -578,6 +578,8 @@ namespace CoMDS2
 				break;
 			case UIControlID.Win_ExtraRewards:
 			{
+				//thanks triniti
+				DataCenter.Save().selectLevelDropData.extraCrystal = BattleResultController.GetExtraCrystals();
 				Transform[] array = new Transform[3];
 				for (int num15 = 1; num15 <= 3; num15++)
 				{
@@ -603,6 +605,7 @@ namespace CoMDS2
 				}
 				if (DataCenter.Save().selectLevelDropData.extraCrystal > 0)
 				{
+					Debug.LogError("hi? hello? bagh?");
 					gameObject6.SetActive(true);
 					gameObject6.transform.localPosition = array[num16].localPosition;
 					componentInChildren2.text = string.Empty + DataCenter.Save().selectLevelDropData.extraCrystal;

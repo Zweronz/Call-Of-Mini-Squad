@@ -2046,6 +2046,9 @@ public class DataConf
 		case Enemy.EnemyType.Zombie_Purple:
 			type = Enemy.EnemyType.Zombie;
 			break;
+		case Enemy.EnemyType.ZombieBomb_Purple:
+			type = Enemy.EnemyType.ZombieBomb;
+			break;
 		case Enemy.EnemyType.ZombieNurse_Purple:
 			type = Enemy.EnemyType.ZombieNurse;
 			break;

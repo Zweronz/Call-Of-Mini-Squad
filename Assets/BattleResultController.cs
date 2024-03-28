@@ -6,22 +6,35 @@ public static class BattleResultController
 {
 	public static void Get()
 	{
+		if (DataCenter.State().battleResult != Defined.BattleResult.Win)
+		{
+			GameBattle.m_instance.bGetBattleResultData = true;
+			return;
+		}
+
 		DataCenter.Save().GetWorldProgressData(DataCenter.State().selectWorldNode).levelStars[DataCenter.State().selectLevelMode][DataCenter.State().selectAreaNode] = (ushort)DataCenter.State().battleStars;
 
-		if (DataCenter.Save().GetWorldProgressData(DataCenter.State().selectWorldNode).levelProgress[DataCenter.State().selectAreaNode + 1] <= 0)
+		if (DataCenter.State().selectAreaNode + 1 <= DataCenter.Save().GetWorldProgressData(DataCenter.State().selectWorldNode).levelProgress[(int)DataCenter.State().selectLevelMode])
 		{
-			ushort worldIndex = (ushort)(DataCenter.State().selectAreaNode + 2);
-			for (int i = 0; i < DataCenter.State().selectAreaNode + 2; i++)
+			if (DataCenter.State().battleStars == 3)
 			{
-				DataCenter.Save().GetWorldProgressData(DataCenter.State().selectWorldNode).levelProgress[i] = worldIndex;
-				worldIndex--;
+				DataCenter.Save().selectLevelDropData.extraCrystal = 5;
+				DataCenter.Save().Crystal += 5;
 			}
 		}
+		else
+		{
+			DataCenter.Save().selectLevelDropData.extraCrystal = 0;
+		}
+
+		GameProgressController.Progress();
+
+		int rewardIndex = GameProgressController.GetRewardIndex();
 
 		int[] baseRewards = new int[2]
 		{
-			LevelCalcTest.LevelRewards[DataCenter.State().selectWorldNode][0] * (DataCenter.State().battleStars == 3 ? 2 : 1),
-			LevelCalcTest.LevelRewards[DataCenter.State().selectWorldNode][1] * (DataCenter.State().battleStars == 3 ? 2 : 1),
+			LevelCalcTest.LevelRewards[rewardIndex][0] * (DataCenter.State().battleStars == 3 ? 2 : 1),
+			LevelCalcTest.LevelRewards[rewardIndex][1] * (DataCenter.State().battleStars == 3 ? 2 : 1),
 		};
 
 		DataCenter.Save().Money += baseRewards[0];
@@ -31,5 +44,15 @@ public static class BattleResultController
 		DataCenter.Save().selectLevelDropData.exp = baseRewards[1];
 
 		GameBattle.m_instance.bGetBattleResultData = true;
+	}
+
+	public static int GetExtraCrystals()
+	{
+		if (DataCenter.State().selectAreaNode + 1 <= DataCenter.Save().GetWorldProgressData(DataCenter.State().selectWorldNode).levelProgress[(int)DataCenter.State().selectLevelMode])
+		{
+			return 5;
+		}
+
+		return 0;
 	}
 }
