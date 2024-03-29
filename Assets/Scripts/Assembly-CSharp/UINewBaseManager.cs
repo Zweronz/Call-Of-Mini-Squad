@@ -621,6 +621,7 @@ public class UINewBaseManager : MonoBehaviour
 		{
 			UIBASECOURSEINFO.GetCourse(11).STATE = UtilUICourseInfo.CoursePhaseState.Done;
 		}
+		HeroListController.Refresh();
 		SceneLoadingManager.s_lastSceneName = "UIBase";
 		SceneLoadingManager.s_nextSceneName = "UITeam";
 		SceneManager.Instance.SwitchScene("Loading");

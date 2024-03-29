@@ -40,6 +40,8 @@ public static class BattleResultController
 		DataCenter.Save().Money += baseRewards[0];
 		DataCenter.Save().GetTeamData().teamExp += baseRewards[1];
 
+		TeamLevelController.OnReceivedXP();
+
 		DataCenter.Save().selectLevelDropData.money = baseRewards[0];
 		DataCenter.Save().selectLevelDropData.exp = baseRewards[1];
 

@@ -10,6 +10,6 @@ public class LevelCalcTest2 : MonoBehaviour
 	void Start()
 	{
 		LevelCalcTest.Init();
-		levels = (from level in LevelCalcTest.LevelRewards select level[0] + ", " + level[1]).ToList();
+		levels = (from level in LevelCalcTest.LevelRewards select level[0] + ", " + level[1] + ", " + level[2]).ToList();
 	}
 }

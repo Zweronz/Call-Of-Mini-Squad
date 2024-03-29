@@ -6,12 +6,32 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class UpgradeCalcTest : MonoBehaviour
 {
-	public int level;
+	public const int WeaponStarting = 1000, WeaponIncrease = 50, WeaponIncreaseIncrease = 20, SkillStarting = 300, SkillIncrease = 10, CombatStarting = 200, CombatIncrease = 70;
 
-	public float price;
+	private static int currentWeaponAdd, currentSkillAdd, currentWeaponIncrease = WeaponIncrease, currentSkillIncrease = SkillIncrease, currentCombatAdd;
 
-	void Update()
+	public static List<int[]> upgrades;
+
+	public static void Init()
 	{
-		price = (37.5f + Mathf.Pow(level, 3.537243574f) * 1f) / 100f;
+		upgrades = new List<int[]>();
+
+		for (int i = 0; i < 30; i++)
+		{
+			if (i == 0)
+			{
+				upgrades.Add(new int[3] { WeaponStarting, SkillStarting, CombatStarting } );
+				continue;
+			}
+
+			currentWeaponAdd += currentWeaponIncrease * i;
+			currentSkillAdd += currentSkillIncrease * i;
+			currentCombatAdd += CombatIncrease * i;
+
+			currentWeaponIncrease += WeaponIncreaseIncrease;
+			currentSkillIncrease += SkillIncrease;
+
+			upgrades.Add(new int[3] { WeaponStarting + currentWeaponAdd, SkillStarting + currentSkillAdd, CombatStarting + currentCombatAdd } );
+		}
 	}
 }

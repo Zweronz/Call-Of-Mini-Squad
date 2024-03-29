@@ -16,7 +16,8 @@ public static class LevelRewardController
 		DataCenter.Save().selectLevelDropData = new LevelDropData
 		{
 			money = rewards[0],
-			exp = rewards[1]
+			exp = rewards[1],
+			recommendCombat = rewards[2]
 		};
 	}
 }

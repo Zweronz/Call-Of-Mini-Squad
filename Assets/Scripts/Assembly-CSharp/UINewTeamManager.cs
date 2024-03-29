@@ -547,7 +547,8 @@ public class UINewTeamManager : MonoBehaviour
 		DataCenter.State().protocoUseCrystal = useCrystal;
 		UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 2);
 		UIDialogManager.Instance.ShowBlock(2);
-		HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_BuyTeamSite, OnTeamBuyTeamSiteFinished);
+		//HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_BuyTeamSite, OnTeamBuyTeamSiteFinished);
+		OnTeamBuyTeamSiteFinished(HeroListController.BuySite());
 	}
 
 	private List<int> GetCanEnqueueList(int siteNum, bool includeFreeSeat)
@@ -841,7 +842,8 @@ public class UINewTeamManager : MonoBehaviour
 	{
 		UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 3);
 		UIDialogManager.Instance.ShowBlock(3);
-		HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_BuyHero, OnTeamBuyHeroFinished);
+		//HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_BuyHero, OnTeamBuyHeroFinished);
+		OnTeamBuyHeroFinished(HeroListController.BuyHero());
 	}
 
 	public void InitTeamPlayerDetailInfo()

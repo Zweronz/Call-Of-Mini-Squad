@@ -65,9 +65,8 @@ namespace Zweronz.SavingSystem
 				teamExp = 0,
 				teamLevel = 1,
 
-				//placeholder
-				teamMaxLevel = 100,
-				teamMaxExp = 10000,
+				teamMaxLevel = 50,
+				teamMaxExp = ExperienceCalcTest.XPStarting,
 
 				talents = new Dictionary<CoMDS2.TeamSpecialAttribute.TeamAttributeType, int>
 				{
@@ -119,14 +118,6 @@ namespace Zweronz.SavingSystem
 						heroIndex = 1,
 						siteNum = 1,
 						state = Defined.ItemState.Available,
-					},
-					new PlayerData
-					{
-						heroIndex = 9,
-						state = Defined.ItemState.Locked,
-						unlockNeedTeamLevel = 10,
-						costType = Defined.COST_TYPE.Money,
-						unlockCost = 10000
 					},
 					new PlayerData
 					{
@@ -264,9 +255,14 @@ namespace Zweronz.SavingSystem
 				hero.weaponLevel = 2;
 				hero.skillLevel = 2;
 
+				hero.weaponStar = 1;
+				hero.skillStar = 1;
+
 				//placeholder
 				hero.weaponMaxLevel = 5;
 				hero.skillMaxLevel = 5;
+
+				hero.combat = 400;
 
                 for (int i = 0; i < 32; i++)
 				{
@@ -283,6 +279,14 @@ namespace Zweronz.SavingSystem
 						hero.upgradeData.ornamentsUpgrade[i - 22] = new EquipUpgradeData() { index = i - 21, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
 					}
 				}
+
+				hero.upgradeData.weaponCombat = UpgradeCalcTest.CombatStarting;
+				hero.upgradeData.weaponCanUpgrade = true;
+
+				hero.upgradeData.weaponUpgradeCost = UpgradeCalcTest.WeaponStarting + UpgradeCalcTest.WeaponIncrease;
+
+				hero.upgradeData.skillCanUpgrade = true;
+				hero.upgradeData.skillUpgradeCost = UpgradeCalcTest.SkillStarting + UpgradeCalcTest.SkillIncrease;
 			}
 
 			return creator;

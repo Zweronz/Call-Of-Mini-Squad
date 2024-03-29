@@ -292,9 +292,28 @@ public class HttpRequestHandle : MonoBehaviour
 		HttpClient.Instance().HandleResponse();
 	}
 
+	private static List<RequestType> finishedRequestTypes = new List<RequestType>
+	{
+		RequestType.Get_WorldNodeList,
+		RequestType.Get_PlayerData,
+		RequestType.Get_LevelReward,
+		RequestType.Team_GetListGeniusInfos,
+		RequestType.HeartBeat,
+		RequestType.Chat_GetMsgList,
+		RequestType.Chat_SendMsg,
+		RequestType.Team_BuyTeamSite
+	};
+
 	public void SendRequest(RequestType requestType, OnRequestFinish callBack)
 	{
-		Debug.Log(requestType);
+		if (finishedRequestTypes.Contains(requestType))
+		{
+			Debug.Log("tried requesting " + requestType.ToString());
+		}
+		else
+		{
+			Debug.LogError("UNCHECKED REQUEST!! " + requestType.ToString());
+		}
 		//m_requestMap[requestType].GetResponse("");
 		if (callBack != null)
 		{
