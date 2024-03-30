@@ -240,16 +240,16 @@ namespace Zweronz.SavingSystem
 			{
 				hero.equips = new System.Collections.Generic.Dictionary<Defined.EQUIP_TYPE, UserEquipData>
 				{
-					{Defined.EQUIP_TYPE.Acc, new UserEquipData { currEquipIndex = 22, currEquipLevel = -1 } },
-					{Defined.EQUIP_TYPE.Body, new UserEquipData { currEquipIndex = 11, currEquipLevel = -1 } },
-					{Defined.EQUIP_TYPE.Head, new UserEquipData { currEquipIndex = 0, currEquipLevel = -1 } }
+					{Defined.EQUIP_TYPE.Acc, new UserEquipData { currEquipIndex = 22, currEquipLevel = 1 } },
+					{Defined.EQUIP_TYPE.Body, new UserEquipData { currEquipIndex = 11, currEquipLevel = 1 } },
+					{Defined.EQUIP_TYPE.Head, new UserEquipData { currEquipIndex = 0, currEquipLevel = 1 } }
 				};
 
                 hero.upgradeData = new UpgradeData
                 {
                     helmsUpgrade = new EquipUpgradeData[11],
 					ArmorsUpgrade = new EquipUpgradeData[11],
-                    ornamentsUpgrade = new EquipUpgradeData[10]
+                    ornamentsUpgrade = new EquipUpgradeData[11]
                 };
 
 				hero.weaponLevel = 2;
@@ -262,22 +262,52 @@ namespace Zweronz.SavingSystem
 				hero.weaponMaxLevel = 5;
 				hero.skillMaxLevel = 5;
 
-				hero.combat = 400;
-
-                for (int i = 0; i < 32; i++)
+                for (int i = 0; i < 33; i++)
 				{
 					if (i < 11)
 					{
-						hero.upgradeData.helmsUpgrade[i] = new EquipUpgradeData() { index = i + 1, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
+						hero.upgradeData.helmsUpgrade[i] = new EquipUpgradeData() { index = i + 1, equipIndex = i, level = 0, state = Defined.ItemState.Locked, costType = Defined.COST_TYPE.Money, maxLevel = 5, unlockNeedTeamLevel = i > 0 ? i > 2 ? i > 6 ? 24 : 16 : 8 : 0 };
 					}
 					else if (i < 22)
 					{
-						hero.upgradeData.ArmorsUpgrade[i - 11] = new EquipUpgradeData() { index = i - 10, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
+						hero.upgradeData.ArmorsUpgrade[i - 11] = new EquipUpgradeData() { index = i - 10, equipIndex = i, level = 0, state = Defined.ItemState.Locked, costType = Defined.COST_TYPE.Money, maxLevel = 5, unlockNeedTeamLevel = i - 11 > 0 ? i - 11 > 2 ? i - 11 > 6 ? 24 : 16 : 8 : 0  };
 					}
 					else
 					{
-						hero.upgradeData.ornamentsUpgrade[i - 22] = new EquipUpgradeData() { index = i - 21, equipIndex = i, level = 0, state = Defined.ItemState.Locked, unlockNeedTeamLevel = 30 };
+						hero.upgradeData.ornamentsUpgrade[i - 22] = new EquipUpgradeData() { index = i - 21, equipIndex = i, level = 0, state = Defined.ItemState.Locked, costType = Defined.COST_TYPE.Money, maxLevel = 5, unlockNeedTeamLevel = i - 22 > 0 ? i - 22 > 2 ? i - 22 > 6 ? 24 : 16 : 8 : 0 };
 					}
+				}
+
+				hero.upgradeData.helmsUpgrade[0].state = Defined.ItemState.Available;
+				hero.upgradeData.ArmorsUpgrade[0].state = Defined.ItemState.Available;
+				hero.upgradeData.ornamentsUpgrade[0].state = Defined.ItemState.Available;
+
+				hero.upgradeData.helmsUpgrade[0].canUpgrade = true;
+				hero.upgradeData.ArmorsUpgrade[0].canUpgrade = true;
+				hero.upgradeData.ornamentsUpgrade[0].canUpgrade = true;
+
+				if (EquipUpgradeCalcTest.helmets == null || EquipUpgradeCalcTest.armors == null || EquipUpgradeCalcTest.ornaments == null)
+				{
+					EquipUpgradeCalcTest.Init();
+				}
+
+				for (int i = 0; i < 11; i++)
+				{
+					hero.upgradeData.helmsUpgrade[i].cost = EquipUpgradeCalcTest.helmets[i][i == 0 ? 1 : 0];
+					hero.upgradeData.ArmorsUpgrade[i].cost = EquipUpgradeCalcTest.armors[i][i == 0 ? 1 : 0];
+					hero.upgradeData.ornamentsUpgrade[i].cost = EquipUpgradeCalcTest.ornaments[i][i == 0 ? 1 : 0];
+
+					hero.upgradeData.helmsUpgrade[i].unlockMoney = EquipUpgradeCalcTest.helmets[i][i == 0 ? 1 : 0];
+					hero.upgradeData.ArmorsUpgrade[i].unlockMoney = EquipUpgradeCalcTest.armors[i][i == 0 ? 1 : 0];
+					hero.upgradeData.ornamentsUpgrade[i].unlockMoney = EquipUpgradeCalcTest.ornaments[i][i == 0 ? 1 : 0];
+
+					hero.upgradeData.helmsUpgrade[i].unlockCrystal = i > 2 ? i > 6 ? 20 : 10 : 0;
+					hero.upgradeData.ArmorsUpgrade[i].unlockCrystal = i > 2 ? i > 6 ? 20 : 10 : 0;
+					hero.upgradeData.ornamentsUpgrade[i].unlockCrystal = i > 2 ? i > 6 ? 20 : 10 : 0;
+
+					hero.upgradeData.helmsUpgrade[i].combat = EquipUpgradeCalcTest.helmets[i][6];
+					hero.upgradeData.ArmorsUpgrade[i].combat = EquipUpgradeCalcTest.armors[i][6];
+					hero.upgradeData.ornamentsUpgrade[i].combat = EquipUpgradeCalcTest.ornaments[i][6];
 				}
 
 				hero.upgradeData.weaponCombat = UpgradeCalcTest.CombatStarting;

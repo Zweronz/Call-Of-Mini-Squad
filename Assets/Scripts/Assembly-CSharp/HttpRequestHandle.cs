@@ -301,7 +301,10 @@ public class HttpRequestHandle : MonoBehaviour
 		RequestType.HeartBeat,
 		RequestType.Chat_GetMsgList,
 		RequestType.Chat_SendMsg,
-		RequestType.Team_BuyTeamSite
+		RequestType.Team_BuyTeamSite,
+		RequestType.Team_LevelUpEquipment,
+		RequestType.Team_UnlockEquipment,
+		RequestType.Team_UseEquipment
 	};
 
 	public void SendRequest(RequestType requestType, OnRequestFinish callBack)

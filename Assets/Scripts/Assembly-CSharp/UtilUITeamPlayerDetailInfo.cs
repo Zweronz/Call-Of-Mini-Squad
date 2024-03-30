@@ -621,7 +621,8 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 		DataCenter.State().protocoUseCrystal = useCystal;
 		UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 20);
 		UIDialogManager.Instance.ShowBlock(20);
-		HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_LevelUpEquipment, OnEquipmentLevelupFinished);
+		//HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_LevelUpEquipment, OnEquipmentLevelupFinished);
+		OnEquipmentLevelupFinished(UpgradeController.UpgradeEquipment());
 	}
 
 	protected void RequestBreakEquipmentWeaponUseCrystal()
@@ -678,7 +679,8 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 		DataCenter.State().protocoUseCrystal = useCystal;
 		UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 21);
 		UIDialogManager.Instance.ShowBlock(21);
-		HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_UnlockEquipment, OnEquipmentUnlockedFinished);
+		//HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_UnlockEquipment, OnEquipmentUnlockedFinished);
+		OnEquipmentUnlockedFinished(UpgradeController.UnlockEquipment());
 	}
 
 	protected void HandleWSWeaponUpgradeBtnClickEvent()
@@ -762,6 +764,7 @@ public class UtilUITeamPlayerDetailInfo : MonoBehaviour
 			}
 			UIEffectManager.Instance.ShowEffect(UIEffectManager.EffectType.E_Loading, 22);
 			UIDialogManager.Instance.ShowBlock(22);
+			HeroListController.Equip();
 			HttpRequestHandle.instance.SendRequest(HttpRequestHandle.RequestType.Team_UseEquipment, OnEquipmentUsedFinished);
 		}
 	}

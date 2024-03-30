@@ -101,6 +101,82 @@ public static class UpgradeController
 		}
 	}
 
+	public static void RefreshEquipment()
+	{
+		foreach (PlayerData hero in DataCenter.Save().GetHeroList())
+		{
+			foreach (EquipUpgradeData equip in hero.upgradeData.helmsUpgrade)
+			{
+				if (DataCenter.Save().GetTeamData().teamLevel >= equip.unlockNeedTeamLevel && equip.state == Defined.ItemState.Locked)
+				{
+					equip.state = Defined.ItemState.Purchase;
+				}
+			}
+
+			foreach (EquipUpgradeData equip in hero.upgradeData.ArmorsUpgrade)
+			{
+				if (DataCenter.Save().GetTeamData().teamLevel >= equip.unlockNeedTeamLevel && equip.state == Defined.ItemState.Locked)
+				{
+					equip.state = Defined.ItemState.Purchase;
+				}
+			}
+
+			foreach (EquipUpgradeData equip in hero.upgradeData.ornamentsUpgrade)
+			{
+				if (DataCenter.Save().GetTeamData().teamLevel >= equip.unlockNeedTeamLevel && equip.state == Defined.ItemState.Locked)
+				{
+					equip.state = Defined.ItemState.Purchase;
+				}
+			}
+		}
+	}
+
+	public static int UnlockEquipment()
+	{
+		if (EquipUpgradeCalcTest.helmets == null || EquipUpgradeCalcTest.armors == null || EquipUpgradeCalcTest.ornaments == null)
+		{
+			EquipUpgradeCalcTest.Init();
+		}
+
+        UpgradeData upgradeData = DataCenter.Save().GetPlayerData(DataCenter.State().selectHeroIndex).upgradeData;
+
+        int[] prices;
+        EquipUpgradeData equip;
+
+        if (DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Head)
+        {
+            equip = upgradeData.helmsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.helmets[DataCenter.State().selectEquipIndex - 1];
+        }
+        else if (DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Body)
+        {
+            equip = upgradeData.ArmorsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.armors[DataCenter.State().selectEquipIndex - 1];
+        }
+        else
+        {
+            equip = upgradeData.ornamentsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.ornaments[DataCenter.State().selectEquipIndex - 1];
+        }
+
+        if (DataCenter.Save().Money >= equip.unlockMoney && DataCenter.Save().Crystal >= equip.unlockCrystal)
+		{
+			DataCenter.Save().Money -= equip.unlockMoney;
+			DataCenter.Save().Crystal -= equip.unlockCrystal;
+
+			equip.state = Defined.ItemState.Available;
+			equip.cost = prices[1];
+
+			equip.canUpgrade = true;
+
+			HeroListController.Refresh();
+
+			return 0;
+		}
+
+		return -1;
+	}
+
 	public static int UpgradeWeapon()
 	{
 		if (UpgradeCalcTest.upgrades == null)
@@ -130,11 +206,65 @@ public static class UpgradeController
 				
 			return 0;
 		}
+
 		if (hero.weaponLevel >= 21)
 		{
 			hero.upgradeData.weaponCanUpgrade = false;
-
 			hero.upgradeData.weaponUpgradeCost = 0;
+		}
+
+		return -1;
+	}
+
+	public static int UpgradeEquipment()
+	{
+		if (EquipUpgradeCalcTest.helmets == null || EquipUpgradeCalcTest.armors == null || EquipUpgradeCalcTest.ornaments == null)
+		{
+			EquipUpgradeCalcTest.Init();
+		}
+
+        UpgradeData upgradeData = DataCenter.Save().GetPlayerData(DataCenter.State().selectHeroIndex).upgradeData;
+
+        int[] prices;
+        EquipUpgradeData equip;
+
+        if (DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Head)
+        {
+            equip = upgradeData.helmsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.helmets[DataCenter.State().selectEquipIndex - 1];
+        }
+        else if (DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Body)
+        {
+            equip = upgradeData.ArmorsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.armors[DataCenter.State().selectEquipIndex - 1];
+        }
+        else
+        {
+            equip = upgradeData.ornamentsUpgrade[DataCenter.State().selectEquipIndex - 1];
+            prices = EquipUpgradeCalcTest.ornaments[DataCenter.State().selectEquipIndex - 1];
+        }
+
+        if (DataCenter.Save().Money >= equip.cost)
+		{
+			DataCenter.Save().Money -= equip.cost;
+
+			equip.level++;
+			equip.combat = prices[equip.level + 6];
+
+			DataCenter.Save().GetPlayerData(DataCenter.State().selectHeroIndex).equips[DataCenter.State().selectEquipType].currEquipLevel = equip.level;
+
+			if (equip.level != equip.maxLevel)
+			{
+				equip.cost = prices[equip.level + 1];
+			}
+			else
+			{
+				equip.canUpgrade = false;
+			}
+
+			HeroListController.Refresh();
+
+			return 0;
 		}
 
 		return -1;
@@ -206,7 +336,6 @@ public static class UpgradeController
 		if (hero.skillLevel >= 21)
 		{
 			hero.upgradeData.skillCanUpgrade = false;
-
 			hero.upgradeData.skillUpgradeCost = 0;
 		}
 

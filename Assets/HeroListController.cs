@@ -9,6 +9,7 @@ public static class HeroListController
 	{
 		UpgradeController.RefreshWeapons();
 		UpgradeController.RefreshSkills();
+		UpgradeController.RefreshEquipment();
 
 		foreach (PlayerData hero in DataCenter.Save().GetHeroList())
 		{
@@ -17,13 +18,13 @@ public static class HeroListController
 				hero.state = Defined.ItemState.Purchase; 
 			}
 
-			hero.combat = hero.upgradeData.weaponCombat;
+			hero.combat = hero.upgradeData.weaponCombat + hero.upgradeData.helmsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Head].currEquipIndex).combat + hero.upgradeData.ArmorsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Body].currEquipIndex).combat + hero.upgradeData.ornamentsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Acc].currEquipIndex).combat;
 		}
 	}
 
 	public static int BuyHero()
 	{
-		PlayerData hero = DataCenter.Save().GetHeroList().ToList().Find(x => x.heroIndex == DataCenter.State().selectHeroIndex);
+		PlayerData hero = DataCenter.Save().GetPlayerData(DataCenter.State().selectHeroIndex);
 
 		if (hero.costType == Defined.COST_TYPE.Money && DataCenter.Save().Money >= hero.unlockCost)
 		{
@@ -54,5 +55,16 @@ public static class HeroListController
 		}
 
 		return -1;
+	}
+
+	public static void Equip()
+	{
+		PlayerData hero = DataCenter.Save().GetPlayerData(DataCenter.State().selectHeroIndex);
+		EquipUpgradeData[] upgradeData = DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Head ? hero.upgradeData.helmsUpgrade : DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Body ? hero.upgradeData.ArmorsUpgrade : hero.upgradeData.ornamentsUpgrade;
+
+		hero.equips[DataCenter.State().selectEquipType].currEquipIndex = DataCenter.State().selectEquipIndex - 1 + (DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Body ? 11 : DataCenter.State().selectEquipType == Defined.EQUIP_TYPE.Acc ? 22 : 0);
+		hero.equips[DataCenter.State().selectEquipType].currEquipLevel = upgradeData[DataCenter.State().selectEquipIndex - 1].level;
+
+		Refresh();
 	}
 }
