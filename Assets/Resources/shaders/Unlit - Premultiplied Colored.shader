@@ -1,8 +1,10 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Unlit/Premultiplied Colored"
 {
 	Properties
 	{
-		_MainTex ("Base (RGB), Alpha (A)", 2D) = "black" {}
+		_MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
 	}
 
 	SubShader
@@ -14,7 +16,6 @@ Shader "Unlit/Premultiplied Colored"
 			"Queue" = "Transparent"
 			"IgnoreProjector" = "True"
 			"RenderType" = "Transparent"
-			"DisableBatching" = "True"
 		}
 
 		Pass
@@ -25,6 +26,7 @@ Shader "Unlit/Premultiplied Colored"
 			AlphaTest Off
 			Fog { Mode Off }
 			Offset -1, -1
+			ColorMask RGB
 			Blend One OneMinusSrcAlpha
 		
 			CGPROGRAM
@@ -38,33 +40,30 @@ Shader "Unlit/Premultiplied Colored"
 			struct appdata_t
 			{
 				float4 vertex : POSITION;
-				float2 texcoord : TEXCOORD0;
 				half4 color : COLOR;
-				UNITY_VERTEX_INPUT_INSTANCE_ID
+				float2 texcoord : TEXCOORD0;
 			};
 
 			struct v2f
 			{
-				float4 vertex : SV_POSITION;
-				float2 texcoord : TEXCOORD0;
+				float4 vertex : POSITION;
 				half4 color : COLOR;
-				UNITY_VERTEX_OUTPUT_STEREO
+				float2 texcoord : TEXCOORD0;
 			};
 
 			v2f vert (appdata_t v)
 			{
 				v2f o;
-				UNITY_SETUP_INSTANCE_ID(v);
-				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 				o.vertex = UnityObjectToClipPos(v.vertex);
-				o.texcoord = v.texcoord;
 				o.color = v.color;
+				o.texcoord = v.texcoord;
 				return o;
 			}
 
-			half4 frag (v2f IN) : SV_Target
+			half4 frag (v2f IN) : COLOR
 			{
 				half4 col = tex2D(_MainTex, IN.texcoord) * IN.color;
+				//col.rgb = lerp(half3(0.0, 0.0, 0.0), col.rgb, col.a);
 				return col;
 			}
 			ENDCG
@@ -80,7 +79,6 @@ Shader "Unlit/Premultiplied Colored"
 			"Queue" = "Transparent"
 			"IgnoreProjector" = "True"
 			"RenderType" = "Transparent"
-			"DisableBatching" = "True"
 		}
 		
 		Pass
@@ -91,7 +89,7 @@ Shader "Unlit/Premultiplied Colored"
 			AlphaTest Off
 			Fog { Mode Off }
 			Offset -1, -1
-			//ColorMask RGB
+			ColorMask RGB
 			Blend One OneMinusSrcAlpha 
 			ColorMaterial AmbientAndDiffuse
 			

@@ -1,10 +1,10 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
+Shader "GUI/Text Shader (SoftClip)" 
 {
 	Properties
 	{
-		_MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
+		_MainTex ("Alpha (A)", 2D) = "white" {}
 	}
 
 	SubShader
@@ -25,7 +25,8 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 			ZWrite Off
 			Offset -1, -1
 			Fog { Mode Off }
-			ColorMask RGB
+			//ColorMask RGB
+			AlphaTest Greater .01
 			Blend SrcAlpha OneMinusSrcAlpha
 
 			CGPROGRAM
@@ -35,7 +36,7 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 			#include "UnityCG.cginc"
 
 			sampler2D _MainTex;
-			half4 _MainTex_ST;
+			float4 _MainTex_ST;
 			float2 _ClipSharpness = float2(20.0, 20.0);
 
 			struct appdata_t
@@ -65,18 +66,46 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 
 			half4 frag (v2f IN) : COLOR
 			{
-				half4 mask = tex2D(_MainTex, IN.texcoord);
-				half4 mixed = saturate(ceil(IN.color - 0.5));
-				half4 col = saturate((mixed * 0.51 - IN.color) / -0.49);
+				// Softness factor
 				float2 factor = (float2(1.0, 1.0) - abs(IN.worldPos)) * _ClipSharpness;
-				
-				mask *= mixed;
+			
+				// Sample the texture
+				half4 col = IN.color;
+				col.a *= tex2D(_MainTex, IN.texcoord).a;
 				col.a *= clamp( min(factor.x, factor.y), 0.0, 1.0);
-				col.a *= mask.r + mask.g + mask.b + mask.a;
+
 				return col;
 			}
 			ENDCG
 		}
 	}
-	Fallback Off
+	
+	SubShader
+	{
+		LOD 100
+
+		Tags
+		{
+			"Queue" = "Transparent"
+			"IgnoreProjector" = "True"
+			"RenderType" = "Transparent"
+		}
+		
+		Pass
+		{
+			Cull Off
+			Lighting Off
+			ZWrite Off
+			Fog { Mode Off }
+			ColorMask RGB
+			AlphaTest Greater .01
+			Blend SrcAlpha OneMinusSrcAlpha
+			ColorMaterial AmbientAndDiffuse
+			
+			SetTexture [_MainTex]
+			{
+				Combine Texture * Primary
+			}
+		}
+	}
 }

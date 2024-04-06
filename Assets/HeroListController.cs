@@ -11,6 +11,8 @@ public static class HeroListController
 		UpgradeController.RefreshSkills();
 		UpgradeController.RefreshEquipment();
 
+		TeamBuffController.Refresh();
+
 		foreach (PlayerData hero in DataCenter.Save().GetHeroList())
 		{
 			if (hero.state == Defined.ItemState.Locked && hero.unlockNeedTeamLevel > 0 && DataCenter.Save().GetTeamData().teamLevel >= hero.unlockNeedTeamLevel)
@@ -20,6 +22,8 @@ public static class HeroListController
 
 			hero.combat = hero.upgradeData.weaponCombat + hero.upgradeData.helmsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Head].currEquipIndex).combat + hero.upgradeData.ArmorsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Body].currEquipIndex).combat + hero.upgradeData.ornamentsUpgrade.ToList().Find(x => x.equipIndex == hero.equips[Defined.EQUIP_TYPE.Acc].currEquipIndex).combat;
 		}
+
+		TeamLevelController.OnReceivedXP();
 	}
 
 	public static int BuyHero()

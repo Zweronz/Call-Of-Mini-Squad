@@ -1,20 +1,36 @@
-Shader "Unlit/Additive Colored" {
-Properties {
- _MainTex ("Base (RGB), Alpha (A)", 2D) = "black" {}
-}
-SubShader { 
- LOD 100
- Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="true" "RenderType"="Transparent" }
- Pass {
-  Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="true" "RenderType"="Transparent" }
-  ZWrite Off
-  Cull Off
-  Fog { Mode Off }
-  Blend One One
-  AlphaTest Greater 0.01
-  ColorMask RGB
-  ColorMaterial AmbientAndDiffuse
-  SetTexture [_MainTex] { combine texture * primary }
- }
-}
+Shader "Unlit/Additive Colored"
+{
+	Properties
+	{
+		_MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
+	}
+	
+	SubShader
+	{
+		Tags
+		{
+			"Queue" = "Transparent"
+			"IgnoreProjector" = "True"
+			"RenderType" = "Transparent"
+		}
+		
+		LOD 100
+		Cull Off
+		Lighting Off
+		ZWrite Off
+		Fog { Mode Off }
+		ColorMask RGB
+		AlphaTest Greater .01
+		Blend One One
+		
+		Pass
+		{
+			ColorMaterial AmbientAndDiffuse
+			
+			SetTexture [_MainTex]
+			{
+				Combine Texture * Primary
+			}
+		}
+	}
 }

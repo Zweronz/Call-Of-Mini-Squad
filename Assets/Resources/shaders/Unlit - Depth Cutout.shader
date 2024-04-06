@@ -1,18 +1,35 @@
-Shader "Unlit/Depth Cutout" {
-Properties {
- _MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
-}
-SubShader { 
- LOD 100
- Tags { "QUEUE"="Background" "IGNOREPROJECTOR"="true" }
- Pass {
-  Tags { "QUEUE"="Background" "IGNOREPROJECTOR"="true" }
-  ZTest Less
-  Cull Off
-  AlphaTest Greater 0.99
-  ColorMask 0
-  ColorMaterial AmbientAndDiffuse
-  SetTexture [_MainTex] { combine texture * primary }
- }
-}
+Shader "Unlit/Depth Cutout"
+{
+	Properties
+	{
+		_MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
+	}
+	
+	SubShader
+	{
+		LOD 100
+	
+		Tags
+		{
+			"Queue" = "Background"
+			"IgnoreProjector" = "True"
+		}
+		
+		Pass
+		{
+			Cull Off
+			Lighting Off
+			Blend Off
+			ColorMask 0
+			ZWrite On
+			ZTest Less
+			AlphaTest Greater .99
+			ColorMaterial AmbientAndDiffuse
+			
+			SetTexture [_MainTex]
+			{
+				Combine Texture * Primary
+			}
+		}
+	}
 }

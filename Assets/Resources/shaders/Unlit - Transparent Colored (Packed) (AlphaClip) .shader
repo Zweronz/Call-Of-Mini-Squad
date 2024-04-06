@@ -1,6 +1,6 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
+Shader "Unlit/Transparent Colored (Packed) (AlphaClip)"
 {
 	Properties
 	{
@@ -36,7 +36,6 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 
 			sampler2D _MainTex;
 			half4 _MainTex_ST;
-			float2 _ClipSharpness = float2(20.0, 20.0);
 
 			struct appdata_t
 			{
@@ -68,10 +67,11 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 				half4 mask = tex2D(_MainTex, IN.texcoord);
 				half4 mixed = saturate(ceil(IN.color - 0.5));
 				half4 col = saturate((mixed * 0.51 - IN.color) / -0.49);
-				float2 factor = (float2(1.0, 1.0) - abs(IN.worldPos)) * _ClipSharpness;
+				float2 factor = abs(IN.worldPos);
+				float val = 1.0 - max(factor.x, factor.y);
 				
+				if (val < 0.0) col.a = 0.0;
 				mask *= mixed;
-				col.a *= clamp( min(factor.x, factor.y), 0.0, 1.0);
 				col.a *= mask.r + mask.g + mask.b + mask.a;
 				return col;
 			}

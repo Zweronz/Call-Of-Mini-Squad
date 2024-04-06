@@ -77,12 +77,16 @@ namespace Zweronz.SavingSystem
 				}
 			};
 
-			TeamAttributeData[] geniusList = new TeamAttributeData[25], evolutionList = new TeamAttributeData[25];
+			TeamAttributeData[] geniusList = new TeamAttributeData[25], evolutionList = new TeamAttributeData[10];
 
 			for (int i = 0; i < 25; i++)
 			{
-				geniusList[i] = new TeamAttributeData();
-				evolutionList[i] = new TeamAttributeData();
+				geniusList[i] = new TeamAttributeData() { index = i, level = 0, maxLevel = 5, state = Defined.ItemState.Locked, unlockPoint = i >= 5 ? i >= 10 ? i >= 15 ? i >= 20 ? 30 : 25 : 20 : 15 : 10 };
+			}
+
+			for (int i = 0; i < 10; i++)
+			{
+				evolutionList[i] = new TeamAttributeData() { index = i, level = 0, maxLevel = 25, state = Defined.ItemState.Locked, unlockLevel = 15, costType = Defined.COST_TYPE.Money, cost = 30000 };
 			}
 
 			creator.teamSave.teamAttributeSaveData = new DataSave.TeamAttributeSaveData
@@ -90,7 +94,11 @@ namespace Zweronz.SavingSystem
 				teamAttributeTalent = geniusList,
 				teamAttributeEvolve = evolutionList,
 
-				teamGeniusResetCostCrystalPerTimes = 20
+				teamGeniusResetCostCrystalPerTimes = 20,
+				teamAttributeExtraPointCost = 10,
+
+				teamGeniusUnlockCondition = "Team Level 10 Required",
+				teamEvolutionUnlockCondition = "Team Level 15 Required"
 			};
 
 			return creator;

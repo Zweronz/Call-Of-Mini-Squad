@@ -1,10 +1,10 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
+Shader "GUI/Text Shader (AlphaClip)"
 {
 	Properties
 	{
-		_MainTex ("Base (RGB), Alpha (A)", 2D) = "white" {}
+		_MainTex ("Alpha (A)", 2D) = "white" {}
 	}
 
 	SubShader
@@ -17,7 +17,7 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 			"IgnoreProjector" = "True"
 			"RenderType" = "Transparent"
 		}
-		
+
 		Pass
 		{
 			Cull Off
@@ -25,18 +25,16 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 			ZWrite Off
 			Offset -1, -1
 			Fog { Mode Off }
-			ColorMask RGB
+			//ColorMask RGB
 			Blend SrcAlpha OneMinusSrcAlpha
-
+		
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
-
 			#include "UnityCG.cginc"
 
 			sampler2D _MainTex;
-			half4 _MainTex_ST;
-			float2 _ClipSharpness = float2(20.0, 20.0);
+			float4 _MainTex_ST;
 
 			struct appdata_t
 			{
@@ -65,18 +63,51 @@ Shader "Unlit/Transparent Colored (Packed) (SoftClip)"
 
 			half4 frag (v2f IN) : COLOR
 			{
-				half4 mask = tex2D(_MainTex, IN.texcoord);
-				half4 mixed = saturate(ceil(IN.color - 0.5));
-				half4 col = saturate((mixed * 0.51 - IN.color) / -0.49);
-				float2 factor = (float2(1.0, 1.0) - abs(IN.worldPos)) * _ClipSharpness;
-				
-				mask *= mixed;
-				col.a *= clamp( min(factor.x, factor.y), 0.0, 1.0);
-				col.a *= mask.r + mask.g + mask.b + mask.a;
+				// Sample the texture
+				half4 col = IN.color;
+				col.a *= tex2D(_MainTex, IN.texcoord).a;
+
+				float2 factor = abs(IN.worldPos);
+				float val = 1.0 - max(factor.x, factor.y);
+
+				// Option 1: 'if' statement
+				if (val < 0.0) col.a = 0.0;
+
+				// Option 2: no 'if' statement -- may be faster on some devices
+				//col.a *= ceil(clamp(val, 0.0, 1.0));
+
 				return col;
 			}
 			ENDCG
 		}
 	}
-	Fallback Off
+	
+	SubShader
+	{
+		LOD 100
+
+		Tags
+		{
+			"Queue" = "Transparent"
+			"IgnoreProjector" = "True"
+			"RenderType" = "Transparent"
+		}
+		
+		Pass
+		{
+			Cull Off
+			Lighting Off
+			ZWrite Off
+			Fog { Mode Off }
+			ColorMask RGB
+			AlphaTest Greater .01
+			Blend SrcAlpha OneMinusSrcAlpha
+			ColorMaterial AmbientAndDiffuse
+			
+			SetTexture [_MainTex]
+			{
+				Combine Texture * Primary
+			}
+		}
+	}
 }
