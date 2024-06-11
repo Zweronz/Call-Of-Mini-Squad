@@ -75,7 +75,7 @@ public class TriggerEvent : MonoBehaviour
 						UnityEngine.AI.NavMeshAgent component = @object.GetGameObject().GetComponent<UnityEngine.AI.NavMeshAgent>();
 						if (component != null)
 						{
-							component.walkableMask |= 8;
+							component.areaMask |= 8;
 						}
 					}
 				}
@@ -110,7 +110,7 @@ public class TriggerEvent : MonoBehaviour
 					UnityEngine.AI.NavMeshAgent component2 = object2.GetGameObject().GetComponent<UnityEngine.AI.NavMeshAgent>();
 					if (component2 != null)
 					{
-						component2.walkableMask |= 8;
+						component2.areaMask |= 8;
 					}
 				}
 			}
@@ -237,7 +237,7 @@ public class TriggerEvent : MonoBehaviour
 				UnityEngine.AI.NavMeshAgent component = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 				if (component != null)
 				{
-					component.walkableMask |= 8;
+					component.areaMask |= 8;
 				}
 			}
 			else
@@ -245,7 +245,7 @@ public class TriggerEvent : MonoBehaviour
 				UnityEngine.AI.NavMeshAgent component2 = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 				if (component2 != null)
 				{
-					component2.walkableMask = -9;
+					component2.areaMask = -9;
 				}
 			}
 		}
@@ -334,7 +334,7 @@ public class TriggerEvent : MonoBehaviour
 			UnityEngine.AI.NavMeshAgent component = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 			if (component != null)
 			{
-				component.walkableMask |= 8;
+				component.areaMask |= 8;
 			}
 		}
 		if (triggerTarget != TriggerTarget.All && triggerTarget != (TriggerTarget)other.gameObject.layer)
