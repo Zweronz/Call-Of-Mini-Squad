@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1018492959001980}
+  m_RootGameObject: {fileID: 1206577537102352}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1018492959001980
+--- !u!1 &1206577537102352
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4245534693172070}
+  - 4: {fileID: 4929038467584277}
   m_Layer: 0
   m_Name: Ninjia_Ice_04
   m_TagString: Untagged
@@ -27,32 +27,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4245534693172070
+--- !u!4 &4929038467584277
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1018492959001980}
+  m_GameObject: {fileID: 1206577537102352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.935049, y: 0, z: 34.742977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4639375151050842}
-  - {fileID: 4102284676070815}
-  - {fileID: 4824548676933972}
+  - {fileID: 4519783800009123}
+  - {fileID: 4859567523043270}
+  - {fileID: 4658560738408494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &1757711981021886
+--- !u!1 &1444519692155959
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4639375151050842}
-  - 114: {fileID: 114837043916596838}
-  - 65: {fileID: 65071797884356406}
-  - 54: {fileID: 54067754150257867}
+  - 4: {fileID: 4519783800009123}
+  - 114: {fileID: 114649514499235549}
+  - 65: {fileID: 65049711885956944}
+  - 54: {fileID: 54424508297742230}
   m_Layer: 14
   m_Name: AttackCollider
   m_TagString: Untagged
@@ -60,24 +60,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4639375151050842
+--- !u!4 &4519783800009123
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1757711981021886}
+  m_GameObject: {fileID: 1444519692155959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.2355309, z: -0.2355309}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4245534693172070}
+  m_Father: {fileID: 4929038467584277}
   m_RootOrder: 0
---- !u!114 &114837043916596838
+--- !u!114 &114649514499235549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1757711981021886}
+  m_GameObject: {fileID: 1444519692155959}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fad1cb4f28b669419110177ff22e62af, type: 3}
@@ -87,25 +87,25 @@ MonoBehaviour:
   belong: {fileID: 0}
   type: 0
   index: 0
---- !u!65 &65071797884356406
+--- !u!65 &65049711885956944
 BoxCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1757711981021886}
+  m_GameObject: {fileID: 1444519692155959}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Size: {x: 2, y: 1, z: 5}
   m_Center: {x: 0, y: 0.25, z: 2.13}
---- !u!54 &54067754150257867
+--- !u!54 &54424508297742230
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1757711981021886}
+  m_GameObject: {fileID: 1444519692155959}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -114,72 +114,75 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1510644778674657
+--- !u!1 &1629783808125903
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4102284676070815}
-  - 33: {fileID: 33465187111761101}
-  - 23: {fileID: 23170935274262977}
-  - 111: {fileID: 111710989624884446}
+  - 4: {fileID: 4859567523043270}
+  - 33: {fileID: 33029355494064652}
+  - 23: {fileID: 23887074333507646}
+  - 111: {fileID: 111821655513957600}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4102284676070815
+--- !u!4 &4859567523043270
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1510644778674657}
+  m_GameObject: {fileID: 1629783808125903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4395420326599356}
-  - {fileID: 4713819175080228}
-  m_Father: {fileID: 4245534693172070}
+  - {fileID: 4123245876106567}
+  - {fileID: 4482967390289967}
+  m_Father: {fileID: 4929038467584277}
   m_RootOrder: 1
---- !u!33 &33465187111761101
+--- !u!33 &33029355494064652
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1510644778674657}
-  m_Mesh: {fileID: 4300000, guid: 61635af7ae1dbd940a765c3807bcb4d8, type: 2}
---- !u!23 &23170935274262977
+  m_GameObject: {fileID: 1629783808125903}
+  m_Mesh: {fileID: 4300000, guid: b10a9f1a31486b545882b8ccd96baed8, type: 2}
+--- !u!23 &23887074333507646
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1510644778674657}
+  m_GameObject: {fileID: 1629783808125903}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cf34db9643535d24386f578e23495f8a, type: 2}
+  - {fileID: 2100000, guid: 07bcd80ea7e9f0d488df585d2a02ae61, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111710989624884446
+--- !u!111 &111821655513957600
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1510644778674657}
+  m_GameObject: {fileID: 1629783808125903}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -187,14 +190,14 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &1971465475126197
+--- !u!1 &1690272331239885
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4395420326599356}
+  - 4: {fileID: 4123245876106567}
   m_Layer: 0
   m_Name: Bone_Weapon
   m_TagString: Untagged
@@ -202,28 +205,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4395420326599356
+--- !u!4 &4123245876106567
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971465475126197}
+  m_GameObject: {fileID: 1690272331239885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4900776050756048}
-  - {fileID: 4553254477155060}
-  m_Father: {fileID: 4102284676070815}
+  - {fileID: 4047492970296620}
+  - {fileID: 4065129623890131}
+  m_Father: {fileID: 4859567523043270}
   m_RootOrder: 0
---- !u!1 &1110338476814235
+--- !u!1 &1696887548007223
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4900776050756048}
+  - 4: {fileID: 4047492970296620}
   m_Layer: 0
   m_Name: EjectionPortCover
   m_TagString: Untagged
@@ -231,26 +234,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4900776050756048
+--- !u!4 &4047492970296620
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1110338476814235}
+  m_GameObject: {fileID: 1696887548007223}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4395420326599356}
+  m_Father: {fileID: 4123245876106567}
   m_RootOrder: 0
---- !u!1 &1780308066286260
+--- !u!1 &1111018476606309
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4553254477155060}
+  - 4: {fileID: 4065129623890131}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -258,28 +261,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4553254477155060
+--- !u!4 &4065129623890131
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1780308066286260}
+  m_GameObject: {fileID: 1111018476606309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.1031547, z: 0.6364961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4129185748718015}
-  - {fileID: 4274844104765854}
-  m_Father: {fileID: 4395420326599356}
+  - {fileID: 4782872052767535}
+  - {fileID: 4243743391514109}
+  m_Father: {fileID: 4123245876106567}
   m_RootOrder: 1
---- !u!1 &1477769083080545
+--- !u!1 &1632227835326317
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4129185748718015}
+  - 4: {fileID: 4782872052767535}
   m_Layer: 0
   m_Name: Ninjia_04_Swing
   m_TagString: Untagged
@@ -287,100 +290,103 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4129185748718015
+--- !u!4 &4782872052767535
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1477769083080545}
+  m_GameObject: {fileID: 1632227835326317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4093670824407318}
-  m_Father: {fileID: 4553254477155060}
+  - {fileID: 4029607865738415}
+  m_Father: {fileID: 4065129623890131}
   m_RootOrder: 0
---- !u!1 &1997909460140767
+--- !u!1 &1392406955335901
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4093670824407318}
-  - 33: {fileID: 33131266679215399}
-  - 23: {fileID: 23754792766213755}
-  - 111: {fileID: 111593908017618261}
-  - 114: {fileID: 114274657687956539}
-  - 114: {fileID: 114661310465098191}
+  - 4: {fileID: 4029607865738415}
+  - 33: {fileID: 33323449870707705}
+  - 23: {fileID: 23565973340417268}
+  - 111: {fileID: 111602065769351337}
+  - 114: {fileID: 114976903760857284}
+  - 114: {fileID: 114807760908870858}
   m_Layer: 0
   m_Name: Ninjia_04_Swing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4093670824407318
+--- !u!4 &4029607865738415
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
+  m_GameObject: {fileID: 1392406955335901}
   m_LocalRotation: {x: 0.21261622, y: 0.654754, z: -0.7208466, w: -0.080447435}
   m_LocalPosition: {x: 0, y: 1.348345, z: 0.61032957}
   m_LocalScale: {x: 2.3672276, y: 2.3672276, z: 0.7964825}
   m_Children:
-  - {fileID: 4064385110536933}
-  m_Father: {fileID: 4129185748718015}
+  - {fileID: 4423152551303332}
+  m_Father: {fileID: 4782872052767535}
   m_RootOrder: 0
---- !u!33 &33131266679215399
+--- !u!33 &33323449870707705
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
-  m_Mesh: {fileID: 4300000, guid: a8d1277aae072cf49952075c101fdb26, type: 2}
---- !u!23 &23754792766213755
+  m_GameObject: {fileID: 1392406955335901}
+  m_Mesh: {fileID: 4300000, guid: aeb2017a921f7784bbb6463c372b163c, type: 2}
+--- !u!23 &23565973340417268
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
+  m_GameObject: {fileID: 1392406955335901}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: e11e22810b85b744d831691b7f75f3d3, type: 2}
+  - {fileID: 2100000, guid: 5edbcf42964ff9f489e4ca9b7096f7f2, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111593908017618261
+--- !u!111 &111602065769351337
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
+  m_GameObject: {fileID: 1392406955335901}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 4a10810c9d3e72142a6a4d5801e8c7fc, type: 2}
+  m_Animation: {fileID: 7400000, guid: e61b8eaeebce60b4a8ed628b89703ca1, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 4a10810c9d3e72142a6a4d5801e8c7fc, type: 2}
+  - {fileID: 7400000, guid: e61b8eaeebce60b4a8ed628b89703ca1, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114274657687956539
+--- !u!114 &114976903760857284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
+  m_GameObject: {fileID: 1392406955335901}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
@@ -393,60 +399,60 @@ MonoBehaviour:
   m_DelayTime: []
   m_playOnEnable: 0
   m_DeleteWhenEnd: 0
---- !u!114 &114661310465098191
+--- !u!114 &114807760908870858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1997909460140767}
+  m_GameObject: {fileID: 1392406955335901}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  m_root: {fileID: 1477769083080545}
+  m_root: {fileID: 1632227835326317}
   isBegin: 0
   isFinish: 0
   loop: 0
   enableEmission: 0
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1671675215378917
+--- !u!1 &1389043069805251
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4064385110536933}
-  - 198: {fileID: 198742154988054327}
-  - 199: {fileID: 199683161486650126}
-  - 114: {fileID: 114924040273044082}
+  - 4: {fileID: 4423152551303332}
+  - 198: {fileID: 198122173342989774}
+  - 199: {fileID: 199561599074401308}
+  - 114: {fileID: 114352228292559801}
   m_Layer: 0
   m_Name: Ninjia_04_Swing_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4064385110536933
+--- !u!4 &4423152551303332
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671675215378917}
+  m_GameObject: {fileID: 1389043069805251}
   m_LocalRotation: {x: 0.5200557, y: -0.4730338, z: -0.4950878, w: 0.5105578}
   m_LocalPosition: {x: 0.34107646, y: -0.15386043, z: -0.12387004}
   m_LocalScale: {x: 0.65009534, y: 1.9256561, z: 0.6491164}
   m_Children: []
-  m_Father: {fileID: 4093670824407318}
+  m_Father: {fileID: 4029607865738415}
   m_RootOrder: 0
---- !u!198 &198742154988054327
+--- !u!198 &198122173342989774
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671675215378917}
+  m_GameObject: {fileID: 1389043069805251}
   lengthInSec: 5
   startDelay: 0.33
   speed: 1
@@ -1423,19 +1429,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199683161486650126
+--- !u!199 &199561599074401308
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671675215378917}
+  m_GameObject: {fileID: 1389043069805251}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: f3f0ef9592e497b40911431c752a4dd2, type: 2}
+  - {fileID: 2100000, guid: 335a857d402986743916d49e823e4b51, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1451,16 +1457,16 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
-  m_Mesh: {fileID: 4300000, guid: c041c5077413af54e82602355b627d3e, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 5407c79b5fa81204eb8ed2f0c94a6daa, type: 2}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!114 &114924040273044082
+--- !u!114 &114352228292559801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671675215378917}
+  m_GameObject: {fileID: 1389043069805251}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -1473,14 +1479,14 @@ MonoBehaviour:
   enableEmission: 1
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1680632703780993
+--- !u!1 &1048982181993129
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4274844104765854}
+  - 4: {fileID: 4243743391514109}
   m_Layer: 0
   m_Name: Ninjia_04_Swing_B
   m_TagString: Untagged
@@ -1488,100 +1494,103 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4274844104765854
+--- !u!4 &4243743391514109
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1680632703780993}
+  m_GameObject: {fileID: 1048982181993129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4396238135210913}
-  m_Father: {fileID: 4553254477155060}
+  - {fileID: 4290525389606447}
+  m_Father: {fileID: 4065129623890131}
   m_RootOrder: 1
---- !u!1 &1513683952302216
+--- !u!1 &1728825987690530
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4396238135210913}
-  - 33: {fileID: 33644507820784528}
-  - 23: {fileID: 23403070334028553}
-  - 111: {fileID: 111801100565577373}
-  - 114: {fileID: 114201790872695852}
-  - 114: {fileID: 114677321221431919}
+  - 4: {fileID: 4290525389606447}
+  - 33: {fileID: 33213529171072325}
+  - 23: {fileID: 23162574890750778}
+  - 111: {fileID: 111904786843485738}
+  - 114: {fileID: 114788772093070376}
+  - 114: {fileID: 114558902917724286}
   m_Layer: 0
   m_Name: Ninjia_04_Swing_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4396238135210913
+--- !u!4 &4290525389606447
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
+  m_GameObject: {fileID: 1728825987690530}
   m_LocalRotation: {x: -0.71819496, y: 0.04548685, z: -0.18492733, w: 0.66927487}
   m_LocalPosition: {x: -0.022691973, y: 1.0520798, z: 0.5939506}
   m_LocalScale: {x: 2.4714718, y: 2.4714718, z: 0.831557}
   m_Children:
-  - {fileID: 4357323726464376}
-  m_Father: {fileID: 4274844104765854}
+  - {fileID: 4731854064331190}
+  m_Father: {fileID: 4243743391514109}
   m_RootOrder: 0
---- !u!33 &33644507820784528
+--- !u!33 &33213529171072325
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
-  m_Mesh: {fileID: 4300000, guid: a8d1277aae072cf49952075c101fdb26, type: 2}
---- !u!23 &23403070334028553
+  m_GameObject: {fileID: 1728825987690530}
+  m_Mesh: {fileID: 4300000, guid: aeb2017a921f7784bbb6463c372b163c, type: 2}
+--- !u!23 &23162574890750778
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
+  m_GameObject: {fileID: 1728825987690530}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a3a170d748e37b34da5004cad465fafa, type: 2}
+  - {fileID: 2100000, guid: 492f8bc720de42840818bafbdeb652e6, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111801100565577373
+--- !u!111 &111904786843485738
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
+  m_GameObject: {fileID: 1728825987690530}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: e1e25b300a357024f98ecc0a0c204dfc, type: 2}
+  m_Animation: {fileID: 7400000, guid: 690f71c62c3243b4484fe9bab2272761, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: e1e25b300a357024f98ecc0a0c204dfc, type: 2}
+  - {fileID: 7400000, guid: 690f71c62c3243b4484fe9bab2272761, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114201790872695852
+--- !u!114 &114788772093070376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
+  m_GameObject: {fileID: 1728825987690530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
@@ -1594,60 +1603,60 @@ MonoBehaviour:
   m_DelayTime: []
   m_playOnEnable: 0
   m_DeleteWhenEnd: 0
---- !u!114 &114677321221431919
+--- !u!114 &114558902917724286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513683952302216}
+  m_GameObject: {fileID: 1728825987690530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  m_root: {fileID: 1680632703780993}
+  m_root: {fileID: 1048982181993129}
   isBegin: 0
   isFinish: 0
   loop: 0
   enableEmission: 0
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1950510301907150
+--- !u!1 &1975796047750716
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4357323726464376}
-  - 198: {fileID: 198739241580235990}
-  - 199: {fileID: 199938089814914529}
-  - 114: {fileID: 114064734768330671}
+  - 4: {fileID: 4731854064331190}
+  - 198: {fileID: 198447712588475339}
+  - 199: {fileID: 199755699348728739}
+  - 114: {fileID: 114540735286851674}
   m_Layer: 0
   m_Name: Ninjia_04_Swing_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4357323726464376
+--- !u!4 &4731854064331190
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1950510301907150}
+  m_GameObject: {fileID: 1975796047750716}
   m_LocalRotation: {x: 0.4809082, y: -0.52680194, z: -0.50477284, w: 0.4862216}
   m_LocalPosition: {x: 0.27873516, y: -0.0786469, z: -0.14895226}
   m_LocalScale: {x: 0.6505749, y: 1.928719, z: 0.6494546}
   m_Children: []
-  m_Father: {fileID: 4396238135210913}
+  m_Father: {fileID: 4290525389606447}
   m_RootOrder: 0
---- !u!198 &198739241580235990
+--- !u!198 &198447712588475339
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1950510301907150}
+  m_GameObject: {fileID: 1975796047750716}
   lengthInSec: 5
   startDelay: 0.33
   speed: 1
@@ -2624,19 +2633,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199938089814914529
+--- !u!199 &199755699348728739
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1950510301907150}
+  m_GameObject: {fileID: 1975796047750716}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: f3f0ef9592e497b40911431c752a4dd2, type: 2}
+  - {fileID: 2100000, guid: 335a857d402986743916d49e823e4b51, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2652,16 +2661,16 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
-  m_Mesh: {fileID: 4300000, guid: c041c5077413af54e82602355b627d3e, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 5407c79b5fa81204eb8ed2f0c94a6daa, type: 2}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!114 &114064734768330671
+--- !u!114 &114540735286851674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1950510301907150}
+  m_GameObject: {fileID: 1975796047750716}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -2674,42 +2683,42 @@ MonoBehaviour:
   enableEmission: 1
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1399515384507911
+--- !u!1 &1263311764340996
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4713819175080228}
-  - 198: {fileID: 198148358657628897}
-  - 199: {fileID: 199047194752376215}
+  - 4: {fileID: 4482967390289967}
+  - 198: {fileID: 198353792212434707}
+  - 199: {fileID: 199789993350074454}
   m_Layer: 0
   m_Name: Ninjia_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4713819175080228
+--- !u!4 &4482967390289967
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399515384507911}
+  m_GameObject: {fileID: 1263311764340996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4668244325913841}
-  m_Father: {fileID: 4102284676070815}
+  - {fileID: 4867121664969191}
+  m_Father: {fileID: 4859567523043270}
   m_RootOrder: 1
---- !u!198 &198148358657628897
+--- !u!198 &198353792212434707
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399515384507911}
+  m_GameObject: {fileID: 1263311764340996}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -3761,19 +3770,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199047194752376215
+--- !u!199 &199789993350074454
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399515384507911}
+  m_GameObject: {fileID: 1263311764340996}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a387f83f6b59c89469d18e6adb3cdfb2, type: 2}
+  - {fileID: 2100000, guid: 8a0eda9431c1c5b498952539877c03bf, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3793,41 +3802,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1579022121654865
+--- !u!1 &1070165339555997
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4668244325913841}
-  - 198: {fileID: 198817727309179242}
-  - 199: {fileID: 199783605238232989}
+  - 4: {fileID: 4867121664969191}
+  - 198: {fileID: 198920200263197258}
+  - 199: {fileID: 199941338683957437}
   m_Layer: 0
   m_Name: Ninjia_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4668244325913841
+--- !u!4 &4867121664969191
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579022121654865}
+  m_GameObject: {fileID: 1070165339555997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4713819175080228}
+  m_Father: {fileID: 4482967390289967}
   m_RootOrder: 0
---- !u!198 &198817727309179242
+--- !u!198 &198920200263197258
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579022121654865}
+  m_GameObject: {fileID: 1070165339555997}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -4879,19 +4888,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199783605238232989
+--- !u!199 &199941338683957437
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579022121654865}
+  m_GameObject: {fileID: 1070165339555997}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a387f83f6b59c89469d18e6adb3cdfb2, type: 2}
+  - {fileID: 2100000, guid: 8a0eda9431c1c5b498952539877c03bf, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4911,14 +4920,14 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1561647633310656
+--- !u!1 &1920581695376800
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4824548676933972}
+  - 4: {fileID: 4658560738408494}
   m_Layer: 0
   m_Name: Ninjia_Ice_FM
   m_TagString: Untagged
@@ -4926,56 +4935,56 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4824548676933972
+--- !u!4 &4658560738408494
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1561647633310656}
+  m_GameObject: {fileID: 1920581695376800}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -0.1755981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4822576169061515}
-  m_Father: {fileID: 4245534693172070}
+  - {fileID: 4753803620502199}
+  m_Father: {fileID: 4929038467584277}
   m_RootOrder: 2
---- !u!1 &1979558261914553
+--- !u!1 &1332901085259664
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4822576169061515}
-  - 198: {fileID: 198700610070052431}
-  - 199: {fileID: 199402557137403493}
+  - 4: {fileID: 4753803620502199}
+  - 198: {fileID: 198762351384780542}
+  - 199: {fileID: 199582887824502791}
   m_Layer: 0
   m_Name: Ninjia_Ice_FM_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4822576169061515
+--- !u!4 &4753803620502199
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1979558261914553}
+  m_GameObject: {fileID: 1332901085259664}
   m_LocalRotation: {x: -0.72474694, y: 0, z: 0, w: 0.6890152}
   m_LocalPosition: {x: 0, y: 1.1038173, z: -0.03076011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4647797600050550}
-  - {fileID: 4822679496794086}
-  m_Father: {fileID: 4824548676933972}
+  - {fileID: 4445564405850280}
+  - {fileID: 4622272336016798}
+  m_Father: {fileID: 4658560738408494}
   m_RootOrder: 0
---- !u!198 &198700610070052431
+--- !u!198 &198762351384780542
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1979558261914553}
+  m_GameObject: {fileID: 1332901085259664}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -5962,19 +5971,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199402557137403493
+--- !u!199 &199582887824502791
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1979558261914553}
+  m_GameObject: {fileID: 1332901085259664}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9f5f035e123bfef428e27587672f1f8c, type: 2}
+  - {fileID: 2100000, guid: f7a7027fed447ab46b0bb96e2aad3203, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -5994,41 +6003,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1530717210379857
+--- !u!1 &1249422977476632
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4647797600050550}
-  - 198: {fileID: 198577078013055710}
-  - 199: {fileID: 199322186883779215}
+  - 4: {fileID: 4445564405850280}
+  - 198: {fileID: 198692888528868753}
+  - 199: {fileID: 199525426892618082}
   m_Layer: 0
   m_Name: Ninjia_Ice_FM_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4647797600050550
+--- !u!4 &4445564405850280
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1530717210379857}
+  m_GameObject: {fileID: 1249422977476632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.0042487783, z: 0.08399978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4822576169061515}
+  m_Father: {fileID: 4753803620502199}
   m_RootOrder: 0
---- !u!198 &198577078013055710
+--- !u!198 &198692888528868753
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1530717210379857}
+  m_GameObject: {fileID: 1249422977476632}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -7015,19 +7024,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199322186883779215
+--- !u!199 &199525426892618082
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1530717210379857}
+  m_GameObject: {fileID: 1249422977476632}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 80418ca7d4e06b04d9bf9106c44ad0e5, type: 2}
+  - {fileID: 2100000, guid: 088a53a7de660ec4099bc82e1947c141, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -7047,41 +7056,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1526737392981724
+--- !u!1 &1348774841201479
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4822679496794086}
-  - 198: {fileID: 198237438220934363}
-  - 199: {fileID: 199759037399275781}
+  - 4: {fileID: 4622272336016798}
+  - 198: {fileID: 198961756114757795}
+  - 199: {fileID: 199849017665112388}
   m_Layer: 0
   m_Name: Ninjia_Ice_FM_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4822679496794086
+--- !u!4 &4622272336016798
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526737392981724}
+  m_GameObject: {fileID: 1348774841201479}
   m_LocalRotation: {x: -2.1173187E-07, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4822576169061515}
+  m_Father: {fileID: 4753803620502199}
   m_RootOrder: 1
---- !u!198 &198237438220934363
+--- !u!198 &198961756114757795
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526737392981724}
+  m_GameObject: {fileID: 1348774841201479}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -8068,19 +8077,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199759037399275781
+--- !u!199 &199849017665112388
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526737392981724}
+  m_GameObject: {fileID: 1348774841201479}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9f5f035e123bfef428e27587672f1f8c, type: 2}
+  - {fileID: 2100000, guid: f7a7027fed447ab46b0bb96e2aad3203, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

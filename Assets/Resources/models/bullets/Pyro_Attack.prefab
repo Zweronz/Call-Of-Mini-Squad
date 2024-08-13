@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1121315740203990}
+  m_RootGameObject: {fileID: 1315159912057787}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1121315740203990
+--- !u!1 &1315159912057787
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4679507369787854}
-  - 54: {fileID: 54357794861730571}
-  - 135: {fileID: 135597875778782176}
+  - 4: {fileID: 4282215617110697}
+  - 54: {fileID: 54088661357472944}
+  - 135: {fileID: 135292811791417142}
   m_Layer: 0
   m_Name: Pyro_Attack
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4679507369787854
+--- !u!4 &4282215617110697
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1121315740203990}
+  m_GameObject: {fileID: 1315159912057787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.07210684, y: 0.37189525, z: 0.07992676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4806365179635594}
+  - {fileID: 4424009625996733}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &54357794861730571
+--- !u!54 &54088661357472944
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1121315740203990}
+  m_GameObject: {fileID: 1315159912057787}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -57,56 +57,56 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!135 &135597875778782176
+--- !u!135 &135292811791417142
 SphereCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1121315740203990}
+  m_GameObject: {fileID: 1315159912057787}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1954639309474024
+--- !u!1 &1375228773279611
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4806365179635594}
-  - 198: {fileID: 198686109490322557}
-  - 199: {fileID: 199212598613689725}
-  - 114: {fileID: 114341076040132719}
+  - 4: {fileID: 4424009625996733}
+  - 198: {fileID: 198448329984333271}
+  - 199: {fileID: 199396778108475906}
+  - 114: {fileID: 114104110790807271}
   m_Layer: 0
   m_Name: Pyro_Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4806365179635594
+--- !u!4 &4424009625996733
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954639309474024}
+  m_GameObject: {fileID: 1375228773279611}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4654275198248957}
-  - {fileID: 4971877553976474}
-  m_Father: {fileID: 4679507369787854}
+  - {fileID: 4702471326931187}
+  - {fileID: 4472392194191525}
+  m_Father: {fileID: 4282215617110697}
   m_RootOrder: 0
---- !u!198 &198686109490322557
+--- !u!198 &198448329984333271
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954639309474024}
+  m_GameObject: {fileID: 1375228773279611}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1123,19 +1123,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199212598613689725
+--- !u!199 &199396778108475906
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954639309474024}
+  m_GameObject: {fileID: 1375228773279611}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 622ea0d7765ab0d4abaeeeec7b339b3e, type: 2}
+  - {fileID: 2100000, guid: 736fc6e5d048f074ba1fd2d42baadc08, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1155,12 +1155,12 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!114 &114341076040132719
+--- !u!114 &114104110790807271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954639309474024}
+  m_GameObject: {fileID: 1375228773279611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -1173,41 +1173,41 @@ MonoBehaviour:
   enableEmission: 0
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1852077404276783
+--- !u!1 &1022683970989917
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4654275198248957}
-  - 198: {fileID: 198476940463274829}
-  - 199: {fileID: 199911761871223533}
+  - 4: {fileID: 4702471326931187}
+  - 198: {fileID: 198287594136322481}
+  - 199: {fileID: 199997891200621033}
   m_Layer: 0
   m_Name: Pyro_Attack_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4654275198248957
+--- !u!4 &4702471326931187
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852077404276783}
+  m_GameObject: {fileID: 1022683970989917}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4806365179635594}
+  m_Father: {fileID: 4424009625996733}
   m_RootOrder: 0
---- !u!198 &198476940463274829
+--- !u!198 &198287594136322481
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852077404276783}
+  m_GameObject: {fileID: 1022683970989917}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -2214,19 +2214,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199911761871223533
+--- !u!199 &199997891200621033
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852077404276783}
+  m_GameObject: {fileID: 1022683970989917}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0132b581f1d0a0c4a9e978db7d15f5aa, type: 2}
+  - {fileID: 2100000, guid: d025192a3026e3445a60e85a5c8d180e, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2246,41 +2246,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1045439220479237
+--- !u!1 &1362685488054631
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4971877553976474}
-  - 198: {fileID: 198748695648444184}
-  - 199: {fileID: 199795563468295207}
+  - 4: {fileID: 4472392194191525}
+  - 198: {fileID: 198226092711458238}
+  - 199: {fileID: 199927801437503451}
   m_Layer: 0
   m_Name: Pyro_Attack_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4971877553976474
+--- !u!4 &4472392194191525
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045439220479237}
+  m_GameObject: {fileID: 1362685488054631}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4806365179635594}
+  m_Father: {fileID: 4424009625996733}
   m_RootOrder: 1
---- !u!198 &198748695648444184
+--- !u!198 &198226092711458238
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045439220479237}
+  m_GameObject: {fileID: 1362685488054631}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -3267,19 +3267,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199795563468295207
+--- !u!199 &199927801437503451
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045439220479237}
+  m_GameObject: {fileID: 1362685488054631}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 770bc567117da64448dfde5a9aed8e99, type: 2}
+  - {fileID: 2100000, guid: a8ff3d17481f764488348d6ef2f92bf7, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

@@ -11,7 +11,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 1107489202891503180}
+    m_StateMachine: {fileID: 1107892223224973943}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
@@ -20,28 +20,30 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &1107489202891503180
+--- !u!1107 &1107892223224973943
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 0}
+  m_DefaultState: {fileID: 1102695909478806844}
   m_States:
-  - {fileID: 1102765854448882758}
-  - {fileID: 1102230009436867842}
+  - {fileID: 1102695909478806844}
+  - {fileID: 1102195279445703601}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-  - first: {fileID: 1102765854448882758}
+  - first: {fileID: 1102695909478806844}
     second: []
-  - first: {fileID: 1102230009436867842}
+  - first: {fileID: 1102195279445703601}
+    second: []
+  - first: {fileID: 0}
     second: []
   m_MotionSetCount: 0
   m_AnyStatePosition: {x: 0, y: -250, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
---- !u!1102 &1102765854448882758
+--- !u!1102 &1102695909478806844
 State:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -50,13 +52,13 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 7819a5325c9198046bdab7d72f52a404, type: 2}
+  - {fileID: 7400000, guid: 33eca7ba1860c6643bd5d38e1e89e372, type: 2}
   m_ParentStateMachine: {fileID: 0}
   m_Position: {x: 0, y: 0, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag:
---- !u!1102 &1102230009436867842
+--- !u!1102 &1102195279445703601
 State:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -65,7 +67,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 7819a5325c9198046bdab7d72f52a404, type: 2}
+  - {fileID: 7400000, guid: 33eca7ba1860c6643bd5d38e1e89e372, type: 2}
   m_ParentStateMachine: {fileID: 0}
   m_Position: {x: 250, y: 0, z: 0}
   m_IKOnFeet: 0

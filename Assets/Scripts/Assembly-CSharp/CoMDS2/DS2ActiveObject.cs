@@ -528,14 +528,14 @@ namespace CoMDS2
 			{
 				if (clamp)
 				{
-					m_gameObject.GetComponent<Animation>().Rewind(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name));
-					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].wrapMode = WrapMode.ClampForever;
+					m_gameObject.GetComponent<Animation>().Rewind(name);
+					m_gameObject.GetComponent<Animation>()[name].wrapMode = WrapMode.ClampForever;
 				}
 				else
 				{
-					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
+					m_gameObject.GetComponent<Animation>()[name].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
 				}
-				m_gameObject.GetComponent<Animation>().Play(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name));
+				m_gameObject.GetComponent<Animation>().Play(name);
 			}
 		}
 
@@ -543,18 +543,18 @@ namespace CoMDS2
 		{
 			if (name != null && !(name == string.Empty) && !(m_gameObject == null))
 			{
-				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].wrapMode = WrapMode.Once;
+				m_gameObject.GetComponent<Animation>()[name].wrapMode = WrapMode.Once;
 			}
 		}
 
 		public virtual bool AnimationPlaying(string name)
 		{
-			return m_gameObject.GetComponent<Animation>().IsPlaying(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name));
+			return m_gameObject.GetComponent<Animation>().IsPlaying(name);
 		}
 
 		public virtual bool HasAnimation(string animName)
 		{
-			return m_gameObject.GetComponent<Animation>().GetClip(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), animName)) != null;
+			return m_gameObject.GetComponent<Animation>().GetClip(animName) != null;
 		}
 
 		public virtual void AnimationStop()
@@ -568,34 +568,34 @@ namespace CoMDS2
 			{
 				if (clamp)
 				{
-					m_gameObject.GetComponent<Animation>().Rewind(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name));
-					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].wrapMode = WrapMode.ClampForever;
+					m_gameObject.GetComponent<Animation>().Rewind(name);
+					m_gameObject.GetComponent<Animation>()[name].wrapMode = WrapMode.ClampForever;
 				}
 				else
 				{
-					m_gameObject.GetComponent<Animation>().Rewind(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name));
-					m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
+					m_gameObject.GetComponent<Animation>().Rewind(name);
+					m_gameObject.GetComponent<Animation>()[name].wrapMode = ((!loop) ? WrapMode.Once : WrapMode.Loop);
 				}
-				m_gameObject.GetComponent<Animation>().CrossFade(AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name), fadeLength);
+				m_gameObject.GetComponent<Animation>().CrossFade(name, fadeLength);
 			}
 		}
 
 		public virtual float AnimationLength(string name)
 		{
-			return m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].length;
+			return m_gameObject.GetComponent<Animation>()[name].length;
 		}
 
 		public virtual void SetAnimationSpeed(string name, float speed)
 		{
 			if (name != null && !(name == string.Empty) && !(m_gameObject == null))
 			{
-				m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)].speed = speed;
+				m_gameObject.GetComponent<Animation>()[name].speed = speed;
 			}
 		}
 
 		public virtual AnimationState GetAnimationState(string name)
 		{
-			return m_gameObject.GetComponent<Animation>()[AnimationHelper.TryGetAnimationName(m_gameObject.GetComponent<Animation>(), name)];
+			return m_gameObject.GetComponent<Animation>()[name];
 		}
 
 		public virtual Transform GetMoveTransform()

@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1219690052723851}
+  m_RootGameObject: {fileID: 1089965508751029}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1219690052723851
+--- !u!1 &1089965508751029
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4767420591210808}
-  - 135: {fileID: 135445579518517907}
-  - 54: {fileID: 54020158098212749}
+  - 4: {fileID: 4962985403609862}
+  - 135: {fileID: 135935701131749789}
+  - 54: {fileID: 54744871627951706}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom
   m_TagString: Untagged
@@ -29,38 +29,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4767420591210808
+--- !u!4 &4962985403609862
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1219690052723851}
+  m_GameObject: {fileID: 1089965508751029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.69387, y: 0.4626372, z: 1.2318826}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4069430200597899}
+  - {fileID: 4923302058287405}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!135 &135445579518517907
+--- !u!135 &135935701131749789
 SphereCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1219690052723851}
+  m_GameObject: {fileID: 1089965508751029}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &54020158098212749
+--- !u!54 &54744871627951706
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1219690052723851}
+  m_GameObject: {fileID: 1089965508751029}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -69,45 +69,45 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1308871415826690
+--- !u!1 &1325849239046563
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4069430200597899}
-  - 198: {fileID: 198024433342498105}
-  - 199: {fileID: 199658211446658581}
+  - 4: {fileID: 4923302058287405}
+  - 198: {fileID: 198724006438965367}
+  - 199: {fileID: 199937197823541306}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4069430200597899
+--- !u!4 &4923302058287405
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308871415826690}
+  m_GameObject: {fileID: 1325849239046563}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4562119113918943}
-  - {fileID: 4434969623380770}
-  - {fileID: 4606144302968967}
-  - {fileID: 4894939322654828}
-  m_Father: {fileID: 4767420591210808}
+  - {fileID: 4795127241830502}
+  - {fileID: 4214871205204622}
+  - {fileID: 4351272429013146}
+  - {fileID: 4040724425876167}
+  m_Father: {fileID: 4962985403609862}
   m_RootOrder: 0
---- !u!198 &198024433342498105
+--- !u!198 &198724006438965367
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308871415826690}
+  m_GameObject: {fileID: 1325849239046563}
   lengthInSec: 3
   startDelay: 0
   speed: 1
@@ -1129,19 +1129,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199658211446658581
+--- !u!199 &199937197823541306
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308871415826690}
+  m_GameObject: {fileID: 1325849239046563}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 89f8178846874e0409d8d4db8e7f59f3, type: 2}
+  - {fileID: 2100000, guid: a2ea833286e99fa40aafcbcb75b4bdb2, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1157,45 +1157,45 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
-  m_Mesh: {fileID: 4300000, guid: 243d8bdb1e44cec4b876c9caac732810, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 6037e82cfff2cdd4d8d520d4f9eaa717, type: 2}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1162530625397752
+--- !u!1 &1034207940111619
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4562119113918943}
-  - 198: {fileID: 198612447650891727}
-  - 199: {fileID: 199070023108490142}
+  - 4: {fileID: 4795127241830502}
+  - 198: {fileID: 198831953515071533}
+  - 199: {fileID: 199671796323727904}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4562119113918943
+--- !u!4 &4795127241830502
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1162530625397752}
+  m_GameObject: {fileID: 1034207940111619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4069430200597899}
+  m_Father: {fileID: 4923302058287405}
   m_RootOrder: 0
---- !u!198 &198612447650891727
+--- !u!198 &198831953515071533
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1162530625397752}
+  m_GameObject: {fileID: 1034207940111619}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -2227,19 +2227,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199070023108490142
+--- !u!199 &199671796323727904
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1162530625397752}
+  m_GameObject: {fileID: 1034207940111619}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ba5d6886926f5c947b5d4b467eb9b00b, type: 2}
+  - {fileID: 2100000, guid: bf5dde4b00a45c1458fc22c739bbf3ac, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2259,41 +2259,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1633025473005857
+--- !u!1 &1200960152125776
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4434969623380770}
-  - 198: {fileID: 198368081972986285}
-  - 199: {fileID: 199130855532164624}
+  - 4: {fileID: 4214871205204622}
+  - 198: {fileID: 198803182217178484}
+  - 199: {fileID: 199114550807688378}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4434969623380770
+--- !u!4 &4214871205204622
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633025473005857}
+  m_GameObject: {fileID: 1200960152125776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4069430200597899}
+  m_Father: {fileID: 4923302058287405}
   m_RootOrder: 1
---- !u!198 &198368081972986285
+--- !u!198 &198803182217178484
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633025473005857}
+  m_GameObject: {fileID: 1200960152125776}
   lengthInSec: 3
   startDelay: 0
   speed: 1
@@ -3315,19 +3315,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199130855532164624
+--- !u!199 &199114550807688378
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633025473005857}
+  m_GameObject: {fileID: 1200960152125776}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 86c6a6ad04815da4f944f50537480e17, type: 2}
+  - {fileID: 2100000, guid: 366f27753533d86469ad3c83e8c60c02, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3343,45 +3343,45 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
-  m_Mesh: {fileID: 4300000, guid: 243d8bdb1e44cec4b876c9caac732810, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 6037e82cfff2cdd4d8d520d4f9eaa717, type: 2}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1464666507648416
+--- !u!1 &1866429745669137
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4606144302968967}
-  - 198: {fileID: 198701364334620789}
-  - 199: {fileID: 199803539642918708}
+  - 4: {fileID: 4351272429013146}
+  - 198: {fileID: 198699801581141988}
+  - 199: {fileID: 199868421985405900}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4606144302968967
+--- !u!4 &4351272429013146
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1464666507648416}
+  m_GameObject: {fileID: 1866429745669137}
   m_LocalRotation: {x: 0.7063819, y: 0, z: 0, w: 0.70783097}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4069430200597899}
+  m_Father: {fileID: 4923302058287405}
   m_RootOrder: 2
---- !u!198 &198701364334620789
+--- !u!198 &198699801581141988
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1464666507648416}
+  m_GameObject: {fileID: 1866429745669137}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -4403,19 +4403,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199803539642918708
+--- !u!199 &199868421985405900
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1464666507648416}
+  m_GameObject: {fileID: 1866429745669137}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 74aade978b3747d47985e1f9b0672382, type: 2}
+  - {fileID: 2100000, guid: e3ad34b33097acc499648d6e8a9d2c88, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4435,41 +4435,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1485696834427322
+--- !u!1 &1745309668637433
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4894939322654828}
-  - 198: {fileID: 198952222806025266}
-  - 199: {fileID: 199782162386549636}
+  - 4: {fileID: 4040724425876167}
+  - 198: {fileID: 198576876019789056}
+  - 199: {fileID: 199232445349840583}
   m_Layer: 0
   m_Name: Zombie_Nurse_venom_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4894939322654828
+--- !u!4 &4040724425876167
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1485696834427322}
+  m_GameObject: {fileID: 1745309668637433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4069430200597899}
+  m_Father: {fileID: 4923302058287405}
   m_RootOrder: 3
---- !u!198 &198952222806025266
+--- !u!198 &198576876019789056
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1485696834427322}
+  m_GameObject: {fileID: 1745309668637433}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -5501,19 +5501,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199782162386549636
+--- !u!199 &199232445349840583
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1485696834427322}
+  m_GameObject: {fileID: 1745309668637433}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 74aade978b3747d47985e1f9b0672382, type: 2}
+  - {fileID: 2100000, guid: e3ad34b33097acc499648d6e8a9d2c88, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

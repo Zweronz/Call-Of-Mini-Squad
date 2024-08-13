@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1780892229748293}
+  m_RootGameObject: {fileID: 1527511316165294}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1780892229748293
+--- !u!1 &1527511316165294
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4728955616149232}
-  - 65: {fileID: 65421699485766602}
-  - 54: {fileID: 54727891414118972}
+  - 4: {fileID: 4047298502177479}
+  - 65: {fileID: 65332548400709073}
+  - 54: {fileID: 54048542954784078}
   m_Layer: 0
   m_Name: Ninjia_04_Bullet
   m_TagString: Untagged
@@ -29,40 +29,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4728955616149232
+--- !u!4 &4047298502177479
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1780892229748293}
+  m_GameObject: {fileID: 1527511316165294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4140737422916216}
-  - {fileID: 4603623032228823}
-  - {fileID: 4644669047560227}
+  - {fileID: 4188149470020865}
+  - {fileID: 4288213147664723}
+  - {fileID: 4005410066996603}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65421699485766602
+--- !u!65 &65332548400709073
 BoxCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1780892229748293}
+  m_GameObject: {fileID: 1527511316165294}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Size: {x: 0.5, y: 0.36, z: 1}
   m_Center: {x: 0, y: 0.54, z: 0.03}
---- !u!54 &54727891414118972
+--- !u!54 &54048542954784078
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1780892229748293}
+  m_GameObject: {fileID: 1527511316165294}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -71,119 +71,122 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1371073001728838
+--- !u!1 &1159456373153616
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4140737422916216}
-  - 33: {fileID: 33061294470110460}
-  - 23: {fileID: 23215635753613394}
-  - 111: {fileID: 111172908156548060}
+  - 4: {fileID: 4188149470020865}
+  - 33: {fileID: 33308574457779864}
+  - 23: {fileID: 23318033562184927}
+  - 111: {fileID: 111114556069563718}
   m_Layer: 0
   m_Name: Ninjia_04_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4140737422916216
+--- !u!4 &4188149470020865
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371073001728838}
+  m_GameObject: {fileID: 1159456373153616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.019806901, y: 0.5172549, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.49999997}
   m_Children: []
-  m_Father: {fileID: 4728955616149232}
+  m_Father: {fileID: 4047298502177479}
   m_RootOrder: 0
---- !u!33 &33061294470110460
+--- !u!33 &33308574457779864
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371073001728838}
-  m_Mesh: {fileID: 4300000, guid: 5ff41e5e24c56114a98e31cac0183259, type: 2}
---- !u!23 &23215635753613394
+  m_GameObject: {fileID: 1159456373153616}
+  m_Mesh: {fileID: 4300000, guid: 3eed225e9644c4347bea6ac12586200b, type: 2}
+--- !u!23 &23318033562184927
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371073001728838}
+  m_GameObject: {fileID: 1159456373153616}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7551955023c9a184d905bf23042916f4, type: 2}
+  - {fileID: 2100000, guid: e1cdb5337a3a2774e810bc407e3d8bc4, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111172908156548060
+--- !u!111 &111114556069563718
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371073001728838}
+  m_GameObject: {fileID: 1159456373153616}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 7e59cade80480c0478d9d0bafc93061b, type: 2}
+  m_Animation: {fileID: 7400000, guid: 4bb37aa64a8a3864085126e620cb8284, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 7e59cade80480c0478d9d0bafc93061b, type: 2}
+  - {fileID: 7400000, guid: 4bb37aa64a8a3864085126e620cb8284, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &1982029711006541
+--- !u!1 &1866478158291113
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4603623032228823}
-  - 96: {fileID: 96272140783499396}
+  - 4: {fileID: 4288213147664723}
+  - 96: {fileID: 96942208951805032}
   m_Layer: 0
   m_Name: Ninjia_04_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4603623032228823
+--- !u!4 &4288213147664723
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982029711006541}
+  m_GameObject: {fileID: 1866478158291113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.019806901, y: 0.5172549, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4728955616149232}
+  m_Father: {fileID: 4047298502177479}
   m_RootOrder: 1
---- !u!96 &96272140783499396
+--- !u!96 &96942208951805032
 TrailRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982029711006541}
+  m_GameObject: {fileID: 1866478158291113}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cfb0e02e716242e4692dbd658b62d9ad, type: 2}
+  - {fileID: 2100000, guid: d9cfa8a15ebcca648bebbdae3455f909, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -212,70 +215,73 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!1 &1016907641651289
+--- !u!1 &1559495614643549
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4644669047560227}
-  - 33: {fileID: 33121038323333848}
-  - 23: {fileID: 23163160391347315}
-  - 111: {fileID: 111361886227766155}
+  - 4: {fileID: 4005410066996603}
+  - 33: {fileID: 33863700411663579}
+  - 23: {fileID: 23193722476461706}
+  - 111: {fileID: 111893522412802045}
   m_Layer: 0
   m_Name: Ninjia_04_Bullet_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4644669047560227
+--- !u!4 &4005410066996603
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016907641651289}
+  m_GameObject: {fileID: 1559495614643549}
   m_LocalRotation: {x: 0.7069773, y: -0.013530908, z: 0.70697737, w: 0.013530993}
   m_LocalPosition: {x: -0, y: 0, z: -0}
   m_LocalScale: {x: 1.25, y: 0.49999997, z: 0.49999994}
   m_Children: []
-  m_Father: {fileID: 4728955616149232}
+  m_Father: {fileID: 4047298502177479}
   m_RootOrder: 2
---- !u!33 &33121038323333848
+--- !u!33 &33863700411663579
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016907641651289}
-  m_Mesh: {fileID: 4300000, guid: 5ff41e5e24c56114a98e31cac0183259, type: 2}
---- !u!23 &23163160391347315
+  m_GameObject: {fileID: 1559495614643549}
+  m_Mesh: {fileID: 4300000, guid: 3eed225e9644c4347bea6ac12586200b, type: 2}
+--- !u!23 &23193722476461706
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016907641651289}
+  m_GameObject: {fileID: 1559495614643549}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2c6e6fec7f1c93840b7d98610939bfc5, type: 2}
+  - {fileID: 2100000, guid: bfaa18daf7b38214ab69902c33128175, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111361886227766155
+--- !u!111 &111893522412802045
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016907641651289}
+  m_GameObject: {fileID: 1559495614643549}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []

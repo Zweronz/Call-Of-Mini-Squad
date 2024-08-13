@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1381316791143386}
+  m_RootGameObject: {fileID: 1128799599529920}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1381316791143386
+--- !u!1 &1128799599529920
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4401907030654634}
-  - 82: {fileID: 82715221721614207}
-  - 114: {fileID: 114208026492879574}
-  - 114: {fileID: 114955569420504528}
+  - 4: {fileID: 4339210784222570}
+  - 82: {fileID: 82450056108754941}
+  - 114: {fileID: 114268966226632747}
+  - 114: {fileID: 114275124780855102}
   m_Layer: 0
   m_Name: common_vo_bigmonster_attack
   m_TagString: Untagged
@@ -30,25 +30,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4401907030654634
+--- !u!4 &4339210784222570
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381316791143386}
+  m_GameObject: {fileID: 1128799599529920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.093935, y: 2.2916245, z: 8.139698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!82 &82715221721614207
+--- !u!82 &82450056108754941
 AudioSource:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381316791143386}
+  m_GameObject: {fileID: 1128799599529920}
   m_Enabled: 1
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -105,12 +105,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &114208026492879574
+--- !u!114 &114268966226632747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381316791143386}
+  m_GameObject: {fileID: 1128799599529920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3582d1c7d4196262b5c70e29e7c0f4f, type: 3}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   isSfx: 1
   audioClips:
-  - {fileID: 8300000, guid: c93d9552c21d30c4f8feec545ff341ef, type: 3}
-  - {fileID: 8300000, guid: e0c362943b4c08949a4bb97109ff4b26, type: 3}
-  - {fileID: 8300000, guid: bd6ceae84390eb14cb27a0a89b01c27c, type: 3}
+  - {fileID: 8300000, guid: bc67a9784a0c21f42865452c7819d599, type: 3}
+  - {fileID: 8300000, guid: 27db25d63fbde5c4e91f27e8e78f58be, type: 3}
+  - {fileID: 8300000, guid: 0877638c8ced3e045b905897d3150cc7, type: 3}
   probability: []
   volumOffset: 0.1
   pitchOffset: 0.1
@@ -133,12 +133,12 @@ MonoBehaviour:
   intervalRangeMin: 0
   intervalRangeMax: 0
   delatLimit: 1000
---- !u!114 &114955569420504528
+--- !u!114 &114275124780855102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381316791143386}
+  m_GameObject: {fileID: 1128799599529920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a37e59c578bc44061723623ff7d0f0, type: 3}

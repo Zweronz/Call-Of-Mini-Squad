@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1476807305080067}
+  m_RootGameObject: {fileID: 1013417712465492}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1476807305080067
+--- !u!1 &1013417712465492
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4111079105709422}
-  - 114: {fileID: 114913998254302725}
-  - 114: {fileID: 114670901483696159}
+  - 4: {fileID: 4027332906302435}
+  - 114: {fileID: 114134522742279401}
+  - 114: {fileID: 114577292587041140}
   m_Layer: 0
   m_Name: DeathLight_Attack_2_G_Attack
   m_TagString: Untagged
@@ -29,25 +29,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4111079105709422
+--- !u!4 &4027332906302435
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476807305080067}
+  m_GameObject: {fileID: 1013417712465492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4576367930538876}
+  - {fileID: 4262163568030184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114913998254302725
+--- !u!114 &114134522742279401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476807305080067}
+  m_GameObject: {fileID: 1013417712465492}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -60,12 +60,12 @@ MonoBehaviour:
   enableEmission: 0
   m_Time: 0
   m_maxTime: 0
---- !u!114 &114670901483696159
+--- !u!114 &114577292587041140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476807305080067}
+  m_GameObject: {fileID: 1013417712465492}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
@@ -76,43 +76,43 @@ MonoBehaviour:
   m_DelayTime: []
   m_playOnEnable: 0
   m_DeleteWhenEnd: 0
---- !u!1 &1242465253098136
+--- !u!1 &1817814945564392
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4576367930538876}
-  - 198: {fileID: 198396057665789055}
-  - 199: {fileID: 199633415926995815}
+  - 4: {fileID: 4262163568030184}
+  - 198: {fileID: 198526401138769505}
+  - 199: {fileID: 199663545209650472}
   m_Layer: 0
   m_Name: DeathLight_Attack_2_G_Attack_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4576367930538876
+--- !u!4 &4262163568030184
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242465253098136}
+  m_GameObject: {fileID: 1817814945564392}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.55999994, z: 1}
   m_Children:
-  - {fileID: 4345705426354462}
-  - {fileID: 4945485413782044}
-  m_Father: {fileID: 4111079105709422}
+  - {fileID: 4329239981099887}
+  - {fileID: 4687334552520630}
+  m_Father: {fileID: 4027332906302435}
   m_RootOrder: 0
---- !u!198 &198396057665789055
+--- !u!198 &198526401138769505
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242465253098136}
+  m_GameObject: {fileID: 1817814945564392}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1139,19 +1139,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199633415926995815
+--- !u!199 &199663545209650472
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242465253098136}
+  m_GameObject: {fileID: 1817814945564392}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2675cd6f215bb444582e2f00dd82a7c7, type: 2}
+  - {fileID: 2100000, guid: bc00f39c95392e548b81cadff74646b8, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1171,41 +1171,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1444566070458772
+--- !u!1 &1586853588291889
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4345705426354462}
-  - 198: {fileID: 198031588028170283}
-  - 199: {fileID: 199544552046320672}
+  - 4: {fileID: 4329239981099887}
+  - 198: {fileID: 198880543624702514}
+  - 199: {fileID: 199889810583144381}
   m_Layer: 0
   m_Name: DeathLight_Attack_2_G_Attack_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4345705426354462
+--- !u!4 &4329239981099887
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444566070458772}
+  m_GameObject: {fileID: 1586853588291889}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.7375041, z: 1}
   m_Children: []
-  m_Father: {fileID: 4576367930538876}
+  m_Father: {fileID: 4262163568030184}
   m_RootOrder: 0
---- !u!198 &198031588028170283
+--- !u!198 &198880543624702514
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444566070458772}
+  m_GameObject: {fileID: 1586853588291889}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -2222,19 +2222,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199544552046320672
+--- !u!199 &199889810583144381
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444566070458772}
+  m_GameObject: {fileID: 1586853588291889}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 08e228afa6013f441b8f7c255e81ecc2, type: 2}
+  - {fileID: 2100000, guid: 96ec0ac274ff53b428ff1760da7f7eda, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2254,41 +2254,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1248831544173003
+--- !u!1 &1807536882806811
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4945485413782044}
-  - 198: {fileID: 198007146789751859}
-  - 199: {fileID: 199910202989678310}
+  - 4: {fileID: 4687334552520630}
+  - 198: {fileID: 198002297198894509}
+  - 199: {fileID: 199384572462224243}
   m_Layer: 0
   m_Name: DeathLight_Attack_2_G_Attack_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4945485413782044
+--- !u!4 &4687334552520630
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248831544173003}
+  m_GameObject: {fileID: 1807536882806811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1.7375054, z: 1}
   m_Children: []
-  m_Father: {fileID: 4576367930538876}
+  m_Father: {fileID: 4262163568030184}
   m_RootOrder: 1
---- !u!198 &198007146789751859
+--- !u!198 &198002297198894509
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248831544173003}
+  m_GameObject: {fileID: 1807536882806811}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -3295,19 +3295,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199910202989678310
+--- !u!199 &199384572462224243
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248831544173003}
+  m_GameObject: {fileID: 1807536882806811}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7c440fe32c043d548872e9f5e87105bd, type: 2}
+  - {fileID: 2100000, guid: 047bca0c2a5d7934bb4da8698940e8a9, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

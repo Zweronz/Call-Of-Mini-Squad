@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1136527780029982}
+  m_RootGameObject: {fileID: 1834338913753668}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1136527780029982
+--- !u!1 &1834338913753668
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4562352518608460}
-  - 65: {fileID: 65857139258918868}
-  - 54: {fileID: 54917564528090623}
+  - 4: {fileID: 4206389586402223}
+  - 65: {fileID: 65973373199845897}
+  - 54: {fileID: 54270371715098561}
   m_Layer: 0
   m_Name: Doctor_Attack_Bullet
   m_TagString: Untagged
@@ -29,38 +29,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4562352518608460
+--- !u!4 &4206389586402223
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1136527780029982}
+  m_GameObject: {fileID: 1834338913753668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 8.054878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4541128745594766}
+  - {fileID: 4779830467821659}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65857139258918868
+--- !u!65 &65973373199845897
 BoxCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1136527780029982}
+  m_GameObject: {fileID: 1834338913753668}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Size: {x: 0.5, y: 0.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &54917564528090623
+--- !u!54 &54270371715098561
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1136527780029982}
+  m_GameObject: {fileID: 1834338913753668}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -69,44 +69,44 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1600220862286361
+--- !u!1 &1830097485668400
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4541128745594766}
-  - 198: {fileID: 198276455402723384}
-  - 199: {fileID: 199078405586301456}
+  - 4: {fileID: 4779830467821659}
+  - 198: {fileID: 198600467808724743}
+  - 199: {fileID: 199430947175787192}
   m_Layer: 0
   m_Name: Pistol_Love_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4541128745594766
+--- !u!4 &4779830467821659
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600220862286361}
+  m_GameObject: {fileID: 1830097485668400}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4737172531851530}
-  - {fileID: 4657275809804422}
-  - {fileID: 4961481956851090}
-  m_Father: {fileID: 4562352518608460}
+  - {fileID: 4559132484162251}
+  - {fileID: 4807737881341943}
+  - {fileID: 4827807939869314}
+  m_Father: {fileID: 4206389586402223}
   m_RootOrder: 0
---- !u!198 &198276455402723384
+--- !u!198 &198600467808724743
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600220862286361}
+  m_GameObject: {fileID: 1830097485668400}
   lengthInSec: 2
   startDelay: 0
   speed: 1
@@ -1153,19 +1153,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199078405586301456
+--- !u!199 &199430947175787192
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600220862286361}
+  m_GameObject: {fileID: 1830097485668400}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ca7a7d99feac2284ab4e704c1a09240a, type: 2}
+  - {fileID: 2100000, guid: 52689b1af3db0634480132a7d7f3d543, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1185,41 +1185,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1046313817931885
+--- !u!1 &1915731280848526
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4737172531851530}
-  - 198: {fileID: 198435039126403140}
-  - 199: {fileID: 199765656354712604}
+  - 4: {fileID: 4559132484162251}
+  - 198: {fileID: 198346639012186492}
+  - 199: {fileID: 199791994969639609}
   m_Layer: 0
   m_Name: Pistol_Love_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4737172531851530
+--- !u!4 &4559132484162251
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1046313817931885}
+  m_GameObject: {fileID: 1915731280848526}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4541128745594766}
+  m_Father: {fileID: 4779830467821659}
   m_RootOrder: 0
---- !u!198 &198435039126403140
+--- !u!198 &198346639012186492
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1046313817931885}
+  m_GameObject: {fileID: 1915731280848526}
   lengthInSec: 2
   startDelay: 0.3
   speed: 1
@@ -2251,19 +2251,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199765656354712604
+--- !u!199 &199791994969639609
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1046313817931885}
+  m_GameObject: {fileID: 1915731280848526}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 5c18a72cf8288714c830b01b32aa7a7e, type: 2}
+  - {fileID: 2100000, guid: b72f64277e4871a4e83291ccba1b3e69, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2283,41 +2283,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1221003961760881
+--- !u!1 &1825422743521785
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4657275809804422}
-  - 198: {fileID: 198519792379428111}
-  - 199: {fileID: 199041505688053456}
+  - 4: {fileID: 4807737881341943}
+  - 198: {fileID: 198876482656380268}
+  - 199: {fileID: 199734720300220580}
   m_Layer: 0
   m_Name: Pistol_Love_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4657275809804422
+--- !u!4 &4807737881341943
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221003961760881}
+  m_GameObject: {fileID: 1825422743521785}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4541128745594766}
+  m_Father: {fileID: 4779830467821659}
   m_RootOrder: 1
---- !u!198 &198519792379428111
+--- !u!198 &198876482656380268
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221003961760881}
+  m_GameObject: {fileID: 1825422743521785}
   lengthInSec: 2
   startDelay: 0.3
   speed: 1
@@ -3349,19 +3349,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199041505688053456
+--- !u!199 &199734720300220580
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221003961760881}
+  m_GameObject: {fileID: 1825422743521785}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: facb670e35fc9ad4ca0746c26ab3e158, type: 2}
+  - {fileID: 2100000, guid: e12513028f792844189ed298fae5eb73, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3381,70 +3381,73 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1921470205461660
+--- !u!1 &1923367541622556
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4961481956851090}
-  - 33: {fileID: 33208788569764167}
-  - 23: {fileID: 23837518612491446}
-  - 111: {fileID: 111853082019609850}
+  - 4: {fileID: 4827807939869314}
+  - 33: {fileID: 33383626271168763}
+  - 23: {fileID: 23282961376398129}
+  - 111: {fileID: 111172077953141864}
   m_Layer: 0
   m_Name: Pistol_Love_Bullet11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4961481956851090
+--- !u!4 &4827807939869314
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921470205461660}
+  m_GameObject: {fileID: 1923367541622556}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -0.22897032, z: -0}
   m_LocalScale: {x: 0.5, y: 1, z: 0.30000004}
   m_Children: []
-  m_Father: {fileID: 4541128745594766}
+  m_Father: {fileID: 4779830467821659}
   m_RootOrder: 2
---- !u!33 &33208788569764167
+--- !u!33 &33383626271168763
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921470205461660}
-  m_Mesh: {fileID: 4300000, guid: 351ae6627542e8e49ba7bc8f3152c44f, type: 2}
---- !u!23 &23837518612491446
+  m_GameObject: {fileID: 1923367541622556}
+  m_Mesh: {fileID: 4300000, guid: 9f08bd7956c5c6947b6e67a39f96012f, type: 2}
+--- !u!23 &23282961376398129
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921470205461660}
+  m_GameObject: {fileID: 1923367541622556}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 5c18a72cf8288714c830b01b32aa7a7e, type: 2}
+  - {fileID: 2100000, guid: b72f64277e4871a4e83291ccba1b3e69, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!111 &111853082019609850
+--- !u!111 &111172077953141864
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921470205461660}
+  m_GameObject: {fileID: 1923367541622556}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []

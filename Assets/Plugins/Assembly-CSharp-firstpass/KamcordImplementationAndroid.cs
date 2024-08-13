@@ -457,7 +457,14 @@ public class KamcordImplementationAndroid : Kamcord.Implementation
 			{
 				camera.depth = float.MaxValue;
 			}
-			UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(camera.gameObject, "Assets/Plugins/Assembly-CSharp-firstpass/KamcordImplementationAndroid.cs (460,4)", "KamcordAndroid" + type + "Render");
+			if (type == "Pre")
+			{
+				camera.gameObject.AddComponent<KamcordAndroidPreRender>();
+			}
+			else
+			{
+				camera.gameObject.AddComponent<KamcordAndroidPostRender>();
+			}
 			gameObject.SetActive(true);
 			Object.DontDestroyOnLoad(gameObject);
 		}

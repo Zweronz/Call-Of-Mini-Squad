@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1410866586864939}
+  m_RootGameObject: {fileID: 1548547179064732}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1410866586864939
+--- !u!1 &1548547179064732
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4645661921480848}
-  - 135: {fileID: 135441301576076058}
-  - 54: {fileID: 54903185021071397}
+  - 4: {fileID: 4314836398146615}
+  - 135: {fileID: 135177630282793985}
+  - 54: {fileID: 54482984072035609}
   m_Layer: 13
   m_Name: BulletChargeBolt
   m_TagString: Untagged
@@ -29,38 +29,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4645661921480848
+--- !u!4 &4314836398146615
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410866586864939}
+  m_GameObject: {fileID: 1548547179064732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4867134804681228}
+  - {fileID: 4131579323922345}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!135 &135441301576076058
+--- !u!135 &135177630282793985
 SphereCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410866586864939}
+  m_GameObject: {fileID: 1548547179064732}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &54903185021071397
+--- !u!54 &54482984072035609
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410866586864939}
+  m_GameObject: {fileID: 1548547179064732}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -69,46 +69,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1006142085587501
+--- !u!1 &1306246579903675
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4867134804681228}
-  - 198: {fileID: 198833243588547451}
-  - 199: {fileID: 199067990634335358}
+  - 4: {fileID: 4131579323922345}
+  - 198: {fileID: 198287174482664926}
+  - 199: {fileID: 199000975028174855}
   m_Layer: 0
   m_Name: Grenade_04_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4867134804681228
+--- !u!4 &4131579323922345
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006142085587501}
+  m_GameObject: {fileID: 1306246579903675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4338907387450394}
-  - {fileID: 4221668987838882}
-  - {fileID: 4025788850683722}
-  - {fileID: 4562456780650154}
-  - {fileID: 4070649793324374}
-  m_Father: {fileID: 4645661921480848}
+  - {fileID: 4666269633723499}
+  - {fileID: 4886770125186587}
+  - {fileID: 4309911463414918}
+  - {fileID: 4902363558883524}
+  - {fileID: 4609070245676124}
+  m_Father: {fileID: 4314836398146615}
   m_RootOrder: 0
---- !u!198 &198833243588547451
+--- !u!198 &198287174482664926
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006142085587501}
+  m_GameObject: {fileID: 1306246579903675}
   lengthInSec: 0.2
   startDelay: 0
   speed: 1
@@ -1125,19 +1125,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199067990634335358
+--- !u!199 &199000975028174855
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006142085587501}
+  m_GameObject: {fileID: 1306246579903675}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 403c927e74b61e94b9fce9aa9a4dae4f, type: 2}
+  - {fileID: 2100000, guid: 6e46a1935c775424eb091e9c7c760577, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1157,41 +1157,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1232434699662962
+--- !u!1 &1955977852125696
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4338907387450394}
-  - 198: {fileID: 198394282047639889}
-  - 199: {fileID: 199933401881017936}
+  - 4: {fileID: 4666269633723499}
+  - 198: {fileID: 198353061107163581}
+  - 199: {fileID: 199137569445378772}
   m_Layer: 0
   m_Name: Grenade_04_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4338907387450394
+--- !u!4 &4666269633723499
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232434699662962}
+  m_GameObject: {fileID: 1955977852125696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867134804681228}
+  m_Father: {fileID: 4131579323922345}
   m_RootOrder: 0
---- !u!198 &198394282047639889
+--- !u!198 &198353061107163581
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232434699662962}
+  m_GameObject: {fileID: 1955977852125696}
   lengthInSec: 0.2
   startDelay: 0
   speed: 1
@@ -2208,19 +2208,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199933401881017936
+--- !u!199 &199137569445378772
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232434699662962}
+  m_GameObject: {fileID: 1955977852125696}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 13e1fca35e0b85047b6a688a5f334083, type: 2}
+  - {fileID: 2100000, guid: 3ed83365f1051744394fd5c8daba9a31, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2240,41 +2240,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1467232527335303
+--- !u!1 &1271621268470781
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4221668987838882}
-  - 198: {fileID: 198229559766722914}
-  - 199: {fileID: 199232028814309778}
+  - 4: {fileID: 4886770125186587}
+  - 198: {fileID: 198797020316988772}
+  - 199: {fileID: 199921429077402828}
   m_Layer: 0
   m_Name: Grenade_04_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4221668987838882
+--- !u!4 &4886770125186587
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467232527335303}
+  m_GameObject: {fileID: 1271621268470781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867134804681228}
+  m_Father: {fileID: 4131579323922345}
   m_RootOrder: 1
---- !u!198 &198229559766722914
+--- !u!198 &198797020316988772
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467232527335303}
+  m_GameObject: {fileID: 1271621268470781}
   lengthInSec: 0.2
   startDelay: 0
   speed: 1
@@ -3291,19 +3291,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199232028814309778
+--- !u!199 &199921429077402828
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467232527335303}
+  m_GameObject: {fileID: 1271621268470781}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 40a6fbb58d4f4c44bac35ed37010f985, type: 2}
+  - {fileID: 2100000, guid: ff43149af2b5fce43a7d9397fc5d88f1, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3323,41 +3323,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1982889216153536
+--- !u!1 &1339277671457775
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4025788850683722}
-  - 198: {fileID: 198319536259040855}
-  - 199: {fileID: 199657995439449755}
+  - 4: {fileID: 4309911463414918}
+  - 198: {fileID: 198397464490166330}
+  - 199: {fileID: 199264498744699296}
   m_Layer: 0
   m_Name: Grenade_04_Bullet_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4025788850683722
+--- !u!4 &4309911463414918
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982889216153536}
+  m_GameObject: {fileID: 1339277671457775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867134804681228}
+  m_Father: {fileID: 4131579323922345}
   m_RootOrder: 2
---- !u!198 &198319536259040855
+--- !u!198 &198397464490166330
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982889216153536}
+  m_GameObject: {fileID: 1339277671457775}
   lengthInSec: 1
   startDelay: 0
   speed: 1
@@ -4364,19 +4364,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199657995439449755
+--- !u!199 &199264498744699296
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982889216153536}
+  m_GameObject: {fileID: 1339277671457775}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 936931901c891ad47a810cfaed5be3aa, type: 2}
+  - {fileID: 2100000, guid: e80da0c1f3c535c449cf0683c9cf9020, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4396,41 +4396,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1797841457114447
+--- !u!1 &1659414256933335
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4562456780650154}
-  - 198: {fileID: 198704602732364451}
-  - 199: {fileID: 199200096665848236}
+  - 4: {fileID: 4902363558883524}
+  - 198: {fileID: 198704812873144654}
+  - 199: {fileID: 199971004279026782}
   m_Layer: 0
   m_Name: Grenade_04_Bullet_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4562456780650154
+--- !u!4 &4902363558883524
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1797841457114447}
+  m_GameObject: {fileID: 1659414256933335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867134804681228}
+  m_Father: {fileID: 4131579323922345}
   m_RootOrder: 3
---- !u!198 &198704602732364451
+--- !u!198 &198704812873144654
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1797841457114447}
+  m_GameObject: {fileID: 1659414256933335}
   lengthInSec: 1
   startDelay: 0
   speed: 1
@@ -5437,19 +5437,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199200096665848236
+--- !u!199 &199971004279026782
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1797841457114447}
+  m_GameObject: {fileID: 1659414256933335}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 79d7cfd1f4b58554599cc30e4adaa19b, type: 2}
+  - {fileID: 2100000, guid: 81f0eff979318484d9369bfe4e00a060, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -5469,41 +5469,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1893477700798588
+--- !u!1 &1469507292218841
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4070649793324374}
-  - 198: {fileID: 198983790640230943}
-  - 199: {fileID: 199668956801184574}
+  - 4: {fileID: 4609070245676124}
+  - 198: {fileID: 198578965895630223}
+  - 199: {fileID: 199139727809117958}
   m_Layer: 0
   m_Name: Grenade_04_Bullet_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4070649793324374
+--- !u!4 &4609070245676124
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1893477700798588}
+  m_GameObject: {fileID: 1469507292218841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867134804681228}
+  m_Father: {fileID: 4131579323922345}
   m_RootOrder: 4
---- !u!198 &198983790640230943
+--- !u!198 &198578965895630223
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1893477700798588}
+  m_GameObject: {fileID: 1469507292218841}
   lengthInSec: 1
   startDelay: 0
   speed: 1
@@ -6510,19 +6510,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199668956801184574
+--- !u!199 &199139727809117958
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1893477700798588}
+  m_GameObject: {fileID: 1469507292218841}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 79d7cfd1f4b58554599cc30e4adaa19b, type: 2}
+  - {fileID: 2100000, guid: 81f0eff979318484d9369bfe4e00a060, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

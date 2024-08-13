@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1724384472065789}
+  m_RootGameObject: {fileID: 1681205615212211}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1724384472065789
+--- !u!1 &1681205615212211
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4392434001643351}
-  - 54: {fileID: 54753849914694232}
-  - 135: {fileID: 135708464008606835}
+  - 4: {fileID: 4805416968316389}
+  - 54: {fileID: 54217263307451356}
+  - 135: {fileID: 135096352390980583}
   m_Layer: 13
   m_Name: BlackholeBullet
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4392434001643351
+--- !u!4 &4805416968316389
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1724384472065789}
+  m_GameObject: {fileID: 1681205615212211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4132803969898713}
+  - {fileID: 4532635207362432}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &54753849914694232
+--- !u!54 &54217263307451356
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1724384472065789}
+  m_GameObject: {fileID: 1681205615212211}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -57,61 +57,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!135 &135708464008606835
+--- !u!135 &135096352390980583
 SphereCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1724384472065789}
+  m_GameObject: {fileID: 1681205615212211}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 2.5
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!1 &1001164547360514
+--- !u!1 &1038323867477288
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4132803969898713}
-  - 198: {fileID: 198380732639228294}
-  - 199: {fileID: 199102333848983970}
-  - 114: {fileID: 114852177051407149}
-  - 114: {fileID: 114869045660104213}
+  - 4: {fileID: 4532635207362432}
+  - 198: {fileID: 198964289550883734}
+  - 199: {fileID: 199304851135736475}
+  - 114: {fileID: 114000341329375487}
+  - 114: {fileID: 114465429111424112}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4132803969898713
+--- !u!4 &4532635207362432
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001164547360514}
+  m_GameObject: {fileID: 1038323867477288}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4378932063090431}
-  - {fileID: 4210464829020148}
-  - {fileID: 4302268649360025}
-  - {fileID: 4634357663404407}
-  - {fileID: 4703685504455596}
-  - {fileID: 4131719512476347}
-  m_Father: {fileID: 4392434001643351}
+  - {fileID: 4181739298038363}
+  - {fileID: 4033559774774431}
+  - {fileID: 4392410799623436}
+  - {fileID: 4362273034727820}
+  - {fileID: 4748952395089290}
+  - {fileID: 4775470001342008}
+  m_Father: {fileID: 4805416968316389}
   m_RootOrder: 0
---- !u!198 &198380732639228294
+--- !u!198 &198964289550883734
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001164547360514}
+  m_GameObject: {fileID: 1038323867477288}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1138,19 +1138,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199102333848983970
+--- !u!199 &199304851135736475
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001164547360514}
+  m_GameObject: {fileID: 1038323867477288}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: afe4128ee0a843a4982a5a9d35038078, type: 2}
+  - {fileID: 2100000, guid: cfd45203506779149a5f447228e766ce, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1170,12 +1170,12 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!114 &114852177051407149
+--- !u!114 &114000341329375487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001164547360514}
+  m_GameObject: {fileID: 1038323867477288}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -1188,12 +1188,12 @@ MonoBehaviour:
   enableEmission: 1
   m_Time: 0
   m_maxTime: 0
---- !u!114 &114869045660104213
+--- !u!114 &114465429111424112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001164547360514}
+  m_GameObject: {fileID: 1038323867477288}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
@@ -1205,41 +1205,41 @@ MonoBehaviour:
   m_DelayTime: []
   m_playOnEnable: 0
   m_DeleteWhenEnd: 0
---- !u!1 &1076304604739796
+--- !u!1 &1362703081846634
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4378932063090431}
-  - 198: {fileID: 198584502058060011}
-  - 199: {fileID: 199670866577516750}
+  - 4: {fileID: 4181739298038363}
+  - 198: {fileID: 198977862194955789}
+  - 199: {fileID: 199752425035032756}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4378932063090431
+--- !u!4 &4181739298038363
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1076304604739796}
+  m_GameObject: {fileID: 1362703081846634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 0
---- !u!198 &198584502058060011
+--- !u!198 &198977862194955789
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1076304604739796}
+  m_GameObject: {fileID: 1362703081846634}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -2266,19 +2266,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199670866577516750
+--- !u!199 &199752425035032756
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1076304604739796}
+  m_GameObject: {fileID: 1362703081846634}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3b62407f1a55a56439c6fffe5da04c88, type: 2}
+  - {fileID: 2100000, guid: 4ae3b08f4ff64c44298d50e441c93dca, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2298,41 +2298,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1345675152913241
+--- !u!1 &1899287086558036
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4210464829020148}
-  - 198: {fileID: 198747053326860373}
-  - 199: {fileID: 199904663395027060}
+  - 4: {fileID: 4033559774774431}
+  - 198: {fileID: 198621808641368464}
+  - 199: {fileID: 199379934254561461}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4210464829020148
+--- !u!4 &4033559774774431
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345675152913241}
+  m_GameObject: {fileID: 1899287086558036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 1
---- !u!198 &198747053326860373
+--- !u!198 &198621808641368464
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345675152913241}
+  m_GameObject: {fileID: 1899287086558036}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -3359,19 +3359,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199904663395027060
+--- !u!199 &199379934254561461
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345675152913241}
+  m_GameObject: {fileID: 1899287086558036}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7bdb811f7c6154a48a5557d43d8f51af, type: 2}
+  - {fileID: 2100000, guid: 5f87083318f362e48a6ec127ca99a6f6, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3391,41 +3391,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1306245515357449
+--- !u!1 &1799086565519178
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4302268649360025}
-  - 198: {fileID: 198192823358030438}
-  - 199: {fileID: 199324376737791490}
+  - 4: {fileID: 4392410799623436}
+  - 198: {fileID: 198574332694634800}
+  - 199: {fileID: 199813965695806213}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4302268649360025
+--- !u!4 &4392410799623436
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1306245515357449}
+  m_GameObject: {fileID: 1799086565519178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 2
---- !u!198 &198192823358030438
+--- !u!198 &198574332694634800
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1306245515357449}
+  m_GameObject: {fileID: 1799086565519178}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -4452,19 +4452,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199324376737791490
+--- !u!199 &199813965695806213
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1306245515357449}
+  m_GameObject: {fileID: 1799086565519178}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d5dbe33b0387f364ab98c474b181f272, type: 2}
+  - {fileID: 2100000, guid: 139fb175f52bb5e46ad6e669be35eb21, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4484,41 +4484,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1425718032116570
+--- !u!1 &1895338059486726
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4634357663404407}
-  - 198: {fileID: 198985684599744684}
-  - 199: {fileID: 199483091080761716}
+  - 4: {fileID: 4362273034727820}
+  - 198: {fileID: 198197636157280504}
+  - 199: {fileID: 199837656319631333}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4634357663404407
+--- !u!4 &4362273034727820
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1425718032116570}
+  m_GameObject: {fileID: 1895338059486726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 3
---- !u!198 &198985684599744684
+--- !u!198 &198197636157280504
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1425718032116570}
+  m_GameObject: {fileID: 1895338059486726}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -5535,19 +5535,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199483091080761716
+--- !u!199 &199837656319631333
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1425718032116570}
+  m_GameObject: {fileID: 1895338059486726}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3d126aa0d30bfbe4aa6a9d9bd4f535bd, type: 2}
+  - {fileID: 2100000, guid: 3a05c804bdc71c74a909cf5db5d5c0c5, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -5567,41 +5567,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1905732757454629
+--- !u!1 &1983893706686070
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4703685504455596}
-  - 198: {fileID: 198369993543494964}
-  - 199: {fileID: 199724842335699111}
+  - 4: {fileID: 4748952395089290}
+  - 198: {fileID: 198725826548047850}
+  - 199: {fileID: 199897526569435441}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4703685504455596
+--- !u!4 &4748952395089290
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1905732757454629}
+  m_GameObject: {fileID: 1983893706686070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 4
---- !u!198 &198369993543494964
+--- !u!198 &198725826548047850
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1905732757454629}
+  m_GameObject: {fileID: 1983893706686070}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -6618,19 +6618,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199724842335699111
+--- !u!199 &199897526569435441
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1905732757454629}
+  m_GameObject: {fileID: 1983893706686070}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 14456414285de78479d594717e9c037d, type: 2}
+  - {fileID: 2100000, guid: f80fbf5c8c8ace34a97da4b72c73f1d9, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -6650,41 +6650,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1367084479007682
+--- !u!1 &1897992237990903
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4131719512476347}
-  - 198: {fileID: 198202581790921645}
-  - 199: {fileID: 199683750431177394}
+  - 4: {fileID: 4775470001342008}
+  - 198: {fileID: 198598948103738953}
+  - 199: {fileID: 199090112128567315}
   m_Layer: 0
   m_Name: High-energy magnetic field_Bullet_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4131719512476347
+--- !u!4 &4775470001342008
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367084479007682}
+  m_GameObject: {fileID: 1897992237990903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4132803969898713}
+  m_Father: {fileID: 4532635207362432}
   m_RootOrder: 5
---- !u!198 &198202581790921645
+--- !u!198 &198598948103738953
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367084479007682}
+  m_GameObject: {fileID: 1897992237990903}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -7701,19 +7701,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199683750431177394
+--- !u!199 &199090112128567315
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367084479007682}
+  m_GameObject: {fileID: 1897992237990903}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9b9d91ce9df42cf4ca636d2a95d19dbb, type: 2}
+  - {fileID: 2100000, guid: 3bd22ec8dc3027e4d91b1d8974d6b23b, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

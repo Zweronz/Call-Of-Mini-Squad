@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1807760537749345}
+  m_RootGameObject: {fileID: 1569498623809881}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1807760537749345
+--- !u!1 &1569498623809881
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4740848035831259}
-  - 82: {fileID: 82256143895541000}
-  - 114: {fileID: 114623722305017061}
-  - 114: {fileID: 114395675781236394}
+  - 4: {fileID: 4349323951140369}
+  - 82: {fileID: 82530135680065273}
+  - 114: {fileID: 114447361946969981}
+  - 114: {fileID: 114732935748565849}
   m_Layer: 0
   m_Name: monster_fatcook_attack
   m_TagString: Untagged
@@ -30,25 +30,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4740848035831259
+--- !u!4 &4349323951140369
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807760537749345}
+  m_GameObject: {fileID: 1569498623809881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.093935, y: 2.2916245, z: 8.139698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!82 &82256143895541000
+--- !u!82 &82530135680065273
 AudioSource:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807760537749345}
+  m_GameObject: {fileID: 1569498623809881}
   m_Enabled: 1
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -105,12 +105,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &114623722305017061
+--- !u!114 &114447361946969981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807760537749345}
+  m_GameObject: {fileID: 1569498623809881}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3582d1c7d4196262b5c70e29e7c0f4f, type: 3}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   isSfx: 1
   audioClips:
-  - {fileID: 8300000, guid: 0f1d14da662a09c4d802f410d2a5e9d0, type: 3}
+  - {fileID: 8300000, guid: 2f3faba5d6777004ca143896bb04c895, type: 3}
   probability: []
   volumOffset: 0
   pitchOffset: 0
@@ -131,12 +131,12 @@ MonoBehaviour:
   intervalRangeMin: 0
   intervalRangeMax: 0
   delatLimit: 1000
---- !u!114 &114395675781236394
+--- !u!114 &114732935748565849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807760537749345}
+  m_GameObject: {fileID: 1569498623809881}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a37e59c578bc44061723623ff7d0f0, type: 3}

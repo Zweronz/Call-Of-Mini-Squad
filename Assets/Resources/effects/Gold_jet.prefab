@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1904817872158307}
+  m_RootGameObject: {fileID: 1918300515189176}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1904817872158307
+--- !u!1 &1918300515189176
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4986295219313628}
-  - 114: {fileID: 114872454881037891}
+  - 4: {fileID: 4435502098593330}
+  - 114: {fileID: 114907277505547524}
   m_Layer: 0
   m_Name: Gold_jet
   m_TagString: Untagged
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4986295219313628
+--- !u!4 &4435502098593330
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904817872158307}
+  m_GameObject: {fileID: 1918300515189176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4510089787160019}
+  - {fileID: 4644821016625802}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114872454881037891
+--- !u!114 &114907277505547524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904817872158307}
+  m_GameObject: {fileID: 1918300515189176}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e62a4517dc1c4e628be6f191da8def, type: 3}
@@ -58,41 +58,41 @@ MonoBehaviour:
   m_DelayTime: []
   m_playOnEnable: 0
   m_DeleteWhenEnd: 0
---- !u!1 &1284467732377791
+--- !u!1 &1247601364933821
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4510089787160019}
-  - 198: {fileID: 198153459830048594}
-  - 199: {fileID: 199833101861261350}
+  - 4: {fileID: 4644821016625802}
+  - 198: {fileID: 198202500997877805}
+  - 199: {fileID: 199621911156937600}
   m_Layer: 0
   m_Name: Gold_jet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4510089787160019
+--- !u!4 &4644821016625802
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1284467732377791}
+  m_GameObject: {fileID: 1247601364933821}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4986295219313628}
+  m_Father: {fileID: 4435502098593330}
   m_RootOrder: 0
---- !u!198 &198153459830048594
+--- !u!198 &198202500997877805
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1284467732377791}
+  m_GameObject: {fileID: 1247601364933821}
   lengthInSec: 2
   startDelay: 0
   speed: 1
@@ -1109,19 +1109,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199833101861261350
+--- !u!199 &199621911156937600
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1284467732377791}
+  m_GameObject: {fileID: 1247601364933821}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 58264e97c345f0d44aa1171209cacc37, type: 2}
+  - {fileID: 2100000, guid: 7ea5e77e81cbaab4d86a44c644cac47a, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

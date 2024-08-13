@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1073855574497927}
+  m_RootGameObject: {fileID: 1368219673425370}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1073855574497927
+--- !u!1 &1368219673425370
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4047706296674633}
+  - 4: {fileID: 4534205771069114}
   m_Layer: 0
   m_Name: LeaderHalo
   m_TagString: Untagged
@@ -27,27 +27,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4047706296674633
+--- !u!4 &4534205771069114
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073855574497927}
+  m_GameObject: {fileID: 1368219673425370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.508453, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4732570683703048}
+  - {fileID: 4306749992585658}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &1977648054001834
+--- !u!1 &1686917937350273
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4732570683703048}
+  - 4: {fileID: 4306749992585658}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster
   m_TagString: Untagged
@@ -55,313 +55,328 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4732570683703048
+--- !u!4 &4306749992585658
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1977648054001834}
+  m_GameObject: {fileID: 1686917937350273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 1, z: 0.8}
   m_Children:
-  - {fileID: 4321575357814501}
-  m_Father: {fileID: 4047706296674633}
+  - {fileID: 4803591057577186}
+  m_Father: {fileID: 4534205771069114}
   m_RootOrder: 0
---- !u!1 &1444110775219580
+--- !u!1 &1372084509233354
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4321575357814501}
-  - 33: {fileID: 33872232109937900}
-  - 23: {fileID: 23689345487662876}
-  - 95: {fileID: 95137551613682461}
+  - 4: {fileID: 4803591057577186}
+  - 33: {fileID: 33994494526123769}
+  - 23: {fileID: 23866654610837360}
+  - 95: {fileID: 95100700135976070}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4321575357814501
+--- !u!4 &4803591057577186
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444110775219580}
+  m_GameObject: {fileID: 1372084509233354}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4781379552411314}
-  - {fileID: 4754417529662946}
-  - {fileID: 4066177302768732}
-  m_Father: {fileID: 4732570683703048}
+  - {fileID: 4388132897734954}
+  - {fileID: 4650284582048224}
+  - {fileID: 4263207721423452}
+  m_Father: {fileID: 4306749992585658}
   m_RootOrder: 0
---- !u!33 &33872232109937900
+--- !u!33 &33994494526123769
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444110775219580}
-  m_Mesh: {fileID: 4300000, guid: 351ae6627542e8e49ba7bc8f3152c44f, type: 2}
---- !u!23 &23689345487662876
+  m_GameObject: {fileID: 1372084509233354}
+  m_Mesh: {fileID: 4300000, guid: 9f08bd7956c5c6947b6e67a39f96012f, type: 2}
+--- !u!23 &23866654610837360
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444110775219580}
+  m_GameObject: {fileID: 1372084509233354}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0d5207da8f37f5a4ba3a997576076a9e, type: 2}
+  - {fileID: 2100000, guid: 064e965b6b03d1441aac5c2d039cc8b2, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!95 &95137551613682461
+--- !u!95 &95100700135976070
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444110775219580}
+  m_GameObject: {fileID: 1372084509233354}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c39c90afe18ba4a43811ec6edfb00008, type: 2}
+  m_Controller: {fileID: 9100000, guid: d1074330f08cf12419e4ca73d7a7729f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &1252397249858654
+--- !u!1 &1695868109603651
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4781379552411314}
-  - 33: {fileID: 33615219302934108}
-  - 23: {fileID: 23815743526394489}
+  - 4: {fileID: 4388132897734954}
+  - 33: {fileID: 33778235022275152}
+  - 23: {fileID: 23785648381076909}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4781379552411314
+--- !u!4 &4388132897734954
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252397249858654}
+  m_GameObject: {fileID: 1695868109603651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.060600366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4321575357814501}
+  m_Father: {fileID: 4803591057577186}
   m_RootOrder: 0
---- !u!33 &33615219302934108
+--- !u!33 &33778235022275152
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252397249858654}
-  m_Mesh: {fileID: 4300000, guid: 351ae6627542e8e49ba7bc8f3152c44f, type: 2}
---- !u!23 &23815743526394489
+  m_GameObject: {fileID: 1695868109603651}
+  m_Mesh: {fileID: 4300000, guid: 9f08bd7956c5c6947b6e67a39f96012f, type: 2}
+--- !u!23 &23785648381076909
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252397249858654}
+  m_GameObject: {fileID: 1695868109603651}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0d5207da8f37f5a4ba3a997576076a9e, type: 2}
+  - {fileID: 2100000, guid: 064e965b6b03d1441aac5c2d039cc8b2, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1 &1520257651386219
+--- !u!1 &1619008373209238
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4754417529662946}
-  - 33: {fileID: 33519300056020962}
-  - 23: {fileID: 23994541926418934}
+  - 4: {fileID: 4650284582048224}
+  - 33: {fileID: 33952574499559369}
+  - 23: {fileID: 23042429417548244}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4754417529662946
+--- !u!4 &4650284582048224
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1520257651386219}
+  m_GameObject: {fileID: 1619008373209238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.0036813493, z: -0}
   m_LocalScale: {x: 1.1214954, y: 1.1214955, z: 1.1214956}
   m_Children:
-  - {fileID: 4469955418573798}
-  m_Father: {fileID: 4321575357814501}
+  - {fileID: 4398832314633575}
+  m_Father: {fileID: 4803591057577186}
   m_RootOrder: 1
---- !u!33 &33519300056020962
+--- !u!33 &33952574499559369
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1520257651386219}
-  m_Mesh: {fileID: 4300000, guid: 351ae6627542e8e49ba7bc8f3152c44f, type: 2}
---- !u!23 &23994541926418934
+  m_GameObject: {fileID: 1619008373209238}
+  m_Mesh: {fileID: 4300000, guid: 9f08bd7956c5c6947b6e67a39f96012f, type: 2}
+--- !u!23 &23042429417548244
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1520257651386219}
+  m_GameObject: {fileID: 1619008373209238}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0d5207da8f37f5a4ba3a997576076a9e, type: 2}
+  - {fileID: 2100000, guid: 064e965b6b03d1441aac5c2d039cc8b2, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1 &1796040827538917
+--- !u!1 &1571815020710671
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4469955418573798}
-  - 33: {fileID: 33172928546892746}
-  - 23: {fileID: 23520440238785592}
+  - 4: {fileID: 4398832314633575}
+  - 33: {fileID: 33920224885128948}
+  - 23: {fileID: 23386180397555105}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4469955418573798
+--- !u!4 &4398832314633575
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796040827538917}
+  m_GameObject: {fileID: 1571815020710671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.060600366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4754417529662946}
+  m_Father: {fileID: 4650284582048224}
   m_RootOrder: 0
---- !u!33 &33172928546892746
+--- !u!33 &33920224885128948
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796040827538917}
-  m_Mesh: {fileID: 4300000, guid: 351ae6627542e8e49ba7bc8f3152c44f, type: 2}
---- !u!23 &23520440238785592
+  m_GameObject: {fileID: 1571815020710671}
+  m_Mesh: {fileID: 4300000, guid: 9f08bd7956c5c6947b6e67a39f96012f, type: 2}
+--- !u!23 &23386180397555105
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796040827538917}
+  m_GameObject: {fileID: 1571815020710671}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0d5207da8f37f5a4ba3a997576076a9e, type: 2}
+  - {fileID: 2100000, guid: 064e965b6b03d1441aac5c2d039cc8b2, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1 &1506283268907794
+--- !u!1 &1819462456499294
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4066177302768732}
-  - 33: {fileID: 33232337754122613}
-  - 23: {fileID: 23362928922384700}
+  - 4: {fileID: 4263207721423452}
+  - 33: {fileID: 33892552583475371}
+  - 23: {fileID: 23210844360377757}
   m_Layer: 0
   m_Name: Halo_protagonist_Little_monster_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4066177302768732
+--- !u!4 &4263207721423452
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1506283268907794}
+  m_GameObject: {fileID: 1819462456499294}
   m_LocalRotation: {x: 2.6693655E-08, y: -0.70707726, z: -2.6691422E-08, w: 0.70713633}
   m_LocalPosition: {x: 0.08748723, y: 0.034948718, z: 0.0462002}
   m_LocalScale: {x: 1.5309302, y: 1.5309303, z: 1.5309293}
   m_Children: []
-  m_Father: {fileID: 4321575357814501}
+  m_Father: {fileID: 4803591057577186}
   m_RootOrder: 2
---- !u!33 &33232337754122613
+--- !u!33 &33892552583475371
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1506283268907794}
-  m_Mesh: {fileID: 4300000, guid: 7216907e2f943c148a61689f2769bdd3, type: 2}
---- !u!23 &23362928922384700
+  m_GameObject: {fileID: 1819462456499294}
+  m_Mesh: {fileID: 4300000, guid: 4868f76c09874b14698d4a7232c6995d, type: 2}
+--- !u!23 &23210844360377757
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1506283268907794}
+  m_GameObject: {fileID: 1819462456499294}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 573dd588d0bcfad44813254aaa1fd453, type: 2}
+  - {fileID: 2100000, guid: 2e409fb3e6eb8d848b07cff442ab7819, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}

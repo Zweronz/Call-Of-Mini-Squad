@@ -2,26 +2,27 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  m_ObjectHideFlags: 1
   serializedVersion: 2
+  m_ObjectHideFlags: 1
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1209675655807635}
+  m_RootGameObject: {fileID: 1916456631335947}
   m_IsPrefabParent: 1
---- !u!1 &1209675655807635
+  m_IsExploded: 0
+--- !u!1 &1916456631335947
 GameObject:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
   m_Component:
-  - component: {fileID: 4726943174039341}
-  - component: {fileID: 82909503449572349}
-  - component: {fileID: 114662638487763568}
-  - component: {fileID: 114940450288669019}
+  - 4: {fileID: 4473064538784487}
+  - 82: {fileID: 82648667138430720}
+  - 114: {fileID: 114962440607832220}
+  - 114: {fileID: 114733572827677945}
   m_Layer: 0
   m_Name: common_explo_sm
   m_TagString: Untagged
@@ -29,36 +30,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4726943174039341
+--- !u!4 &4473064538784487
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209675655807635}
+  m_GameObject: {fileID: 1916456631335947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.093935, y: 2.2916245, z: 8.139698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82909503449572349
+--- !u!82 &82648667138430720
 AudioSource:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209675655807635}
+  m_GameObject: {fileID: 1916456631335947}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 10
@@ -71,79 +68,59 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
-      time: 0
+    - time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - serializedVersion: 2
-      time: 1
+    - time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
-      time: 0.0060422956
+    - time: 0.0060422956
       value: 0.29959518
       inSlope: 0.43272972
       outSlope: 0.43272972
       tangentMode: 0
-    - serializedVersion: 2
-      time: 0.27492446
+    - time: 0.27492446
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - serializedVersion: 2
-      time: 0
+    - time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!114 &114662638487763568
+--- !u!114 &114962440607832220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209675655807635}
+  m_GameObject: {fileID: 1916456631335947}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3582d1c7d4196262b5c70e29e7c0f4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   isSfx: 1
   audioClips:
-  - {fileID: 8300000, guid: f06362165961ad34db6b2f1cde2b6356, type: 3}
-  - {fileID: 8300000, guid: da751c6197d85f444815225c07b2ecb3, type: 3}
-  - {fileID: 8300000, guid: 2404a23719bb0394c88556f88e21890d, type: 3}
+  - {fileID: 8300000, guid: 58431d27264503b4da5b56ff9e519e40, type: 3}
+  - {fileID: 8300000, guid: 29264803d26e79d4ca6c92fadcae0bd7, type: 3}
+  - {fileID: 8300000, guid: b8bdfe9f4ab35b34794723c3bb6ddf56, type: 3}
   probability: []
   volumOffset: 0
   pitchOffset: 0
@@ -156,16 +133,16 @@ MonoBehaviour:
   intervalRangeMin: 0
   intervalRangeMax: 0
   delatLimit: 1000
---- !u!114 &114940450288669019
+--- !u!114 &114733572827677945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209675655807635}
+  m_GameObject: {fileID: 1916456631335947}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a37e59c578bc44061723623ff7d0f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   maxCount: 1
   deltaTime: 0.2

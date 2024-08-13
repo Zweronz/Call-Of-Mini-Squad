@@ -356,11 +356,11 @@ namespace CoMDS2
 			UIConstant.bNeedLoseConnect = false;
 			if (bMustWatchFinished)
 			{
-				Handheld.PlayFullScreenMovie("squad1.mp4", Color.black, FullScreenMovieControlMode.Hidden);
+			//	Handheld.PlayFullScreenMovie("squad1.mp4", Color.black, FullScreenMovieControlMode.Hidden);
 			}
 			else
 			{
-				Handheld.PlayFullScreenMovie("squad1.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+			//	Handheld.PlayFullScreenMovie("squad1.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
 			}
 		}
 	}

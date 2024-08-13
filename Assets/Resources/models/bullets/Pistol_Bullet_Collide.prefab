@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1819321086279902}
+  m_RootGameObject: {fileID: 1768274777284111}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1819321086279902
+--- !u!1 &1768274777284111
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4923281723760971}
-  - 65: {fileID: 65476559608627175}
-  - 54: {fileID: 54469564122365829}
+  - 4: {fileID: 4004742999121277}
+  - 65: {fileID: 65918332977500993}
+  - 54: {fileID: 54983697861120931}
   m_Layer: 0
   m_Name: Pistol_Bullet_Collide
   m_TagString: Untagged
@@ -29,38 +29,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4923281723760971
+--- !u!4 &4004742999121277
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819321086279902}
+  m_GameObject: {fileID: 1768274777284111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.631159, y: 0.5979183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4786705048402058}
+  - {fileID: 4963043437264161}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &65476559608627175
+--- !u!65 &65918332977500993
 BoxCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819321086279902}
+  m_GameObject: {fileID: 1768274777284111}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Size: {x: 0.2, y: 0.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &54469564122365829
+--- !u!54 &54983697861120931
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819321086279902}
+  m_GameObject: {fileID: 1768274777284111}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -69,105 +69,108 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1657352821662905
+--- !u!1 &1649872215413606
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4786705048402058}
-  - 33: {fileID: 33619053659657529}
-  - 23: {fileID: 23958738491903226}
+  - 4: {fileID: 4963043437264161}
+  - 33: {fileID: 33288444834870443}
+  - 23: {fileID: 23700110640629589}
   m_Layer: 0
   m_Name: Pistol_Bullet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4786705048402058
+--- !u!4 &4963043437264161
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1657352821662905}
+  m_GameObject: {fileID: 1649872215413606}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.371139E-08}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.5, z: 0.7}
   m_Children:
-  - {fileID: 4446270338794945}
-  - {fileID: 4843287177736319}
-  m_Father: {fileID: 4923281723760971}
+  - {fileID: 4249289231997511}
+  - {fileID: 4434314250764146}
+  m_Father: {fileID: 4004742999121277}
   m_RootOrder: 0
---- !u!33 &33619053659657529
+--- !u!33 &33288444834870443
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1657352821662905}
-  m_Mesh: {fileID: 4300000, guid: d3460b61ef68acc4d9f3cfe64804bce0, type: 2}
---- !u!23 &23958738491903226
+  m_GameObject: {fileID: 1649872215413606}
+  m_Mesh: {fileID: 4300000, guid: 0b9ddce6ce68c19429cbf906eb53c5e3, type: 2}
+--- !u!23 &23700110640629589
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1657352821662905}
+  m_GameObject: {fileID: 1649872215413606}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c4b540d4a9e1620458464d36475092bf, type: 2}
+  - {fileID: 2100000, guid: efad583ea3e4dd64bb0100c0c7fc826c, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1 &1016052394278857
+--- !u!1 &1250731774809288
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4446270338794945}
-  - 96: {fileID: 96523913993725764}
+  - 4: {fileID: 4249289231997511}
+  - 96: {fileID: 96869833352121105}
   m_Layer: 0
   m_Name: Pistol_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4446270338794945
+--- !u!4 &4249289231997511
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016052394278857}
+  m_GameObject: {fileID: 1250731774809288}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 4}
   m_Children: []
-  m_Father: {fileID: 4786705048402058}
+  m_Father: {fileID: 4963043437264161}
   m_RootOrder: 0
---- !u!96 &96523913993725764
+--- !u!96 &96869833352121105
 TrailRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1016052394278857}
+  m_GameObject: {fileID: 1250731774809288}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d987ae01964e8044691eafc765bf8b81, type: 2}
+  - {fileID: 2100000, guid: 22836a1a7105d9947b11cd6c4d6437dc, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -196,69 +199,72 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!1 &1300611497256381
+--- !u!1 &1395071567428441
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4843287177736319}
-  - 33: {fileID: 33787689233925342}
-  - 23: {fileID: 23114168952652928}
-  - 114: {fileID: 114764880497893052}
+  - 4: {fileID: 4434314250764146}
+  - 33: {fileID: 33124360697400483}
+  - 23: {fileID: 23720767048744469}
+  - 114: {fileID: 114543831286667587}
   m_Layer: 0
   m_Name: Pistol_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4843287177736319
+--- !u!4 &4434314250764146
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611497256381}
+  m_GameObject: {fileID: 1395071567428441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.3862767, z: 0}
   m_LocalScale: {x: 5, y: 2, z: 3.5}
   m_Children: []
-  m_Father: {fileID: 4786705048402058}
+  m_Father: {fileID: 4963043437264161}
   m_RootOrder: 1
---- !u!33 &33787689233925342
+--- !u!33 &33124360697400483
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611497256381}
-  m_Mesh: {fileID: 4300000, guid: d3460b61ef68acc4d9f3cfe64804bce0, type: 2}
---- !u!23 &23114168952652928
+  m_GameObject: {fileID: 1395071567428441}
+  m_Mesh: {fileID: 4300000, guid: 0b9ddce6ce68c19429cbf906eb53c5e3, type: 2}
+--- !u!23 &23720767048744469
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611497256381}
+  m_GameObject: {fileID: 1395071567428441}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d9c49b21addcbab4aa844a9d72ecb1f3, type: 2}
+  - {fileID: 2100000, guid: 57fac57b37ba1b64db571c7b1eeee4d0, type: 2}
   m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!114 &114764880497893052
+--- !u!114 &114543831286667587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300611497256381}
+  m_GameObject: {fileID: 1395071567428441}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fb985ab484acf6853bf8c1345d6decd, type: 3}

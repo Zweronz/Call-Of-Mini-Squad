@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1061975644833555}
+  m_RootGameObject: {fileID: 1095592569036648}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1061975644833555
+--- !u!1 &1095592569036648
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4860276303747280}
-  - 54: {fileID: 54938781636589755}
-  - 135: {fileID: 135464148313635675}
+  - 4: {fileID: 4918939033732433}
+  - 54: {fileID: 54284857588379249}
+  - 135: {fileID: 135677929880344469}
   m_Layer: 0
   m_Name: Putridifier_Attack
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4860276303747280
+--- !u!4 &4918939033732433
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1061975644833555}
+  m_GameObject: {fileID: 1095592569036648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4447328513809002}
+  - {fileID: 4085028285328310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &54938781636589755
+--- !u!54 &54284857588379249
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1061975644833555}
+  m_GameObject: {fileID: 1095592569036648}
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -57,57 +57,57 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!135 &135464148313635675
+--- !u!135 &135677929880344469
 SphereCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1061975644833555}
+  m_GameObject: {fileID: 1095592569036648}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1725409661793944
+--- !u!1 &1133420357557968
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4447328513809002}
-  - 198: {fileID: 198485409937955099}
-  - 199: {fileID: 199543651517972423}
-  - 114: {fileID: 114251921377912160}
+  - 4: {fileID: 4085028285328310}
+  - 198: {fileID: 198270524656590730}
+  - 199: {fileID: 199147262268867852}
+  - 114: {fileID: 114857398161990146}
   m_Layer: 0
   m_Name: Putridifier_Attack_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4447328513809002
+--- !u!4 &4085028285328310
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725409661793944}
+  m_GameObject: {fileID: 1133420357557968}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4100215592885696}
-  - {fileID: 4799438638712187}
-  - {fileID: 4252523596254011}
-  m_Father: {fileID: 4860276303747280}
+  - {fileID: 4845403261468758}
+  - {fileID: 4423081084143725}
+  - {fileID: 4789147756122126}
+  m_Father: {fileID: 4918939033732433}
   m_RootOrder: 0
---- !u!198 &198485409937955099
+--- !u!198 &198270524656590730
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725409661793944}
+  m_GameObject: {fileID: 1133420357557968}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1104,19 +1104,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199543651517972423
+--- !u!199 &199147262268867852
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725409661793944}
+  m_GameObject: {fileID: 1133420357557968}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5688cec0c66ef74bb9f7e28f7df1f7c, type: 2}
+  - {fileID: 2100000, guid: 695aec66b42d696419169e940f94be28, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1136,12 +1136,12 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!114 &114251921377912160
+--- !u!114 &114857398161990146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725409661793944}
+  m_GameObject: {fileID: 1133420357557968}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcc35973d11feddc593a5bdb30f98ad, type: 3}
@@ -1154,41 +1154,41 @@ MonoBehaviour:
   enableEmission: 0
   m_Time: 0
   m_maxTime: 0
---- !u!1 &1562749662263486
+--- !u!1 &1987228994544643
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4100215592885696}
-  - 198: {fileID: 198043031185291888}
-  - 199: {fileID: 199913078814653779}
+  - 4: {fileID: 4845403261468758}
+  - 198: {fileID: 198607326577983696}
+  - 199: {fileID: 199479706424339481}
   m_Layer: 0
   m_Name: Putridifier_Attack_1_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4100215592885696
+--- !u!4 &4845403261468758
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1562749662263486}
+  m_GameObject: {fileID: 1987228994544643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4447328513809002}
+  m_Father: {fileID: 4085028285328310}
   m_RootOrder: 0
---- !u!198 &198043031185291888
+--- !u!198 &198607326577983696
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1562749662263486}
+  m_GameObject: {fileID: 1987228994544643}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -2155,19 +2155,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199913078814653779
+--- !u!199 &199479706424339481
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1562749662263486}
+  m_GameObject: {fileID: 1987228994544643}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: bc0c53563c3bcc04c8080d945ce24769, type: 2}
+  - {fileID: 2100000, guid: 4d78b1ba25d340e40b190dfe9d7a3fc5, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2187,41 +2187,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1407005143966681
+--- !u!1 &1856191101142586
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4799438638712187}
-  - 198: {fileID: 198507130017837377}
-  - 199: {fileID: 199609159178581019}
+  - 4: {fileID: 4423081084143725}
+  - 198: {fileID: 198649579629160059}
+  - 199: {fileID: 199164003939658381}
   m_Layer: 0
   m_Name: Putridifier_Attack_1_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4799438638712187
+--- !u!4 &4423081084143725
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1407005143966681}
+  m_GameObject: {fileID: 1856191101142586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4447328513809002}
+  m_Father: {fileID: 4085028285328310}
   m_RootOrder: 1
---- !u!198 &198507130017837377
+--- !u!198 &198649579629160059
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1407005143966681}
+  m_GameObject: {fileID: 1856191101142586}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -3188,19 +3188,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199609159178581019
+--- !u!199 &199164003939658381
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1407005143966681}
+  m_GameObject: {fileID: 1856191101142586}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0940dc6d4a332b64ba36ccf959796e25, type: 2}
+  - {fileID: 2100000, guid: d56ea0fa9005a1549b65885a29fa3661, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3220,41 +3220,41 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!1 &1362757342634518
+--- !u!1 &1947695233727933
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4252523596254011}
-  - 198: {fileID: 198639530838450096}
-  - 199: {fileID: 199350257221827785}
+  - 4: {fileID: 4789147756122126}
+  - 198: {fileID: 198218693573699442}
+  - 199: {fileID: 199586280554294514}
   m_Layer: 0
   m_Name: Putridifier_Attack_1_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4252523596254011
+--- !u!4 &4789147756122126
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1362757342634518}
+  m_GameObject: {fileID: 1947695233727933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4447328513809002}
+  m_Father: {fileID: 4085028285328310}
   m_RootOrder: 2
---- !u!198 &198639530838450096
+--- !u!198 &198218693573699442
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1362757342634518}
+  m_GameObject: {fileID: 1947695233727933}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -4286,19 +4286,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199350257221827785
+--- !u!199 &199586280554294514
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1362757342634518}
+  m_GameObject: {fileID: 1947695233727933}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cf4e44a146d5be34ba6c653405e56b51, type: 2}
+  - {fileID: 2100000, guid: 2381388ba228ca846a9e120cf3748c57, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
