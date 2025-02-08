@@ -31,7 +31,7 @@ public class AutomaticBaker : Editor
 	{
 		EditorSceneManager.sceneOpened -= FinishedLoading;
 
-		NavMeshBuilder.BuildNavMeshAsync();
+		NavMeshGenerator.GenerateNavMesh();
 		building = true;
 	}
 
