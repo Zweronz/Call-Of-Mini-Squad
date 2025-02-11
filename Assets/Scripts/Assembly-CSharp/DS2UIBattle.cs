@@ -53,6 +53,10 @@ public class DS2UIBattle : MonoBehaviour
 		{
 			return;
 		}
+		if (!Application.isMobilePlatform)
+		{
+			//right_lparam = Mathf.Atan2(Input.GetAxisRaw("StickY"), Input.GetAxisRaw("StickX"));
+		}
 		if (DataCenter.Save().squadMode)
 		{
 			SquadController squadController = GameBattle.m_instance.GetSquadController();
